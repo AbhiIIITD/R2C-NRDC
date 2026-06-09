@@ -70,6 +70,10 @@ app.include_router(report_router)
 app.include_router(evidence_router)
 
 
+@app.get("/ping")
+async def ping():
+    return {"pong": True}
+
 @app.get("/")
 async def root():
     return {

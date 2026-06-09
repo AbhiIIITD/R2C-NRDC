@@ -79,6 +79,10 @@ class MatchReq(BaseModel):
 def health():
     return {"status": "ok", "model": MODEL, "mode": "supabase-rest" if SUPA else "postgres"}
 
+@app.get("/ping")
+def ping():
+    return {"pong": True}
+
 @app.get("/problems")
 def problems():
     if SUPA:

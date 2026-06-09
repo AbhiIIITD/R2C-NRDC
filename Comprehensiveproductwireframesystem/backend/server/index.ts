@@ -30,6 +30,7 @@ import {
   signAccessToken,
 } from "./lib.js";
 import { registerAiRoutes } from "./routes/ai.routes.js";
+import { aiConfig } from "./services/aiConfig.js";
 
 const app = express();
 const upload = multer({ storage: multer.memoryStorage(), limits: { fileSize: 25 * 1024 * 1024 } });
@@ -157,7 +158,37 @@ api.get("/health", (_req, res) => res.json({ success: true, data: { status: "ok"
 
 // Lightweight keep-alive endpoint (no DB) hit by the self-pinger below to stop the
 // host (e.g. Render free tier) from spinning the service down between requests.
-api.get("/ping", (_req, res) => res.json({ success: true, data: { pong: true, at: new Date().toISOString() } }));
+// This also pings the other two services (Matchmaking and SUTRA AI) to keep them awake.
+api.get("/ping", asyncRoute(async (_req, res) => {
+  const results: Record<string, any> = {
+    pong: true,
+    at: new Date().toISOString()
+  };
+
+  const pingService = async (name: string, url: string) => {
+    try {
+      const controller = new AbortController();
+      const id = setTimeout(() => controller.abort(), 8000); // 8 second timeout
+      const response = await fetch(`${url}/ping`, { signal: controller.signal });
+      clearTimeout(id);
+      if (response.ok) {
+        const data = await response.json().catch(() => ({}));
+        results[name] = { status: "ok", data };
+      } else {
+        results[name] = { status: "error", code: response.status };
+      }
+    } catch (err: any) {
+      results[name] = { status: "failed", error: err?.message || String(err) };
+    }
+  };
+
+  await Promise.all([
+    pingService("matchmaking", aiConfig.matchmaking.url),
+    pingService("sutra", aiConfig.sutra.url)
+  ]);
+
+  res.json({ success: true, data: results });
+}));
 
 // Public, unauthenticated landing-page statistics — all derived from real data.
 api.get("/public/stats", asyncRoute(async (_req, res) => {
