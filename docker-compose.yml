@@ -1,0 +1,152 @@
+# =====================================================================
+# NRDC R2C — full stack. Single command:  docker compose up --build
+# Services: postgres, redis, backend, matchmaking, ai-agents, frontend
+# Host ports are configurable in .env (defaults avoid common conflicts).
+# =====================================================================
+
+services:
+  # ---- PostgreSQL (Prisma DB `nrdc_r2c` + SUTRA DB `sutra`); pgvector-capable image ----
+  postgres:
+    image: pgvector/pgvector:pg16
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: nrdc_r2c
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-postgres}
+    ports:
+      - "${POSTGRES_PORT:-55433}:5432"
+    volumes:
+      - nrdc_pg_data:/var/lib/postgresql/data
+      - ./db-init:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d nrdc_r2c"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+  # ---- Redis (cache for the SUTRA agents; optional but provided) ----
+  redis:
+    image: redis:7-alpine
+    restart: unless-stopped
+    command: ["redis-server", "--save", "", "--appendonly", "no"]
+    ports:
+      - "${REDIS_PORT:-6380}:6379"
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+
+  # ---- Backend (Express + Prisma) — migrates + seeds on boot ----
+  # Behind the "full-docker" profile: by default we run the backend from source
+  # (tsx) on :4001, so `docker compose up -d` skips this container to avoid a
+  # port clash. Use `docker compose --profile full-docker up -d` for all-Docker.
+  backend:
+    profiles: ["full-docker"]
+    build:
+      context: ./Comprehensiveproductwireframesystem/backend
+      dockerfile: Dockerfile.backend
+    restart: unless-stopped
+    environment:
+      DATABASE_URL: postgresql://postgres:${POSTGRES_PASSWORD:-postgres}@postgres:5432/nrdc_r2c?schema=public
+      PORT: 4000
+      CLIENT_ORIGIN: http://localhost:${FRONTEND_PORT:-5174},http://127.0.0.1:${FRONTEND_PORT:-5174}
+      JWT_ACCESS_SECRET: ${JWT_ACCESS_SECRET:-dev-nrdc-r2c-jwt-secret-change-me}
+      ACCESS_TOKEN_TTL: 15m
+      REFRESH_TOKEN_DAYS: 30
+      STORAGE_ROOT: /app/storage
+      # AI integrations (in-cluster service names)
+      MATCHMAKING_API_URL: http://matchmaking:8004
+      SUTRA_AI_API_URL: http://ai-agents:8000
+      SUPABASE_URL: ${SUPABASE_URL}
+      SUPABASE_KEY: ${SUPABASE_KEY}
+      OPENAI_API_KEY: ${OPENAI_API_KEY}
+      COPILOT_PROVIDER: openai
+      COPILOT_MODEL: ${COPILOT_MODEL:-gpt-5.4}
+      COPILOT_TEMPERATURE: "0.4"
+      AI_HTTP_TIMEOUT_MS: "120000"
+      AI_HTTP_RETRIES: "1"
+    ports:
+      - "${BACKEND_PORT:-4001}:4000"
+    volumes:
+      - nrdc_backend_storage:/app/storage
+    depends_on:
+      postgres:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD-SHELL", "wget -qO- http://localhost:4000/api/v1/health | grep -q ok"]
+      interval: 10s
+      timeout: 5s
+      retries: 18
+      start_period: 40s
+
+  # ---- Matchmaking (FastAPI + bge -> Supabase pgvector via REST) ----
+  matchmaking:
+    build:
+      context: "./AI 2/Matchmaking_problem_to_papers"
+      dockerfile: Dockerfile.matchmaking
+    restart: unless-stopped
+    environment:
+      SUPABASE_URL: ${SUPABASE_URL}
+      SUPABASE_KEY: ${SUPABASE_KEY}
+    ports:
+      - "${MATCHMAKING_PORT:-8004}:8004"
+    healthcheck:
+      test: ["CMD-SHELL", "curl -fsS http://localhost:8004/health || exit 1"]
+      interval: 15s
+      timeout: 5s
+      retries: 10
+      start_period: 30s
+
+  # ---- SUTRA AI agents (FastAPI, 6 agents, OpenAI) ----
+  ai-agents:
+    build:
+      context: "./AI r2c/AI-team"
+      dockerfile: Dockerfile.ai-agents
+    restart: unless-stopped
+    environment:
+      DATABASE_URL: postgresql://postgres:${POSTGRES_PASSWORD:-postgres}@postgres:5432/sutra
+      REDIS_URL: redis://redis:6379/0
+      LLM_PROVIDER: openai
+      OPENAI_API_KEY: ${OPENAI_API_KEY}
+      OPENAI_MODEL: ${SUTRA_OPENAI_MODEL:-gpt-5-mini}
+      OPENAI_EMBEDDING_MODEL: text-embedding-3-small
+      ENVIRONMENT: production
+    ports:
+      - "${AI_AGENTS_PORT:-8000}:8000"
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_started
+    healthcheck:
+      test: ["CMD-SHELL", "curl -fsS http://localhost:8000/health/ || exit 1"]
+      interval: 15s
+      timeout: 5s
+      retries: 10
+      start_period: 20s
+
+  # ---- Frontend (React build served by nginx) ----
+  # Also behind "full-docker": by default we run Vite from source on :5174.
+  frontend:
+    profiles: ["full-docker"]
+    build:
+      context: ./Comprehensiveproductwireframesystem/frontend
+      dockerfile: Dockerfile.frontend
+      args:
+        VITE_API_URL: http://localhost:${BACKEND_PORT:-4001}/api/v1
+    restart: unless-stopped
+    ports:
+      - "${FRONTEND_PORT:-5174}:80"
+    depends_on:
+      backend:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD-SHELL", "wget -qO- http://localhost:80/ >/dev/null 2>&1 || exit 1"]
+      interval: 15s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  nrdc_pg_data:
+  nrdc_backend_storage:
