@@ -317,6 +317,28 @@ that activates the fix.
 
 ---
 
+## 9b. Cold-start keep-alive (already wired)
+
+Free Render web services **spin down after ~15 min idle** and cold-start on the next
+request. The backend now **self-pings its own public URL** every 10 min to keep the
+idle timer from firing.
+
+- **It works on Render with zero config:** Render injects `RENDER_EXTERNAL_URL`, which
+  the server uses to hit `GET /api/v1/ping` (a no-DB endpoint) on a timer
+  ([server/index.ts](../Comprehensiveproductwireframesystem/backend/server/index.ts#L929-L948)).
+- **Why not a localhost ping?** Render only resets the idle timer on requests through
+  its **public edge** — an internal `localhost` ping wouldn't count. That's why it must
+  hit the external URL.
+- **Optional knobs:** `KEEP_ALIVE_MINUTES` (default `10`; keep it < 15) and, on
+  non-Render hosts, `KEEP_ALIVE_URL` (your public base URL). Unset = disabled (local dev).
+- **Caveats:** this keeps the **backend** warm only — the matchmaking/ai-agents services
+  cold-start independently (add their own monitor if needed). And a self-ping can't wake
+  a service that has *already* slept; it only prevents sleep while running. For
+  bulletproof uptime, also point an external monitor (UptimeRobot, cron-job.org, or a
+  Render Cron Job) at `https://r2c-backend.onrender.com/api/v1/ping`.
+
+---
+
 ## 10. Optional: make the AI services private
 
 Only the backend talks to matchmaking and ai-agents — the browser never does. To keep

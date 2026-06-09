@@ -155,6 +155,10 @@ async function createSession(user: any, req: express.Request, res: express.Respo
 
 api.get("/health", (_req, res) => res.json({ success: true, data: { status: "ok" } }));
 
+// Lightweight keep-alive endpoint (no DB) hit by the self-pinger below to stop the
+// host (e.g. Render free tier) from spinning the service down between requests.
+api.get("/ping", (_req, res) => res.json({ success: true, data: { pong: true, at: new Date().toISOString() } }));
+
 // Public, unauthenticated landing-page statistics — all derived from real data.
 api.get("/public/stats", asyncRoute(async (_req, res) => {
   const [publishedStudies, industryPartners, activeCollaborations, technologiesLicensed, researchers] = await Promise.all([
@@ -923,4 +927,24 @@ app.use((error: any, _req: express.Request, res: express.Response, _next: expres
   res.status(status).json({ success: false, error: { code, message: status === 500 ? "Internal server error" : error.message } });
 });
 
-app.listen(config.port, () => console.log(`NRDC R2C API listening on http://localhost:${config.port}/api/v1`));
+app.listen(config.port, () => console.log(`R2C.AI API listening on http://localhost:${config.port}/api/v1`));
+
+// ── Keep-alive self-ping ───────────────────────────────────────────────────
+// On hosts that sleep idle services (Render free tier spins down after ~15 min),
+// hit our OWN PUBLIC URL on an interval so the host's router keeps resetting the
+// idle timer. A localhost ping would NOT count — only requests through the public
+// edge do — so we must use the external URL. Render injects RENDER_EXTERNAL_URL
+// automatically; set KEEP_ALIVE_URL manually on other hosts. No-op when unset
+// (e.g. local dev), so it never self-pings in development.
+const keepAliveBase = process.env.KEEP_ALIVE_URL || process.env.RENDER_EXTERNAL_URL;
+const keepAliveMinutes = Number(process.env.KEEP_ALIVE_MINUTES || 10);
+if (keepAliveBase) {
+  const target = `${keepAliveBase.replace(/\/$/, "")}/api/v1/ping`;
+  const intervalMs = keepAliveMinutes * 60 * 1000;
+  console.log(`Keep-alive: self-pinging ${target} every ${keepAliveMinutes} min`);
+  setInterval(() => {
+    fetch(target)
+      .then((r) => { if (!r.ok) console.warn(`Keep-alive ping non-OK: ${r.status}`); })
+      .catch((err) => console.warn(`Keep-alive ping failed: ${err?.message || err}`));
+  }, intervalMs).unref(); // unref so the timer never blocks a graceful shutdown
+}

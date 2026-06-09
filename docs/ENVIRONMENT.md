@@ -74,6 +74,8 @@ Compose (e.g. `npm run dev:api` or `uvicorn` directly).
 | `SUTRA_AI_API_URL` | yes (for analysis) | `http://localhost:8000` | `https://r2c-ai-agents.onrender.com` (or internal URL) |
 | `SUTRA_AI_API_KEY` | no | — | only if required |
 | `SUPABASE_URL` / `SUPABASE_KEY` | no | — | optional direct-RPC use |
+| `KEEP_ALIVE_URL` | no | unset (disabled) | auto on Render via `RENDER_EXTERNAL_URL`; self-pings `/api/v1/ping` to prevent cold starts. Set manually only on non-Render hosts. |
+| `KEEP_ALIVE_MINUTES` | no | `10` | `10` (must be < the host's idle window, ~15 min on Render) |
 | `AI_HTTP_TIMEOUT_MS` | no | `45000` | `120000` (SUTRA is slow) |
 | `AI_HTTP_RETRIES` | no | `2` | `1` |
 | `AI_HTTP_RETRY_BASE_MS` / `AI_CACHE_TTL_MS` / `AI_CACHE_MAX_ENTRIES` | no | tuning | leave default |
