@@ -14,7 +14,7 @@ class Settings(BaseSettings):
     database_url: str = "postgresql://user:password@localhost:5432/sutra_db"
 
     # Redis
-    redis_url: str = "redis://localhost:6379/0"
+    redis_url: Optional[str] = None
 
     # LLM Provider Selection: "gemini", "openai", "anthropic", "groq"
     llm_provider: str = "gemini"

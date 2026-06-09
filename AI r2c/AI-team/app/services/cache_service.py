@@ -17,6 +17,11 @@ class CacheService:
     """Redis-based caching service"""
     
     def __init__(self):
+        if not settings.redis_url:
+            logger.info("Redis URL not set. Caching is disabled.")
+            self.client = None
+            return
+
         try:
             self.client = redis.from_url(settings.redis_url)
             self.ttl = settings.cache_ttl
