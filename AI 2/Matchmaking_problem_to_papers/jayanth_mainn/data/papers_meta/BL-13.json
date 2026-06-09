@@ -1,0 +1,76 @@
+{
+  "seed_ref": "BL-13",
+  "metadata_schema_version": "1.0",
+  "ingested_at": "2026-06-06T00:00:00Z",
+  "resolution": {
+    "method": "title_search",
+    "verify": {
+      "title_similarity": 0.86,
+      "year_doc": 2025,
+      "year_openalex": 2025,
+      "flag": "ok"
+    }
+  },
+  "core": {
+    "title": "Preliminary analysis of combining amine absorption and calcium-looping CO2 capture in cement plant",
+    "title_source": "openalex",
+    "abstract": null,
+    "abstract_source": null,
+    "published_year": 2025,
+    "venue": "Energy",
+    "doi": "10.1016/j.energy.2025.136361",
+    "citation_count": 6,
+    "is_open_access": false,
+    "authors": [
+      {
+        "name": "Magdalena Strojny",
+        "orcid": "https://orcid.org/0000-0001-8349-0954",
+        "institution": "AGH University of Krakow",
+        "country": "PL"
+      },
+      {
+        "name": "Patryk Suchodolski",
+        "orcid": null,
+        "institution": "AGH University of Krakow",
+        "country": "PL"
+      },
+      {
+        "name": "Paweł Gładysz",
+        "orcid": "https://orcid.org/0000-0003-0219-6580",
+        "institution": "AGH University of Krakow",
+        "country": "PL"
+      },
+      {
+        "name": "W. Nowak",
+        "orcid": "https://orcid.org/0000-0001-7700-9909",
+        "institution": "AGH University of Krakow",
+        "country": "PL"
+      }
+    ]
+  },
+  "research_domain": {
+    "primary_domain": "buildings_infrastructure",
+    "sub_domain": "carbon_capture_cement",
+    "problem_statement": "Hybrid CCUS path — process emissions + fuel combustion emissions both captured",
+    "_source": "mapping_doc"
+  },
+  "commercialization": {
+    "maps_to_companies": [
+      "Carbon Clean",
+      "UltraTech"
+    ],
+    "trl_level": null,
+    "_trl_note": "needs review (no full-text TRL extraction in this lightweight pass)"
+  },
+  "derived": {
+    "indian_source_bonus": 0,
+    "recency_score": 0.9,
+    "citation_count": 6
+  },
+  "embedding_text": "Preliminary analysis of combining amine absorption and calcium-looping CO2 capture in cement plant. Hybrid CCUS path — process emissions + fuel combustion emissions both captured",
+  "paper_embeddings": {
+    "_status": "DEFERRED",
+    "model": "BAAI/bge-base-en-v1.5",
+    "dim": 768
+  }
+}

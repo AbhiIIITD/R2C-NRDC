@@ -1,0 +1,88 @@
+{
+  "seed_ref": "BL-02",
+  "metadata_schema_version": "1.0",
+  "ingested_at": "2026-06-06T00:00:00Z",
+  "resolution": {
+    "method": "doi",
+    "verify": {
+      "title_similarity": 0.77,
+      "year_doc": 2024,
+      "year_openalex": 2024,
+      "flag": "ok"
+    }
+  },
+  "core": {
+    "title": "Compressive strength prediction and low-carbon optimization of fly ash geopolymer concrete based on big data and ensemble learning",
+    "title_source": "openalex",
+    "abstract": "Portland cement concrete (PCC) is a major contributor to human-made CO2 emissions. To address this environmental impact, fly ash geopolymer concrete (FAGC) has emerged as a promising low-carbon alternative. This study establishes a robust compressive strength prediction model for FAGC and develops an optimal mixture design method to achieve target compressive strength with minimal CO2 emissions. To develop robust prediction models, comprehensive factors, including fly ash characteristics, mixture proportions, curing parameters, and specimen types, are considered, a large dataset comprising 1136 observations is created, and polynomial regression, genetic programming, and ensemble learning are employed. The ensemble learning model shows superior accuracy and generalization ability with an RMSE value of 1.81 MPa and an R2 value of 0.93 in the experimental validation set. Then, the study integrates the developed strength model with a life cycle assessment-based CO2 emissions model, formulating an optimal FAGC mixture design program. A case study validates the effectiveness of this program, demonstrating a 16.7% reduction in CO2 emissions for FAGC with a compressive strength of 50 MPa compared to traditional trial-and-error design. Moreover, compared to PCC, the developed FAGC achieves a substantial 60.3% reduction in CO2 emissions. This work provides engineers with tools for compressive strength prediction and low carbon optimization of FAGC, enabling rapid and highly accurate design of concrete with lower CO2 emissions and greater sustainability.",
+    "abstract_source": "openalex",
+    "published_year": 2024,
+    "venue": "PLoS ONE",
+    "doi": "10.1371/journal.pone.0310422",
+    "citation_count": 22,
+    "is_open_access": true,
+    "authors": [
+      {
+        "name": "Peiling Jiang",
+        "orcid": null,
+        "institution": "Zhejiang Tongji Vocational College of Science and Technology",
+        "country": "CN"
+      },
+      {
+        "name": "Diansheng Zhao",
+        "orcid": null,
+        "institution": "Zhejiang University of Technology",
+        "country": "CN"
+      },
+      {
+        "name": "Cheng Jin",
+        "orcid": "https://orcid.org/0000-0002-9635-9186",
+        "institution": "Zhejiang Energy Group (China)",
+        "country": "CN"
+      },
+      {
+        "name": "Shan Ye",
+        "orcid": null,
+        "institution": "Zhejiang Tongji Vocational College of Science and Technology",
+        "country": "CN"
+      },
+      {
+        "name": "Chenchen Luan",
+        "orcid": "https://orcid.org/0000-0003-4655-5186",
+        "institution": "Harbin Institute of Technology",
+        "country": "CN"
+      },
+      {
+        "name": "Rana Faisal Tufail",
+        "orcid": "https://orcid.org/0000-0002-2875-7991",
+        "institution": "COMSATS University Islamabad",
+        "country": "PK"
+      }
+    ]
+  },
+  "research_domain": {
+    "primary_domain": "buildings_infrastructure",
+    "sub_domain": "geopolymer_cement",
+    "problem_statement": "ML-based mix-design optimisation; embodied-carbon trade-off",
+    "_source": "mapping_doc"
+  },
+  "commercialization": {
+    "maps_to_companies": [
+      "UltraTech",
+      "CarbonStrong"
+    ],
+    "trl_level": null,
+    "_trl_note": "needs review (no full-text TRL extraction in this lightweight pass)"
+  },
+  "derived": {
+    "indian_source_bonus": 0,
+    "recency_score": 0.8,
+    "citation_count": 22
+  },
+  "embedding_text": "Portland cement concrete (PCC) is a major contributor to human-made CO2 emissions. To address this environmental impact, fly ash geopolymer concrete (FAGC) has emerged as a promising low-carbon alternative. This study establishes a robust compressive strength prediction model for FAGC and develops an optimal mixture design method to achieve target compressive strength with minimal CO2 emissions. To develop robust prediction models, comprehensive factors, including fly ash characteristics, mixture proportions, curing parameters, and specimen types, are considered, a large dataset comprising 1136 observations is created, and polynomial regression, genetic programming, and ensemble learning are employed. The ensemble learning model shows superior accuracy and generalization ability with an RMSE value of 1.81 MPa and an R2 value of 0.93 in the experimental validation set. Then, the study integrates the developed strength model with a life cycle assessment-based CO2 emissions model, formulating an optimal FAGC mixture design program. A case study validates the effectiveness of this program, demonstrating a 16.7% reduction in CO2 emissions for FAGC with a compressive strength of 50 MPa compared to traditional trial-and-error design. Moreover, compared to PCC, the developed FAGC achieves a substantial 60.3% reduction in CO2 emissions. This work provides engineers with tools for compressive strength prediction and low carbon optimization of FAGC, enabling rapid and highly accurate design of concrete with lower CO2 emissions and greater sustainability.",
+  "paper_embeddings": {
+    "_status": "DEFERRED",
+    "model": "BAAI/bge-base-en-v1.5",
+    "dim": 768
+  }
+}

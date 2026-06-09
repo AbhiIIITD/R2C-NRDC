@@ -1,0 +1,110 @@
+[
+  {
+    "company_id_local": "RE-TPS-001",
+    "company_name": "Tata Power Solar Systems Ltd",
+    "tier": "TOP TIER",
+    "domain": "renewable_energy",
+    "sub_domain": "Solar Energy",
+    "trl_level": "9 (Commercial deployment)",
+    "fields_parsed": 45
+  },
+  {
+    "company_id_local": "RE-VS-001",
+    "company_name": "Vikram Solar Ltd",
+    "tier": "MID TIER",
+    "domain": "renewable_energy",
+    "sub_domain": "Solar Energy",
+    "trl_level": "9",
+    "fields_parsed": 34
+  },
+  {
+    "company_id_local": "RE-OHM-001",
+    "company_name": "Ohmium International",
+    "tier": "DEEP-TECH STARTUP",
+    "domain": "renewable_energy",
+    "sub_domain": "Green Hydrogen",
+    "trl_level": "8 (System complete and qualified, deployed at MW scale)",
+    "fields_parsed": 41
+  },
+  {
+    "company_id_local": "RE-LOG9-001",
+    "company_name": "Log9 Materials Scientific Pvt Ltd",
+    "tier": "LOCAL DEEP-TECH STARTUP",
+    "domain": "renewable_energy",
+    "sub_domain": "Battery Energy Storage Systems (BESS) + Hydrogen-adjacent (Al-air)",
+    "trl_level": "7 (Li-ion batteries deployed commercially) — 5 (Al-air fuel cell pilot)",
+    "fields_parsed": 43
+  },
+  {
+    "company_id_local": "BLD-UTC-001",
+    "company_name": "UltraTech Cement Ltd",
+    "tier": "TOP TIER",
+    "domain": "buildings_infrastructure",
+    "sub_domain": "Construction Materials + Sustainable Materials",
+    "trl_level": "9",
+    "fields_parsed": 33
+  },
+  {
+    "company_id_local": "BLD-MLD-001",
+    "company_name": "Mahindra Lifespaces Developers Ltd",
+    "tier": "MID TIER",
+    "domain": "buildings_infrastructure",
+    "sub_domain": "Green Buildings + Sustainable Cities",
+    "trl_level": "9 (deployed methodology, multi-project)",
+    "fields_parsed": 35
+  },
+  {
+    "company_id_local": "BLD-CCS-001",
+    "company_name": "Carbon Clean Solutions Ltd",
+    "tier": "DEEP-TECH STARTUP",
+    "domain": "buildings_infrastructure",
+    "sub_domain": "Construction Materials (cement decarbonisation)",
+    "trl_level": "7 (System prototype demonstrated in operational environment — Tata Steel UK installation, Aramco)",
+    "fields_parsed": 42
+  },
+  {
+    "company_id_local": "BLD-CS-001",
+    "company_name": "CarbonStrong",
+    "tier": "LOCAL DEEP-TECH STARTUP",
+    "domain": "buildings_infrastructure",
+    "sub_domain": "Construction Materials",
+    "trl_level": "6 (Technology demonstrated in relevant environment)",
+    "fields_parsed": 40
+  },
+  {
+    "company_id_local": "IND-TS-001",
+    "company_name": "Tata Steel Ltd",
+    "tier": "TOP TIER",
+    "domain": "industrial_production",
+    "sub_domain": "Chemical Processing + Advanced Materials",
+    "trl_level": "8 (System complete, qualified at RINA-CSM Italy)",
+    "fields_parsed": 38
+  },
+  {
+    "company_id_local": "IND-BA-001",
+    "company_name": "Bajaj Auto Ltd",
+    "tier": "MID TIER",
+    "domain": "industrial_production",
+    "sub_domain": "Manufacturing Automation + Production Optimization",
+    "trl_level": "9 (EV scooter); 5 (hydrogen scooter — early R&D)",
+    "fields_parsed": 33
+  },
+  {
+    "company_id_local": "IND-DT-001",
+    "company_name": "Detect Technologies",
+    "tier": "DEEP-TECH STARTUP",
+    "domain": "industrial_production",
+    "sub_domain": "Industrial IoT + Production Optimization",
+    "trl_level": "8 (Operational at Reliance and other customers)",
+    "fields_parsed": 39
+  },
+  {
+    "company_id_local": "IND-NT-001",
+    "company_name": "Newtrace",
+    "tier": "LOCAL DEEP-TECH STARTUP",
+    "domain": "industrial_production",
+    "sub_domain": "Chemical Processing (electrolytic H2) — Industrial decarbonisation use",
+    "trl_level": "5–6 (Demonstrated revenue-generating commercial prototype; pilot scale)",
+    "fields_parsed": 44
+  }
+]

@@ -1,0 +1,47 @@
+{
+  "seed_ref": "IN-15",
+  "metadata_schema_version": "1.0",
+  "ingested_at": "2026-06-06T00:00:00Z",
+  "resolution": {
+    "method": "unresolved",
+    "verify": null
+  },
+  "core": {
+    "title": "CO2 Absorption in RPB using MEA+AEEA+PZ+AMP Solvent Blends (Cheng & Tan baseline)",
+    "title_source": "mapping_doc",
+    "abstract": null,
+    "abstract_source": null,
+    "published_year": 2009,
+    "venue": null,
+    "doi": null,
+    "citation_count": null,
+    "is_open_access": null,
+    "authors": null
+  },
+  "research_domain": {
+    "primary_domain": "industrial_production",
+    "sub_domain": "process_eng_rpb_materials",
+    "problem_statement": "Solvent-blend optimisation for RPB at 303–333 K",
+    "_source": "mapping_doc"
+  },
+  "commercialization": {
+    "maps_to_companies": [
+      "Carbon Clean",
+      "Tata Steel",
+      "UltraTech"
+    ],
+    "trl_level": null,
+    "_trl_note": "needs review (no full-text TRL extraction in this lightweight pass)"
+  },
+  "derived": {
+    "indian_source_bonus": 0,
+    "recency_score": 0.0,
+    "citation_count": null
+  },
+  "embedding_text": "CO2 Absorption in RPB using MEA+AEEA+PZ+AMP Solvent Blends (Cheng & Tan baseline). Solvent-blend optimisation for RPB at 303–333 K",
+  "paper_embeddings": {
+    "_status": "DEFERRED",
+    "model": "BAAI/bge-base-en-v1.5",
+    "dim": 768
+  }
+}

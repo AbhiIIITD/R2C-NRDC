@@ -1,0 +1,291 @@
+{
+  "paper_id": "11111111-1111-4111-8111-000000000017",
+  "seed_ref": "RE-17",
+  "metadata_schema_version": "1.0",
+  "batch_version": "seed-2026-06",
+  "ingestion_timestamp": "2026-06-06T00:00:00Z",
+  "created_at": "2026-06-06T00:00:00Z",
+  "updated_at": "2026-06-06T00:00:00Z",
+  "tier_A_factual": {
+    "title": {
+      "value": "Enhanced Electrochemical Performance of Lithium Iron Phosphate Cathodes Using Plasma-Assisted Reduced Graphene Oxide Additives for Lithium-Ion Batteries",
+      "source": "crossref"
+    },
+    "doi": {
+      "value": "10.3390/batteries10100345",
+      "source": "crossref"
+    },
+    "published_year": {
+      "value": 2024,
+      "source": "crossref"
+    },
+    "venue": {
+      "value": "Batteries",
+      "source": "crossref"
+    },
+    "publisher": {
+      "value": "MDPI AG",
+      "source": "crossref"
+    },
+    "paper_type": {
+      "value": "journal-article",
+      "source": "crossref"
+    },
+    "language": {
+      "value": "en",
+      "source": "crossref"
+    },
+    "abstract": {
+      "value": "One-dimensional lithium-ion transport channels in lithium iron phosphate (LFP) used as a cathode in lithium-ion batteries (LIBs) result in low electrical conductivity and reduced electrochemical performance. To overcome this limitation, three-dimensional plasma-treated reduced graphene oxide (rGO) was synthesized in this study and used as an additive for LFP in LIB cathodes. Graphene oxide was synthesized using Hummers’ method, followed by mixing with LFP, lyophilization, and plasma treatment to obtain LFP@rGO. The plasma treatment achieved the highest degree of reduction and porosity in rGO, creating ion transfer channels. The structure of LFP@rGO was verified through scanning electron microscopy (SEM) analysis, which demonstrated that incorporating 10.0 wt% of rGO into LFP resulted in successful coverage by the rGO layer, forming LFP@rGO-10. In half-cell tests, LFP@rGO-10 exhibited a specific capacity of 142.7 mAh g−1 at the 1.0 C-rate, which is higher than that of LFP. The full-cell exhibited 86.8% capacity retention after 200 cycles, demonstrating the effectiveness of rGO in enhancing the performance of LFP as an LIB cathode material. The outstanding efficiency and performance of the LFP@rGO-10//graphite cell highlight the promising potential of rGO-modified LFP as a cathode material for high-performance LIBs, providing both increased capacity and stability.",
+      "source": "crossref"
+    },
+    "reference_count": {
+      "value": 80,
+      "source": "crossref"
+    },
+    "citation_count": {
+      "value": 4,
+      "source": "openalex"
+    },
+    "is_open_access": {
+      "value": true,
+      "source": "openalex"
+    },
+    "oa_pdf_url": {
+      "value": "https://doi.org/10.3390/batteries10100345",
+      "source": "openalex"
+    },
+    "distribution_license": {
+      "value": "https://creativecommons.org/licenses/by/4.0/",
+      "source": "crossref"
+    },
+    "openalex_id": {
+      "value": "https://openalex.org/W4402919088",
+      "source": "openalex"
+    },
+    "openalex_topics": {
+      "value": [
+        "Advancements in Battery Materials",
+        "Advanced Battery Technologies Research",
+        "Extraction and Separation Processes"
+      ],
+      "source": "openalex"
+    }
+  },
+  "tier_B_derived": {
+    "indian_source_bonus": {
+      "value": 0,
+      "rule": "1 if any author institution country == IN else 0",
+      "inputs": [
+        "KR"
+      ]
+    },
+    "recency_score": {
+      "value": 0.8,
+      "rule": "max(0, 1-(2026-year)*0.1)",
+      "input_year": 2024
+    }
+  },
+  "tier_C_draft": {
+    "domain": {
+      "value": "renewable_energy",
+      "confidence": 0.5,
+      "assigned_by": "system_editorial_draft",
+      "needs_review": true
+    },
+    "sub_domain": {
+      "value": "batteries_storage",
+      "confidence": 0.5,
+      "assigned_by": "system_editorial_draft",
+      "needs_review": true
+    },
+    "problem_area": {
+      "value": "low electrical conductivity & fast-charge/cycle stability of LFP cathodes",
+      "confidence": 0.5,
+      "assigned_by": "system_editorial_draft",
+      "needs_review": true
+    },
+    "method": {
+      "value": "plasma-assisted reduced graphene oxide (rGO) additive for LFP",
+      "confidence": 0.5,
+      "assigned_by": "system_editorial_draft",
+      "needs_review": true
+    },
+    "trl_claim": {
+      "value": 4,
+      "basis": "lab half-cell + full-cell results; no pilot/production",
+      "confidence": 0.4,
+      "assigned_by": "system_editorial_draft",
+      "needs_review": true
+    },
+    "wipo_green_eligible": {
+      "value": true,
+      "confidence": 0.5,
+      "assigned_by": "system_editorial_draft",
+      "needs_review": true
+    },
+    "novelty_score": {
+      "value": null,
+      "_resolution": "needs_rubric",
+      "needs_review": true
+    },
+    "publication_quality_score": {
+      "value": null,
+      "_resolution": "needs_rubric",
+      "needs_review": true
+    }
+  },
+  "tier_D_human": {
+    "has_patent": {
+      "value": null,
+      "_resolution": "awaiting_researcher_or_officer"
+    },
+    "ip_encumbrances": {
+      "value": null,
+      "_resolution": "awaiting_researcher_or_officer"
+    },
+    "licensing_preference": {
+      "value": null,
+      "_resolution": "awaiting_researcher"
+    },
+    "maps_to_companies_DRAFT": {
+      "value": [
+        "Log9 Materials"
+      ],
+      "confidence": 0.4,
+      "needs_review": true
+    }
+  },
+  "institutions": [
+    {
+      "institution_id_local": "https://ror.org/00x514t95",
+      "name": "Hanbat National University",
+      "ror": "https://ror.org/00x514t95",
+      "country": "KR",
+      "is_indian": false,
+      "source": "openalex"
+    }
+  ],
+  "authors": [
+    {
+      "author_id": "11111111-1111-4111-8111-000000000000",
+      "full_name": "Suk Jekal",
+      "orcid": "https://orcid.org/0000-0002-8705-4735",
+      "primary_institution_local": "https://ror.org/00x514t95",
+      "source": "crossref+openalex"
+    },
+    {
+      "author_id": "11111111-1111-4111-8111-000000000001",
+      "full_name": "Chan-Gyo Kim",
+      "orcid": null,
+      "primary_institution_local": "https://ror.org/00x514t95",
+      "source": "crossref+openalex"
+    },
+    {
+      "author_id": "11111111-1111-4111-8111-000000000002",
+      "full_name": "Jiwon Kim",
+      "orcid": "https://orcid.org/0009-0008-5083-0455",
+      "primary_institution_local": "https://ror.org/00x514t95",
+      "source": "crossref+openalex"
+    },
+    {
+      "author_id": "11111111-1111-4111-8111-000000000003",
+      "full_name": "Ha-Yeong Kim",
+      "orcid": null,
+      "primary_institution_local": "https://ror.org/00x514t95",
+      "source": "crossref+openalex"
+    },
+    {
+      "author_id": "11111111-1111-4111-8111-000000000004",
+      "full_name": "Yeon-Ryong Chu",
+      "orcid": null,
+      "primary_institution_local": "https://ror.org/00x514t95",
+      "source": "crossref+openalex"
+    },
+    {
+      "author_id": "11111111-1111-4111-8111-000000000005",
+      "full_name": "Yoon-Ho Ra",
+      "orcid": null,
+      "primary_institution_local": "https://ror.org/00x514t95",
+      "source": "crossref+openalex"
+    },
+    {
+      "author_id": "11111111-1111-4111-8111-000000000006",
+      "full_name": "Zambaga Otgonbayar",
+      "orcid": null,
+      "primary_institution_local": "https://ror.org/00x514t95",
+      "source": "crossref+openalex"
+    },
+    {
+      "author_id": "11111111-1111-4111-8111-000000000007",
+      "full_name": "Chang-Min Yoon",
+      "orcid": "https://orcid.org/0000-0002-6530-3833",
+      "primary_institution_local": "https://ror.org/00x514t95",
+      "source": "crossref+openalex"
+    }
+  ],
+  "paper_authors": [
+    {
+      "author_id": "11111111-1111-4111-8111-000000000000",
+      "author_order": 1,
+      "is_corresponding": null,
+      "affiliation_at_publication": "Department of Chemical and Biological Engineering, Hanbat National University, Daejeon 34158, Republic of Korea"
+    },
+    {
+      "author_id": "11111111-1111-4111-8111-000000000001",
+      "author_order": 2,
+      "is_corresponding": null,
+      "affiliation_at_publication": "Department of Chemical and Biological Engineering, Hanbat National University, Daejeon 34158, Republic of Korea"
+    },
+    {
+      "author_id": "11111111-1111-4111-8111-000000000002",
+      "author_order": 3,
+      "is_corresponding": null,
+      "affiliation_at_publication": "Department of Chemical and Biological Engineering, Hanbat National University, Daejeon 34158, Republic of Korea"
+    },
+    {
+      "author_id": "11111111-1111-4111-8111-000000000003",
+      "author_order": 4,
+      "is_corresponding": null,
+      "affiliation_at_publication": "Department of Chemical and Biological Engineering, Hanbat National University, Daejeon 34158, Republic of Korea"
+    },
+    {
+      "author_id": "11111111-1111-4111-8111-000000000004",
+      "author_order": 5,
+      "is_corresponding": null,
+      "affiliation_at_publication": "Department of Chemical and Biological Engineering, Hanbat National University, Daejeon 34158, Republic of Korea"
+    },
+    {
+      "author_id": "11111111-1111-4111-8111-000000000005",
+      "author_order": 6,
+      "is_corresponding": null,
+      "affiliation_at_publication": "Department of Chemical and Biological Engineering, Hanbat National University, Daejeon 34158, Republic of Korea"
+    },
+    {
+      "author_id": "11111111-1111-4111-8111-000000000006",
+      "author_order": 7,
+      "is_corresponding": null,
+      "affiliation_at_publication": "Department of Chemical and Biological Engineering, Hanbat National University, Daejeon 34158, Republic of Korea"
+    },
+    {
+      "author_id": "11111111-1111-4111-8111-000000000007",
+      "author_order": 8,
+      "is_corresponding": null,
+      "affiliation_at_publication": "Department of Chemical and Biological Engineering, Hanbat National University, Daejeon 34158, Republic of Korea"
+    }
+  ],
+  "paper_files": {
+    "s3_key": null,
+    "_resolution": "pdf_not_fetched",
+    "oa_pdf_url": "https://doi.org/10.3390/batteries10100345",
+    "is_public": true
+  },
+  "paper_tree_nodes": {
+    "_status": "DEFERRED",
+    "_note": "Needs GROBID/LLM pass over the PDF for section hierarchy."
+  },
+  "paper_embeddings": {
+    "_status": "DEFERRED",
+    "_note": "Generate with bge-base-en-v1.5 (768-dim) for BOTH papers and problems. See scripts/embed_demo.py for the local demo."
+  }
+}

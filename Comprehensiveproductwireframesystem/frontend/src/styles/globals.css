@@ -1,0 +1,249 @@
+/* Monochrome standardization: legacy shadcn/MUI pages still carry old color utility classes. */
+[class*="bg-blue"],
+[class*="bg-green"],
+[class*="bg-red"],
+[class*="bg-yellow"],
+[class*="bg-purple"],
+[class*="bg-orange"],
+[class*="bg-pink"],
+[class*="bg-emerald"],
+[class*="bg-amber"],
+[class*="bg-rose"],
+[class*="bg-indigo"],
+[class*="bg-sky"],
+[class*="bg-teal"],
+[class*="bg-cyan"],
+[class*="bg-lime"],
+[class*="from-blue"],
+[class*="to-blue"],
+[class*="from-purple"],
+[class*="to-purple"],
+[class*="from-green"],
+[class*="to-green"],
+[class*="from-emerald"],
+[class*="to-emerald"],
+[class*="from-indigo"],
+[class*="to-indigo"] {
+  background-color: rgb(245 245 245) !important;
+  background-image: none !important;
+}
+
+[class*="text-blue"],
+[class*="text-green"],
+[class*="text-red"],
+[class*="text-yellow"],
+[class*="text-purple"],
+[class*="text-orange"],
+[class*="text-pink"],
+[class*="text-emerald"],
+[class*="text-amber"],
+[class*="text-rose"],
+[class*="text-indigo"],
+[class*="text-sky"],
+[class*="text-teal"],
+[class*="text-cyan"],
+[class*="text-lime"] {
+  color: rgb(38 38 38) !important;
+}
+
+[class*="border-blue"],
+[class*="border-green"],
+[class*="border-red"],
+[class*="border-yellow"],
+[class*="border-purple"],
+[class*="border-orange"],
+[class*="border-pink"],
+[class*="border-emerald"],
+[class*="border-amber"],
+[class*="border-rose"],
+[class*="border-indigo"],
+[class*="border-sky"],
+[class*="border-teal"],
+[class*="border-cyan"],
+[class*="border-lime"] {
+  border-color: rgb(163 163 163) !important;
+}
+
+html {
+  color: rgb(23 23 23);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  /* Premium, near-monochrome canvas with whisper-soft directional depth. */
+  background:
+    radial-gradient(1100px 560px at 100% -8%, rgba(79, 70, 229, 0.05), transparent 60%),
+    radial-gradient(900px 480px at -8% 108%, rgba(15, 23, 42, 0.035), transparent 60%),
+    #f4f5f7;
+  background-attachment: fixed;
+  letter-spacing: -0.01em;
+}
+
+::selection {
+  background: rgb(38 38 38);
+  color: white;
+}
+
+button,
+a,
+input,
+textarea,
+select,
+[role="button"] {
+  transition-duration: 150ms;
+  transition-timing-function: ease-out;
+}
+
+.sonner-toast,
+[data-sonner-toast] {
+  border: 1px solid rgb(212 212 212) !important;
+  background: white !important;
+  color: rgb(23 23 23) !important;
+  box-shadow: 0 18px 45px rgb(0 0 0 / 0.12) !important;
+}
+
+[data-sonner-toast] [data-title] {
+  color: rgb(23 23 23) !important;
+  font-weight: 600 !important;
+}
+
+[data-sonner-toast] [data-description] {
+  color: rgb(64 64 64) !important;
+}
+
+@keyframes enterprise-fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+main > div,
+form,
+[role="dialog"] {
+  animation: enterprise-fade-up 180ms ease-out both;
+}
+
+/* ============================================================
+   Premium enterprise polish layer
+   ============================================================ */
+
+/* Refined, unobtrusive scrollbars */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(212 212 216) transparent;
+}
+*::-webkit-scrollbar {
+  width: 11px;
+  height: 11px;
+}
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: rgb(212 212 216);
+  border-radius: 9999px;
+  border: 3px solid transparent;
+  background-clip: content-box;
+}
+*::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(161 161 170);
+  background-clip: content-box;
+}
+
+/* Accent focus ring via box-shadow (survives the monochrome color override,
+   which only touches background/text/border) — clearer keyboard affordance. */
+:where(a, button, input, select, textarea, [role="button"], [tabindex]):focus-visible {
+  outline: none;
+  box-shadow:
+    0 0 0 2px #ffffff,
+    0 0 0 4px rgba(67, 56, 202, 0.55);
+}
+
+/* Professional, meaning-bearing status pills. Class names deliberately avoid the
+   bg-*/text-*/border-* patterns the monochrome override flattens. */
+.badge-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 9999px;
+  padding: 0.15rem 0.6rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  line-height: 1.1;
+  white-space: nowrap;
+}
+.badge-pill .badge-dot {
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 9999px;
+  background: currentColor;
+  opacity: 0.85;
+}
+.badge-success { background-color: #ecfdf5; color: #047857; border-color: #a7f3d0; }
+.badge-warning { background-color: #fffbeb; color: #b45309; border-color: #fde68a; }
+.badge-info    { background-color: #eef2ff; color: #4338ca; border-color: #c7d2fe; }
+.badge-danger  { background-color: #fef2f2; color: #b91c1c; border-color: #fecaca; }
+.badge-neutral { background-color: #f4f4f5; color: #3f3f46; border-color: #e4e4e7; }
+.badge-dark    { background-color: #1f2937; color: #ffffff; border-color: #1f2937; }
+
+/* Loading skeletons */
+@keyframes enterprise-shimmer {
+  0% { background-position: -480px 0; }
+  100% { background-position: 480px 0; }
+}
+.skeleton {
+  background-color: #ececed;
+  background-image: linear-gradient(90deg, rgba(255,255,255,0) 0, rgba(255,255,255,0.6) 50%, rgba(255,255,255,0) 100%);
+  background-size: 480px 100%;
+  background-repeat: no-repeat;
+  animation: enterprise-shimmer 1.4s ease-in-out infinite;
+  border-radius: 0.5rem;
+}
+
+/* Premium modal / dialog entrance + frosted backdrop */
+@keyframes enterprise-scale-in {
+  from { opacity: 0; transform: translateY(10px) scale(0.985); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+[role="dialog"] {
+  animation: enterprise-scale-in 220ms cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+[data-radix-dialog-overlay],
+[data-slot="dialog-overlay"],
+[data-state="open"].fixed.inset-0 {
+  backdrop-filter: blur(5px) saturate(120%);
+  -webkit-backdrop-filter: blur(5px) saturate(120%);
+  background-color: rgba(15, 23, 42, 0.45) !important;
+}
+
+/* Subtle, premium elevation helpers (opt-in, used by primitives) */
+.elev-card {
+  box-shadow:
+    0 1px 2px rgba(16, 24, 40, 0.04),
+    0 1px 3px rgba(16, 24, 40, 0.06);
+}
+.elev-card-hover:hover {
+  box-shadow:
+    0 8px 16px -6px rgba(16, 24, 40, 0.10),
+    0 16px 32px -12px rgba(16, 24, 40, 0.12);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 1ms !important;
+    scroll-behavior: auto !important;
+    transition-duration: 1ms !important;
+  }
+}

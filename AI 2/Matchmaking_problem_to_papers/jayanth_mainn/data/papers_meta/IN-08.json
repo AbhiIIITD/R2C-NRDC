@@ -1,0 +1,69 @@
+{
+  "seed_ref": "IN-08",
+  "metadata_schema_version": "1.0",
+  "ingested_at": "2026-06-06T00:00:00Z",
+  "resolution": {
+    "method": "doi",
+    "verify": {
+      "title_similarity": 0.73,
+      "year_doc": 2023,
+      "year_openalex": 2023,
+      "flag": "ok"
+    }
+  },
+  "core": {
+    "title": "Leak State Detection and Size Identification for Fluid Pipelines with a Novel Acoustic Emission Intensity Index and Random Forest",
+    "title_source": "openalex",
+    "abstract": "In this paper, an approach to perform leak state detection and size identification for industrial fluid pipelines with an acoustic emission (AE) activity intensity index curve (AIIC), using b-value and a random forest (RF), is proposed. Initially, the b-value was calculated from pre-processed AE data, which was then utilized to construct AIICs. The AIIC presents a robust description of AE intensity, especially for detecting the leaking state, even with the complication of the multi-source problem of AE events (AEEs), in which there are other sources, rather than just leaking, contributing to the AE activity. In addition, it shows the capability to not just discriminate between normal and leaking states, but also to distinguish different leak sizes. To calculate the probability of a state change from normal condition to leakage, a changepoint detection method, using a Bayesian ensemble, was utilized. After the leak is detected, size identification is performed by feeding the AIIC to the RF. The experimental results were compared with two cutting-edge methods under different scenarios with various pressure levels and leak sizes, and the proposed method outperformed both the earlier algorithms in terms of accuracy.",
+    "abstract_source": "openalex",
+    "published_year": 2023,
+    "venue": "Sensors",
+    "doi": "10.3390/s23229087",
+    "citation_count": 10,
+    "is_open_access": true,
+    "authors": [
+      {
+        "name": "Tuan-Khai Nguyen",
+        "orcid": "https://orcid.org/0000-0001-8999-6745",
+        "institution": "University of Ulsan",
+        "country": "KR"
+      },
+      {
+        "name": "Zahoor Ahmad",
+        "orcid": "https://orcid.org/0000-0002-3571-8907",
+        "institution": "University of Ulsan",
+        "country": "KR"
+      },
+      {
+        "name": "Jong-Myon Kim",
+        "orcid": "https://orcid.org/0000-0002-5185-1062",
+        "institution": "University of Ulsan",
+        "country": "KR"
+      }
+    ]
+  },
+  "research_domain": {
+    "primary_domain": "industrial_production",
+    "sub_domain": "industrial_iot_predictive_maintenance",
+    "problem_statement": "AIIC + b-value + RF classifier for leak classification",
+    "_source": "mapping_doc"
+  },
+  "commercialization": {
+    "maps_to_companies": [
+      "Detect Technologies"
+    ],
+    "trl_level": null,
+    "_trl_note": "needs review (no full-text TRL extraction in this lightweight pass)"
+  },
+  "derived": {
+    "indian_source_bonus": 0,
+    "recency_score": 0.7,
+    "citation_count": 10
+  },
+  "embedding_text": "In this paper, an approach to perform leak state detection and size identification for industrial fluid pipelines with an acoustic emission (AE) activity intensity index curve (AIIC), using b-value and a random forest (RF), is proposed. Initially, the b-value was calculated from pre-processed AE data, which was then utilized to construct AIICs. The AIIC presents a robust description of AE intensity, especially for detecting the leaking state, even with the complication of the multi-source problem of AE events (AEEs), in which there are other sources, rather than just leaking, contributing to the AE activity. In addition, it shows the capability to not just discriminate between normal and leaking states, but also to distinguish different leak sizes. To calculate the probability of a state change from normal condition to leakage, a changepoint detection method, using a Bayesian ensemble, was utilized. After the leak is detected, size identification is performed by feeding the AIIC to the RF. The experimental results were compared with two cutting-edge methods under different scenarios with various pressure levels and leak sizes, and the proposed method outperformed both the earlier algorithms in terms of accuracy.",
+  "paper_embeddings": {
+    "_status": "DEFERRED",
+    "model": "BAAI/bge-base-en-v1.5",
+    "dim": 768
+  }
+}

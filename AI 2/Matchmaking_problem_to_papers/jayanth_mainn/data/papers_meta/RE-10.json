@@ -1,0 +1,82 @@
+{
+  "seed_ref": "RE-10",
+  "metadata_schema_version": "1.0",
+  "ingested_at": "2026-06-06T00:00:00Z",
+  "resolution": {
+    "method": "doi",
+    "verify": {
+      "title_similarity": 0.92,
+      "year_doc": 2023,
+      "year_openalex": 2023,
+      "flag": "ok"
+    }
+  },
+  "core": {
+    "title": "Analysis of PEM Water Electrolyzer Failure Due to Induced Hydrogen Crossover in Catalyst-Coated PFSA Membranes",
+    "title_source": "openalex",
+    "abstract": "Polymer electrolyte membrane water electrolysis (PEMWE) is a leading candidate for the development of a sustainable hydrogen infrastructure. The heart of a PEMWE cell is represented by the membrane electrode assembly (MEA), which consists of a polymer electrolyte membrane (PEM) with catalyst layers (CLs), flow fields, and bipolar plates (BPPs). The weakest component of the system is the PEM, as it is prone to chemical and mechanical degradation. Membrane chemical degradation is associated with the formation of hydrogen peroxide due to the crossover of product gases (H2 and O2). In this paper, membrane failure due to H2 crossover was addressed in a membrane-focused accelerated stress test (AST). Asymmetric H2O and gas supply were applied to a test cell in OCV mode at two temperatures (60 °C and 80 °C). Electrochemical characterization at the beginning and at the end of testing revealed a 1.6-fold higher increase in the high-frequency resistance (HFR) at 80 °C. The hydrogen crossover was measured with a micro-GC, and the fluoride emission rate (FER) was monitored during the ASTs. A direct correlation between the FER and H2 crossover was identified, and accelerated membrane degradation at higher temperatures was detected.",
+    "abstract_source": "openalex",
+    "published_year": 2023,
+    "venue": "Membranes",
+    "doi": "10.3390/membranes13030348",
+    "citation_count": 58,
+    "is_open_access": true,
+    "authors": [
+      {
+        "name": "Eveline Kuhnert",
+        "orcid": "https://orcid.org/0000-0001-6371-0016",
+        "institution": "Graz University of Technology",
+        "country": "AT"
+      },
+      {
+        "name": "Mathias Heidinger",
+        "orcid": "https://orcid.org/0000-0002-7062-2185",
+        "institution": "Graz University of Technology",
+        "country": "AT"
+      },
+      {
+        "name": "Daniel Sandu",
+        "orcid": null,
+        "institution": null,
+        "country": null
+      },
+      {
+        "name": "Viktor Hacker",
+        "orcid": "https://orcid.org/0000-0001-5956-7579",
+        "institution": "Graz University of Technology",
+        "country": "AT"
+      },
+      {
+        "name": "Merit Bodner",
+        "orcid": "https://orcid.org/0000-0002-4728-6371",
+        "institution": "Graz University of Technology",
+        "country": "AT"
+      }
+    ]
+  },
+  "research_domain": {
+    "primary_domain": "renewable_energy",
+    "sub_domain": "green_hydrogen_electrolysers",
+    "problem_statement": "Hydrogen crossover at high T — failure mode for commercial PEM stacks",
+    "_source": "mapping_doc"
+  },
+  "commercialization": {
+    "maps_to_companies": [
+      "Ohmium",
+      "Newtrace"
+    ],
+    "trl_level": null,
+    "_trl_note": "needs review (no full-text TRL extraction in this lightweight pass)"
+  },
+  "derived": {
+    "indian_source_bonus": 0,
+    "recency_score": 0.7,
+    "citation_count": 58
+  },
+  "embedding_text": "Polymer electrolyte membrane water electrolysis (PEMWE) is a leading candidate for the development of a sustainable hydrogen infrastructure. The heart of a PEMWE cell is represented by the membrane electrode assembly (MEA), which consists of a polymer electrolyte membrane (PEM) with catalyst layers (CLs), flow fields, and bipolar plates (BPPs). The weakest component of the system is the PEM, as it is prone to chemical and mechanical degradation. Membrane chemical degradation is associated with the formation of hydrogen peroxide due to the crossover of product gases (H2 and O2). In this paper, membrane failure due to H2 crossover was addressed in a membrane-focused accelerated stress test (AST). Asymmetric H2O and gas supply were applied to a test cell in OCV mode at two temperatures (60 °C and 80 °C). Electrochemical characterization at the beginning and at the end of testing revealed a 1.6-fold higher increase in the high-frequency resistance (HFR) at 80 °C. The hydrogen crossover was measured with a micro-GC, and the fluoride emission rate (FER) was monitored during the ASTs. A direct correlation between the FER and H2 crossover was identified, and accelerated membrane degradation at higher temperatures was detected.",
+  "paper_embeddings": {
+    "_status": "DEFERRED",
+    "model": "BAAI/bge-base-en-v1.5",
+    "dim": 768
+  }
+}

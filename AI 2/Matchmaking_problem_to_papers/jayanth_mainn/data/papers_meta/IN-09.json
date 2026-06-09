@@ -1,0 +1,75 @@
+{
+  "seed_ref": "IN-09",
+  "metadata_schema_version": "1.0",
+  "ingested_at": "2026-06-06T00:00:00Z",
+  "resolution": {
+    "method": "doi",
+    "verify": {
+      "title_similarity": 0.84,
+      "year_doc": 2023,
+      "year_openalex": 2023,
+      "flag": "ok"
+    }
+  },
+  "core": {
+    "title": "A Reliable Pipeline Leak Detection Method Using Acoustic Emission with Time Difference of Arrival and Kolmogorov–Smirnov Test",
+    "title_source": "openalex",
+    "abstract": "This paper proposes a novel and reliable leak-detection method for pipeline systems based on acoustic emission (AE) signals. The proposed method analyzes signals from two AE sensors installed on the pipeline to detect leaks located between these two sensors. Firstly, the raw AE signals are preprocessed using empirical mode decomposition. The time difference of arrival (TDOA) is then extracted as a statistical feature of the two AE signals. The state of the pipeline (leakage/normal) is determined through comparing the statistical distribution of the TDOA of the current state with the prior normal state. Specifically, the two-sample Kolmogorov-Smirnov (K-S) test is applied to compare the statistical distribution of the TDOA feature for leak and non-leak scenarios. The K-S test statistic value in this context functions as a leakage indicator. A new criterion called leak sensitivity is introduced to evaluate and compare the performance of leak detection methods. Extensive experiments were conducted using an industrial pipeline system, and the results demonstrate the excellence of the proposed method in leak detection. Compared to traditional feature-based indicators, our approach achieves a significantly higher performance in leak detection.",
+    "abstract_source": "openalex",
+    "published_year": 2023,
+    "venue": "Sensors",
+    "doi": "10.3390/s23239296",
+    "citation_count": 25,
+    "is_open_access": true,
+    "authors": [
+      {
+        "name": "Duc-Thuan Nguyen",
+        "orcid": "https://orcid.org/0000-0002-5749-5409",
+        "institution": "University of Ulsan",
+        "country": "KR"
+      },
+      {
+        "name": "Tuan-Khai Nguyen",
+        "orcid": "https://orcid.org/0000-0001-8999-6745",
+        "institution": "University of Ulsan",
+        "country": "KR"
+      },
+      {
+        "name": "Zahoor Ahmad",
+        "orcid": "https://orcid.org/0000-0002-3571-8907",
+        "institution": "University of Ulsan",
+        "country": "KR"
+      },
+      {
+        "name": "Jong-Myon Kim",
+        "orcid": "https://orcid.org/0000-0002-5185-1062",
+        "institution": "University of Ulsan",
+        "country": "KR"
+      }
+    ]
+  },
+  "research_domain": {
+    "primary_domain": "industrial_production",
+    "sub_domain": "industrial_iot_predictive_maintenance",
+    "problem_statement": "TDoA + statistical test combined for high reliability detection",
+    "_source": "mapping_doc"
+  },
+  "commercialization": {
+    "maps_to_companies": [
+      "Detect Technologies"
+    ],
+    "trl_level": null,
+    "_trl_note": "needs review (no full-text TRL extraction in this lightweight pass)"
+  },
+  "derived": {
+    "indian_source_bonus": 0,
+    "recency_score": 0.7,
+    "citation_count": 25
+  },
+  "embedding_text": "This paper proposes a novel and reliable leak-detection method for pipeline systems based on acoustic emission (AE) signals. The proposed method analyzes signals from two AE sensors installed on the pipeline to detect leaks located between these two sensors. Firstly, the raw AE signals are preprocessed using empirical mode decomposition. The time difference of arrival (TDOA) is then extracted as a statistical feature of the two AE signals. The state of the pipeline (leakage/normal) is determined through comparing the statistical distribution of the TDOA of the current state with the prior normal state. Specifically, the two-sample Kolmogorov-Smirnov (K-S) test is applied to compare the statistical distribution of the TDOA feature for leak and non-leak scenarios. The K-S test statistic value in this context functions as a leakage indicator. A new criterion called leak sensitivity is introduced to evaluate and compare the performance of leak detection methods. Extensive experiments were conducted using an industrial pipeline system, and the results demonstrate the excellence of the proposed method in leak detection. Compared to traditional feature-based indicators, our approach achieves a significantly higher performance in leak detection.",
+  "paper_embeddings": {
+    "_status": "DEFERRED",
+    "model": "BAAI/bge-base-en-v1.5",
+    "dim": 768
+  }
+}

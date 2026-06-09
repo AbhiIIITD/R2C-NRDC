@@ -1,0 +1,302 @@
+{
+  "paper_id": "11111111-1111-4111-8111-000000000002",
+  "seed_ref": "BL-02",
+  "metadata_schema_version": "1.0",
+  "batch_version": "seed-2026-06",
+  "ingestion_timestamp": "2026-06-06T00:00:00Z",
+  "created_at": "2026-06-06T00:00:00Z",
+  "updated_at": "2026-06-06T00:00:00Z",
+  "tier_A_factual": {
+    "title": {
+      "value": "Compressive strength prediction and low-carbon optimization of fly ash geopolymer concrete based on big data and ensemble learning",
+      "source": "crossref"
+    },
+    "doi": {
+      "value": "10.1371/journal.pone.0310422",
+      "source": "crossref"
+    },
+    "published_year": {
+      "value": 2024,
+      "source": "crossref"
+    },
+    "venue": {
+      "value": "PLOS ONE",
+      "source": "crossref"
+    },
+    "publisher": {
+      "value": "Public Library of Science (PLoS)",
+      "source": "crossref"
+    },
+    "paper_type": {
+      "value": "journal-article",
+      "source": "crossref"
+    },
+    "language": {
+      "value": "en",
+      "source": "crossref"
+    },
+    "abstract": {
+      "value": "Portland cement concrete (PCC) is a major contributor to human-made CO2 emissions. To address this environmental impact, fly ash geopolymer concrete (FAGC) has emerged as a promising low-carbon alternative. This study establishes a robust compressive strength prediction model for FAGC and develops an optimal mixture design method to achieve target compressive strength with minimal CO2 emissions. To develop robust prediction models, comprehensive factors, including fly ash characteristics, mixture proportions, curing parameters, and specimen types, are considered, a large dataset comprising 1136 observations is created, and polynomial regression, genetic programming, and ensemble learning are employed. The ensemble learning model shows superior accuracy and generalization ability with an RMSE value of 1.81 MPa and an R2 value of 0.93 in the experimental validation set. Then, the study integrates the developed strength model with a life cycle assessment-based CO2 emissions model, formulating an optimal FAGC mixture design program. A case study validates the effectiveness of this program, demonstrating a 16.7% reduction in CO2 emissions for FAGC with a compressive strength of 50 MPa compared to traditional trial-and-error design. Moreover, compared to PCC, the developed FAGC achieves a substantial 60.3% reduction in CO2 emissions. This work provides engineers with tools for compressive strength prediction and low carbon optimization of FAGC, enabling rapid and highly accurate design of concrete with lower CO2 emissions and greater sustainability.",
+      "source": "crossref"
+    },
+    "reference_count": {
+      "value": 145,
+      "source": "crossref"
+    },
+    "citation_count": {
+      "value": 22,
+      "source": "openalex"
+    },
+    "is_open_access": {
+      "value": true,
+      "source": "openalex"
+    },
+    "oa_pdf_url": {
+      "value": "https://doi.org/10.1371/journal.pone.0310422",
+      "source": "openalex"
+    },
+    "distribution_license": {
+      "value": "http://creativecommons.org/licenses/by/4.0/",
+      "source": "crossref"
+    },
+    "openalex_id": {
+      "value": "https://openalex.org/W4402475937",
+      "source": "openalex"
+    },
+    "openalex_topics": {
+      "value": [
+        "Concrete and Cement Materials Research",
+        "Innovative concrete reinforcement materials",
+        "Concrete Properties and Behavior"
+      ],
+      "source": "openalex"
+    }
+  },
+  "tier_B_derived": {
+    "indian_source_bonus": {
+      "value": 0,
+      "rule": "1 if any author institution country == IN else 0",
+      "inputs": [
+        "CN",
+        "CN",
+        "CN",
+        "CN",
+        "PK"
+      ]
+    },
+    "recency_score": {
+      "value": 0.8,
+      "rule": "max(0, 1-(2026-year)*0.1)",
+      "input_year": 2024
+    }
+  },
+  "tier_C_draft": {
+    "domain": {
+      "value": "buildings_infrastructure",
+      "confidence": 0.5,
+      "assigned_by": "system_editorial_draft",
+      "needs_review": true
+    },
+    "sub_domain": {
+      "value": "geopolymer_cement",
+      "confidence": 0.5,
+      "assigned_by": "system_editorial_draft",
+      "needs_review": true
+    },
+    "problem_area": {
+      "value": "compressive-strength prediction & low-carbon mix optimization of fly-ash geopolymer concrete",
+      "confidence": 0.5,
+      "assigned_by": "system_editorial_draft",
+      "needs_review": true
+    },
+    "method": {
+      "value": "ML ensemble + genetic programming + LCA-based CO2 model",
+      "confidence": 0.5,
+      "assigned_by": "system_editorial_draft",
+      "needs_review": true
+    },
+    "trl_claim": {
+      "value": 4,
+      "basis": "validated predictive model + design-program case study; not field-deployed",
+      "confidence": 0.4,
+      "assigned_by": "system_editorial_draft",
+      "needs_review": true
+    },
+    "wipo_green_eligible": {
+      "value": true,
+      "confidence": 0.5,
+      "assigned_by": "system_editorial_draft",
+      "needs_review": true
+    },
+    "novelty_score": {
+      "value": null,
+      "_resolution": "needs_rubric",
+      "needs_review": true
+    },
+    "publication_quality_score": {
+      "value": null,
+      "_resolution": "needs_rubric",
+      "needs_review": true
+    }
+  },
+  "tier_D_human": {
+    "has_patent": {
+      "value": null,
+      "_resolution": "awaiting_researcher_or_officer"
+    },
+    "ip_encumbrances": {
+      "value": null,
+      "_resolution": "awaiting_researcher_or_officer"
+    },
+    "licensing_preference": {
+      "value": null,
+      "_resolution": "awaiting_researcher"
+    },
+    "maps_to_companies_DRAFT": {
+      "value": [
+        "UltraTech",
+        "CarbonStrong"
+      ],
+      "confidence": 0.4,
+      "needs_review": true
+    }
+  },
+  "institutions": [
+    {
+      "institution_id_local": "https://ror.org/04p4ra235",
+      "name": "Zhejiang Tongji Vocational College of Science and Technology",
+      "ror": "https://ror.org/04p4ra235",
+      "country": "CN",
+      "is_indian": false,
+      "source": "openalex"
+    },
+    {
+      "institution_id_local": "https://ror.org/02djqfd08",
+      "name": "Zhejiang University of Technology",
+      "ror": "https://ror.org/02djqfd08",
+      "country": "CN",
+      "is_indian": false,
+      "source": "openalex"
+    },
+    {
+      "institution_id_local": "https://ror.org/03a2tkf74",
+      "name": "Zhejiang Energy Group (China)",
+      "ror": "https://ror.org/03a2tkf74",
+      "country": "CN",
+      "is_indian": false,
+      "source": "openalex"
+    },
+    {
+      "institution_id_local": "https://ror.org/01yqg2h08",
+      "name": "Harbin Institute of Technology",
+      "ror": "https://ror.org/01yqg2h08",
+      "country": "CN",
+      "is_indian": false,
+      "source": "openalex"
+    },
+    {
+      "institution_id_local": "https://ror.org/00nqqvk19",
+      "name": "COMSATS University Islamabad",
+      "ror": "https://ror.org/00nqqvk19",
+      "country": "PK",
+      "is_indian": false,
+      "source": "openalex"
+    }
+  ],
+  "authors": [
+    {
+      "author_id": "11111111-1111-4111-8111-000000000000",
+      "full_name": "Peiling Jiang",
+      "orcid": null,
+      "primary_institution_local": "https://ror.org/04p4ra235",
+      "source": "crossref+openalex"
+    },
+    {
+      "author_id": "11111111-1111-4111-8111-000000000001",
+      "full_name": "Diansheng Zhao",
+      "orcid": null,
+      "primary_institution_local": "https://ror.org/02djqfd08",
+      "source": "crossref+openalex"
+    },
+    {
+      "author_id": "11111111-1111-4111-8111-000000000002",
+      "full_name": "Cheng Jin",
+      "orcid": "https://orcid.org/0000-0002-9635-9186",
+      "primary_institution_local": "https://ror.org/03a2tkf74",
+      "source": "crossref+openalex"
+    },
+    {
+      "author_id": "11111111-1111-4111-8111-000000000003",
+      "full_name": "Shan Ye",
+      "orcid": null,
+      "primary_institution_local": "https://ror.org/04p4ra235",
+      "source": "crossref+openalex"
+    },
+    {
+      "author_id": "11111111-1111-4111-8111-000000000004",
+      "full_name": "Chenchen Luan",
+      "orcid": "https://orcid.org/0000-0003-4655-5186",
+      "primary_institution_local": "https://ror.org/01yqg2h08",
+      "source": "crossref+openalex"
+    },
+    {
+      "author_id": "11111111-1111-4111-8111-000000000005",
+      "full_name": "Rana Faisal Tufail",
+      "orcid": "https://orcid.org/0000-0002-2875-7991",
+      "primary_institution_local": "https://ror.org/00nqqvk19",
+      "source": "crossref+openalex"
+    }
+  ],
+  "paper_authors": [
+    {
+      "author_id": "11111111-1111-4111-8111-000000000000",
+      "author_order": 1,
+      "is_corresponding": null,
+      "affiliation_at_publication": null
+    },
+    {
+      "author_id": "11111111-1111-4111-8111-000000000001",
+      "author_order": 2,
+      "is_corresponding": null,
+      "affiliation_at_publication": null
+    },
+    {
+      "author_id": "11111111-1111-4111-8111-000000000002",
+      "author_order": 3,
+      "is_corresponding": null,
+      "affiliation_at_publication": null
+    },
+    {
+      "author_id": "11111111-1111-4111-8111-000000000003",
+      "author_order": 4,
+      "is_corresponding": null,
+      "affiliation_at_publication": null
+    },
+    {
+      "author_id": "11111111-1111-4111-8111-000000000004",
+      "author_order": 5,
+      "is_corresponding": null,
+      "affiliation_at_publication": null
+    },
+    {
+      "author_id": "11111111-1111-4111-8111-000000000005",
+      "author_order": 6,
+      "is_corresponding": null,
+      "affiliation_at_publication": null
+    }
+  ],
+  "paper_files": {
+    "s3_key": null,
+    "_resolution": "pdf_not_fetched",
+    "oa_pdf_url": "https://doi.org/10.1371/journal.pone.0310422",
+    "is_public": true
+  },
+  "paper_tree_nodes": {
+    "_status": "DEFERRED",
+    "_note": "Needs GROBID/LLM pass over the PDF for section hierarchy."
+  },
+  "paper_embeddings": {
+    "_status": "DEFERRED",
+    "_note": "Generate with bge-base-en-v1.5 (768-dim) for BOTH papers and problems. See scripts/embed_demo.py for the local demo."
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "seed_ref": "IN-16",
+  "metadata_schema_version": "1.0",
+  "ingested_at": "2026-06-06T00:00:00Z",
+  "resolution": {
+    "method": "unresolved",
+    "verify": null
+  },
+  "core": {
+    "title": "Arc-Blade RPB CO2 Absorption Experimental Study (MEA 0.5–2.0 M)",
+    "title_source": "mapping_doc",
+    "abstract": null,
+    "abstract_source": null,
+    "published_year": 2021,
+    "venue": null,
+    "doi": null,
+    "citation_count": null,
+    "is_open_access": null,
+    "authors": null
+  },
+  "research_domain": {
+    "primary_domain": "industrial_production",
+    "sub_domain": "process_eng_rpb_materials",
+    "problem_statement": "Stainless-steel wire-mesh packing geometry for RPB",
+    "_source": "mapping_doc"
+  },
+  "commercialization": {
+    "maps_to_companies": [
+      "Carbon Clean",
+      "Tata Steel"
+    ],
+    "trl_level": null,
+    "_trl_note": "needs review (no full-text TRL extraction in this lightweight pass)"
+  },
+  "derived": {
+    "indian_source_bonus": 0,
+    "recency_score": 0.5,
+    "citation_count": null
+  },
+  "embedding_text": "Arc-Blade RPB CO2 Absorption Experimental Study (MEA 0.5–2.0 M). Stainless-steel wire-mesh packing geometry for RPB",
+  "paper_embeddings": {
+    "_status": "DEFERRED",
+    "model": "BAAI/bge-base-en-v1.5",
+    "dim": 768
+  }
+}

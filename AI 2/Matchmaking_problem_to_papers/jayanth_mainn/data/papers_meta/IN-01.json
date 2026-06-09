@@ -1,0 +1,75 @@
+{
+  "seed_ref": "IN-01",
+  "metadata_schema_version": "1.0",
+  "ingested_at": "2026-06-06T00:00:00Z",
+  "resolution": {
+    "method": "doi",
+    "verify": {
+      "title_similarity": 0.71,
+      "year_doc": 2023,
+      "year_openalex": 2023,
+      "flag": "ok"
+    }
+  },
+  "core": {
+    "title": "Global green hydrogen-based steel opportunities surrounding high quality renewable energy and iron ore deposits",
+    "title_source": "openalex",
+    "abstract": "emissions and requires deep reform to disconnect from fossil fuels. Here, we investigate the market competitiveness of one of the widely considered decarbonisation routes for primary steel production: green hydrogen-based direct reduction of iron ore followed by electric arc furnace steelmaking. Through analysing over 300 locations by combined use of optimisation and machine learning, we show that competitive renewables-based steel production is located nearby the tropic of Capricorn and Cancer, characterised by superior solar with supplementary onshore wind, in addition to high-quality iron ore and low steelworker wages. If coking coal prices remain high, fossil-free steel could attain competitiveness in favourable locations from 2030, further improving towards 2050. Large-scale implementation requires attention to the abundance of suitable iron ore and other resources such as land and water, technical challenges associated with direct reduction, and future supply chain configuration.",
+    "abstract_source": "openalex",
+    "published_year": 2023,
+    "venue": "Nature Communications",
+    "doi": "10.1038/s41467-023-38123-2",
+    "citation_count": 206,
+    "is_open_access": true,
+    "authors": [
+      {
+        "name": "Alexandra Devlin",
+        "orcid": "https://orcid.org/0000-0001-9483-8397",
+        "institution": "University of Oxford",
+        "country": "GB"
+      },
+      {
+        "name": "Jannik Kossen",
+        "orcid": null,
+        "institution": "University of Oxford",
+        "country": "GB"
+      },
+      {
+        "name": "Haulwen Goldie-Jones",
+        "orcid": null,
+        "institution": "University of Oxford",
+        "country": "GB"
+      },
+      {
+        "name": "Aidong Yang",
+        "orcid": "https://orcid.org/0000-0001-5974-247X",
+        "institution": "University of Oxford",
+        "country": "GB"
+      }
+    ]
+  },
+  "research_domain": {
+    "primary_domain": "industrial_production",
+    "sub_domain": "green_steel_h2",
+    "problem_statement": "300-location ML+optimisation for H2-DRI-EAF competitiveness",
+    "_source": "mapping_doc"
+  },
+  "commercialization": {
+    "maps_to_companies": [
+      "Tata Steel"
+    ],
+    "trl_level": null,
+    "_trl_note": "needs review (no full-text TRL extraction in this lightweight pass)"
+  },
+  "derived": {
+    "indian_source_bonus": 0,
+    "recency_score": 0.7,
+    "citation_count": 206
+  },
+  "embedding_text": "emissions and requires deep reform to disconnect from fossil fuels. Here, we investigate the market competitiveness of one of the widely considered decarbonisation routes for primary steel production: green hydrogen-based direct reduction of iron ore followed by electric arc furnace steelmaking. Through analysing over 300 locations by combined use of optimisation and machine learning, we show that competitive renewables-based steel production is located nearby the tropic of Capricorn and Cancer, characterised by superior solar with supplementary onshore wind, in addition to high-quality iron ore and low steelworker wages. If coking coal prices remain high, fossil-free steel could attain competitiveness in favourable locations from 2030, further improving towards 2050. Large-scale implementation requires attention to the abundance of suitable iron ore and other resources such as land and water, technical challenges associated with direct reduction, and future supply chain configuration.",
+  "paper_embeddings": {
+    "_status": "DEFERRED",
+    "model": "BAAI/bge-base-en-v1.5",
+    "dim": 768
+  }
+}

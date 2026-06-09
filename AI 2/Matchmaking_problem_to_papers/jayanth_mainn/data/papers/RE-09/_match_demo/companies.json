@@ -1,0 +1,26 @@
+[
+  {
+    "company_id": "66666666-6666-4666-8666-000000000001",
+    "legal_name": "Newtrace Pvt Ltd",
+    "brand_name": "Newtrace",
+    "gstin": null,
+    "cin": null,
+    "nic_code": null,
+    "company_tier": "startup",
+    "domains": ["renewable_energy"],
+    "sub_domains": ["green_hydrogen_electrolysers"],
+    "hq_city": "Bengaluru",
+    "hq_state": "Karnataka",
+    "country": "IN",
+    "employee_count_band": "51-200",
+    "annual_revenue_band": null,
+    "dsir_recognized": false,
+    "license_budget_band": "50L-2Cr",
+    "website": "https://newtrace.io",
+    "is_verified": false,
+    "is_active": true,
+    "created_at": "2026-06-06T00:00:00Z",
+    "updated_at": "2026-06-06T00:00:00Z",
+    "_note": "Demo company stub. Profile fields (gstin/cin/nic) to be filled at real onboarding."
+  }
+]

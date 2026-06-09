@@ -1,0 +1,64 @@
+{
+  "seed_ref": "IN-03",
+  "metadata_schema_version": "1.0",
+  "ingested_at": "2026-06-06T00:00:00Z",
+  "resolution": {
+    "method": "doi",
+    "verify": {
+      "title_similarity": 1.0,
+      "year_doc": 2024,
+      "year_openalex": 2024,
+      "flag": "ok"
+    }
+  },
+  "core": {
+    "title": "Carbon abatement costs of green hydrogen across end-use sectors",
+    "title_source": "openalex",
+    "abstract": null,
+    "abstract_source": null,
+    "published_year": 2024,
+    "venue": "Joule",
+    "doi": "10.1016/j.joule.2024.09.003",
+    "citation_count": 57,
+    "is_open_access": false,
+    "authors": [
+      {
+        "name": "Roxana Shafiee",
+        "orcid": "https://orcid.org/0000-0001-5605-1198",
+        "institution": "Harvard University Press",
+        "country": "US"
+      },
+      {
+        "name": "Daniel P. Schrag",
+        "orcid": "https://orcid.org/0000-0003-2216-827X",
+        "institution": "Planetary Science Institute",
+        "country": "US"
+      }
+    ]
+  },
+  "research_domain": {
+    "primary_domain": "industrial_production",
+    "sub_domain": "green_steel_h2",
+    "problem_statement": "Which sectors should consume scarce H2 — steel ranks high",
+    "_source": "mapping_doc"
+  },
+  "commercialization": {
+    "maps_to_companies": [
+      "Tata Steel",
+      "Bajaj Auto"
+    ],
+    "trl_level": null,
+    "_trl_note": "needs review (no full-text TRL extraction in this lightweight pass)"
+  },
+  "derived": {
+    "indian_source_bonus": 0,
+    "recency_score": 0.8,
+    "citation_count": 57
+  },
+  "embedding_text": "Carbon abatement costs of green hydrogen across end-use sectors. Which sectors should consume scarce H2 — steel ranks high",
+  "paper_embeddings": {
+    "_status": "DEFERRED",
+    "model": "BAAI/bge-base-en-v1.5",
+    "dim": 768
+  }
+}

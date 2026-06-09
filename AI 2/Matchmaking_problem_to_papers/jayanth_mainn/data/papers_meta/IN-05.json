@@ -1,0 +1,75 @@
+{
+  "seed_ref": "IN-05",
+  "metadata_schema_version": "1.0",
+  "ingested_at": "2026-06-06T00:00:00Z",
+  "resolution": {
+    "method": "doi",
+    "verify": {
+      "title_similarity": 0.94,
+      "year_doc": 2018,
+      "year_openalex": 2017,
+      "flag": "ok"
+    }
+  },
+  "core": {
+    "title": "Weighing regional scrap availability in global pathways for steel production processes",
+    "title_source": "openalex",
+    "abstract": "This study analyses the impact of the rising availability of steel scrap on the future steel production up to the year 2100 and implications for steel production capacity planning. Steel production processes are energy, resource, and emission intensive, but there are significant variations due to different production routes, product mixes, and processes. This analysis is based on the development of steel demand, using the Steel Optimization Model, which provides a region-detailed representation of technologies, energy and material flows, and trade activities. It is linked to the Scrap Availability Assessment Model which estimates the theoretical steel scrap availability. Aggregated crude steel production is estimated to evolve into an almost balanced split by 2050 between the primary production route using iron ore in the blast oven furnace and the secondary route using mostly steel scrap in the electric arc furnace. By 2060, the share of secondary steel production will exceed the share of primary steel production globally. The results also estimate a global increase in scrap use from 611 Mtonnes in 2015 to 1500 Mtonnes in 2050, with the highest growth being for postconsumer scrap. In 2050, almost 50% of post-consumer scrap is expected to be traded, with the main exporter being China and major importing regions being Africa, India, and other developing Asian countries. The results provide valuable insights on scrap availability and capacity development at the regional level for producers contemplating new investments. Regional availability, quality, and trade patterns of scrap will influence production route choices, possibly in favor of secondary routes. Also, policy instruments such as carbon taxation may affect investment choices and favor more energyefficient and less carbon-intensive emerging technologies.",
+    "abstract_source": "openalex",
+    "published_year": 2017,
+    "venue": "Energy Efficiency",
+    "doi": "10.1007/s12053-017-9583-7",
+    "citation_count": 67,
+    "is_open_access": true,
+    "authors": [
+      {
+        "name": "Maria Xylia",
+        "orcid": "https://orcid.org/0000-0003-2896-8841",
+        "institution": "KTH Royal Institute of Technology",
+        "country": "SE"
+      },
+      {
+        "name": "Semida Silveira",
+        "orcid": "https://orcid.org/0000-0002-5817-9774",
+        "institution": "KTH Royal Institute of Technology",
+        "country": "SE"
+      },
+      {
+        "name": "Jan Duerinck",
+        "orcid": null,
+        "institution": "Flemish Institute for Technological Research",
+        "country": "BE"
+      },
+      {
+        "name": "F. Meinke-Hubeny",
+        "orcid": null,
+        "institution": "Flemish Institute for Technological Research",
+        "country": "BE"
+      }
+    ]
+  },
+  "research_domain": {
+    "primary_domain": "industrial_production",
+    "sub_domain": "green_steel_h2",
+    "problem_statement": "Scrap-based EAF as decarbonisation lever — Tata Steel UK relevant",
+    "_source": "mapping_doc"
+  },
+  "commercialization": {
+    "maps_to_companies": [
+      "Tata Steel"
+    ],
+    "trl_level": null,
+    "_trl_note": "needs review (no full-text TRL extraction in this lightweight pass)"
+  },
+  "derived": {
+    "indian_source_bonus": 0,
+    "recency_score": 0.1,
+    "citation_count": 67
+  },
+  "embedding_text": "This study analyses the impact of the rising availability of steel scrap on the future steel production up to the year 2100 and implications for steel production capacity planning. Steel production processes are energy, resource, and emission intensive, but there are significant variations due to different production routes, product mixes, and processes. This analysis is based on the development of steel demand, using the Steel Optimization Model, which provides a region-detailed representation of technologies, energy and material flows, and trade activities. It is linked to the Scrap Availability Assessment Model which estimates the theoretical steel scrap availability. Aggregated crude steel production is estimated to evolve into an almost balanced split by 2050 between the primary production route using iron ore in the blast oven furnace and the secondary route using mostly steel scrap in the electric arc furnace. By 2060, the share of secondary steel production will exceed the share of primary steel production globally. The results also estimate a global increase in scrap use from 611 Mtonnes in 2015 to 1500 Mtonnes in 2050, with the highest growth being for postconsumer scrap. In 2050, almost 50% of post-consumer scrap is expected to be traded, with the main exporter being China and major importing regions being Africa, India, and other developing Asian countries. The results provide valuable insights on scrap availability and capacity development at the regional level for producers contemplating new investments. Regional availability, quality, and trade patterns of scrap will influence production route choices, possibly in favor of secondary routes. Also, policy instruments such as carbon taxation may affect investment choices and favor more energyefficient and less carbon-intensive emerging technologies.",
+  "paper_embeddings": {
+    "_status": "DEFERRED",
+    "model": "BAAI/bge-base-en-v1.5",
+    "dim": 768
+  }
+}

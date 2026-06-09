@@ -1,0 +1,728 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum UserRole {
+  RESEARCHER
+  INDUSTRY
+  ADMIN
+}
+
+enum UserStatus {
+  ACTIVE
+  PENDING
+  DISABLED
+}
+
+enum StudyStatus {
+  DRAFT
+  SUBMITTED
+  UNDER_REVIEW
+  APPROVED
+  PUBLISHED
+  INTERESTED
+  MEETING_SCHEDULED
+  LICENSE_REQUESTED
+  LICENSED
+  COMMERCIALIZED
+  REJECTED
+}
+
+enum ReviewStatus {
+  PENDING
+  IN_REVIEW
+  COMPLETED
+}
+
+enum InterestStatus {
+  INTERESTED
+  MEETING_SCHEDULED
+  DISCUSSION_APPROVED
+  LICENSE_REQUESTED
+  LICENSED
+}
+
+enum MeetingStatus {
+  PENDING
+  APPROVED
+  SCHEDULED
+  COMPLETED
+  CANCELLED
+}
+
+enum LicenseStatus {
+  PENDING
+  ADMIN_APPROVED
+  RESEARCHER_APPROVAL
+  RESEARCHER_APPROVED
+  AGREEMENT_GENERATED
+  SIGNED_SUBMITTED
+  AGREEMENT_EXECUTED
+  COMMERCIALIZED
+  REJECTED
+}
+
+enum AgreementFileKind {
+  GENERATED
+  SIGNED
+}
+
+model Company {
+  id                   String                        @id @default(cuid())
+  name                 String                        @unique
+  industryTier         String?
+  sector               String?
+  profileData          Json?
+  createdAt            DateTime                      @default(now())
+  updatedAt            DateTime                      @updatedAt
+  users                User[]
+  onboarding           CompanyOnboardingSubmission[]
+  interests            Interest[]
+  problemStatements    ProblemStatement[]
+  meetings             Meeting[]
+  licenses             LicenseRequest[]
+  industryRequirements IndustryRequirement[]
+}
+
+model CompanyOnboardingSubmission {
+  id            String   @id @default(cuid())
+  companyId     String
+  tier          String
+  schemaVersion String
+  status        String   @default("pending")
+  data          Json
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+  company       Company  @relation(fields: [companyId], references: [id], onDelete: Cascade)
+}
+
+model User {
+  id                   String               @id @default(cuid())
+  email                String               @unique
+  passwordHash         String
+  name                 String
+  role                 UserRole
+  status               UserStatus           @default(ACTIVE)
+  organization         String?
+  phone                String?
+  avatar               String?
+  companyId            String?
+  createdAt            DateTime             @default(now())
+  updatedAt            DateTime             @updatedAt
+  lastLoginAt          DateTime?
+  company              Company?             @relation(fields: [companyId], references: [id])
+  sessions             Session[]
+  studies              Study[]              @relation("ResearcherStudies")
+  reviewsAssigned      StudyReview[]        @relation("AssignedReviews")
+  interestsCreated     Interest[]           @relation("InterestCreator")
+  meetingParticipation MeetingParticipant[]
+  notifications        Notification[]
+  uploads              FileObject[]         @relation("FileUploader")
+  auditLogs            AuditLog[]           @relation("AuditActor")
+  approvals            LicenseApproval[]
+  aiExecutions         AIAgentExecution[]   @relation("AIExecutionActor")
+  copilotSessions      CopilotSession[]
+}
+
+model Session {
+  id               String    @id @default(cuid())
+  userId           String
+  refreshTokenHash String    @unique
+  device           String?
+  ipAddress        String?
+  expiresAt        DateTime
+  revokedAt        DateTime?
+  createdAt        DateTime  @default(now())
+  user             User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, expiresAt])
+}
+
+model Study {
+  id                  String                    @id @default(cuid())
+  title               String
+  abstract            String
+  domain              String
+  status              StudyStatus               @default(DRAFT)
+  trl                 Int
+  researcherId        String
+  researcherName      String
+  keywords            String[]
+  commercialPotential String?
+  marketSize          String?
+  competitors         String?
+  ipStatus            String?
+  readinessScore      Int?
+  approvedBy          String?
+  approvedAt          DateTime?
+  publishedAt         DateTime?
+  rejectionReason     String?
+  createdAt           DateTime                  @default(now())
+  updatedAt           DateTime                  @updatedAt
+  researcher          User                      @relation("ResearcherStudies", fields: [researcherId], references: [id])
+  documents           StudyDocument[]
+  reviews             StudyReview[]
+  listing             MarketplaceListing?
+  interests           Interest[]
+  meetings            Meeting[]
+  licenses            LicenseRequest[]
+  commercialization   CommercializationRecord[]
+
+  @@index([researcherId, status])
+  @@index([domain, status])
+}
+
+model StudyDocument {
+  id        String     @id @default(cuid())
+  studyId   String
+  fileId    String
+  purpose   String
+  version   Int        @default(1)
+  createdAt DateTime   @default(now())
+  study     Study      @relation(fields: [studyId], references: [id], onDelete: Cascade)
+  file      FileObject @relation(fields: [fileId], references: [id])
+
+  @@unique([studyId, purpose, version])
+}
+
+model StudyReview {
+  id         String          @id @default(cuid())
+  studyId    String
+  assignedTo String?
+  status     ReviewStatus    @default(PENDING)
+  decision   String?
+  createdAt  DateTime        @default(now())
+  updatedAt  DateTime        @updatedAt
+  study      Study           @relation(fields: [studyId], references: [id], onDelete: Cascade)
+  assignee   User?           @relation("AssignedReviews", fields: [assignedTo], references: [id])
+  comments   ReviewComment[]
+}
+
+model ReviewComment {
+  id        String      @id @default(cuid())
+  reviewId  String
+  authorId  String
+  type      String
+  comment   String
+  createdAt DateTime    @default(now())
+  review    StudyReview @relation(fields: [reviewId], references: [id], onDelete: Cascade)
+}
+
+model MarketplaceListing {
+  id          String   @id @default(cuid())
+  studyId     String   @unique
+  publishedBy String
+  publishedAt DateTime @default(now())
+  active      Boolean  @default(true)
+  study       Study    @relation(fields: [studyId], references: [id], onDelete: Cascade)
+}
+
+model Interest {
+  id           String         @id @default(cuid())
+  studyId      String
+  companyId    String
+  createdById  String
+  industryName String
+  status       InterestStatus @default(INTERESTED)
+  createdAt    DateTime       @default(now())
+  updatedAt    DateTime       @updatedAt
+  study        Study          @relation(fields: [studyId], references: [id])
+  company      Company        @relation(fields: [companyId], references: [id])
+  createdBy    User           @relation("InterestCreator", fields: [createdById], references: [id])
+  meetings     Meeting[]
+
+  @@unique([studyId, companyId])
+  @@index([companyId, status])
+}
+
+model ProblemStatement {
+  id                       String                     @id @default(cuid())
+  companyId                String
+  industryUserId           String
+  industryName             String
+  title                    String
+  industrySector           String
+  problemDescription       String
+  currentChallenges        String
+  expectedSolution         String
+  budgetRange              String
+  urgency                  String
+  contactPerson            String
+  keywords                 String[]
+  processingStatus         ProblemProcessingStatus    @default(DRAFT)
+  lastPipelineError        String?
+  createdAt                DateTime                   @default(now())
+  updatedAt                DateTime                   @updatedAt
+  deletedAt                DateTime?
+  company                  Company                    @relation(fields: [companyId], references: [id])
+  requirement              IndustryRequirement?
+  matchResults             MatchResult[]
+  recommendations          TechnologyRecommendation[]
+  complianceReports        ComplianceReport[]
+  commercializationReports CommercializationReport[]
+
+  @@index([companyId, urgency])
+  @@index([processingStatus])
+  @@index([deletedAt])
+}
+
+model Meeting {
+  id            String               @id @default(cuid())
+  interestId    String?
+  studyId       String
+  companyId     String
+  status        MeetingStatus        @default(PENDING)
+  proposedDate  DateTime?
+  scheduledDate DateTime?
+  meetingLink   String?
+  notes         String?
+  createdAt     DateTime             @default(now())
+  updatedAt     DateTime             @updatedAt
+  interest      Interest?            @relation(fields: [interestId], references: [id])
+  study         Study                @relation(fields: [studyId], references: [id])
+  company       Company              @relation(fields: [companyId], references: [id])
+  participants  MeetingParticipant[]
+
+  @@index([companyId, status])
+  @@index([studyId, status])
+}
+
+model MeetingParticipant {
+  id        String  @id @default(cuid())
+  meetingId String
+  userId    String
+  role      String
+  meeting   Meeting @relation(fields: [meetingId], references: [id], onDelete: Cascade)
+  user      User    @relation(fields: [userId], references: [id])
+
+  @@unique([meetingId, userId])
+}
+
+model LicenseRequest {
+  id                         String                   @id @default(cuid())
+  studyId                    String
+  companyId                  String
+  requestedById              String
+  status                     LicenseStatus            @default(PENDING)
+  workflowType               String?
+  requestedAt                DateTime                 @default(now())
+  reviewedAt                 DateTime?
+  approvedAt                 DateTime?
+  researcherApprovedAt       DateTime?
+  agreementGeneratedAt       DateTime?
+  signedAgreementSubmittedAt DateTime?
+  agreementExecutedAt        DateTime?
+  commercializedAt           DateTime?
+  agreementTerms             String?
+  licenseFee                 Decimal?
+  rejectionReason            String?
+  createdAt                  DateTime                 @default(now())
+  updatedAt                  DateTime                 @updatedAt
+  study                      Study                    @relation(fields: [studyId], references: [id])
+  company                    Company                  @relation(fields: [companyId], references: [id])
+  approvals                  LicenseApproval[]
+  agreements                 Agreement[]
+  commercialization          CommercializationRecord?
+
+  @@index([companyId, status])
+  @@index([studyId, status])
+}
+
+model LicenseApproval {
+  id        String         @id @default(cuid())
+  licenseId String
+  actorId   String
+  role      UserRole
+  decision  String
+  notes     String?
+  createdAt DateTime       @default(now())
+  license   LicenseRequest @relation(fields: [licenseId], references: [id], onDelete: Cascade)
+  actor     User           @relation(fields: [actorId], references: [id])
+}
+
+model Agreement {
+  id        String          @id @default(cuid())
+  licenseId String
+  version   Int             @default(1)
+  terms     String
+  createdAt DateTime        @default(now())
+  license   LicenseRequest  @relation(fields: [licenseId], references: [id], onDelete: Cascade)
+  files     AgreementFile[]
+
+  @@unique([licenseId, version])
+}
+
+model AgreementFile {
+  id          String            @id @default(cuid())
+  agreementId String
+  fileId      String
+  kind        AgreementFileKind
+  createdAt   DateTime          @default(now())
+  agreement   Agreement         @relation(fields: [agreementId], references: [id], onDelete: Cascade)
+  file        FileObject        @relation(fields: [fileId], references: [id])
+}
+
+model FileObject {
+  id             String          @id @default(cuid())
+  uploaderId     String
+  storageKey     String          @unique
+  originalName   String
+  mimeType       String
+  size           Int
+  checksum       String
+  createdAt      DateTime        @default(now())
+  uploader       User            @relation("FileUploader", fields: [uploaderId], references: [id])
+  studyDocuments StudyDocument[]
+  agreementFiles AgreementFile[]
+}
+
+model CommercializationRecord {
+  id          String         @id @default(cuid())
+  studyId     String
+  licenseId   String         @unique
+  status      String
+  milestones  Json?
+  notes       String?
+  completedAt DateTime?
+  createdAt   DateTime       @default(now())
+  updatedAt   DateTime       @updatedAt
+  study       Study          @relation(fields: [studyId], references: [id])
+  license     LicenseRequest @relation(fields: [licenseId], references: [id])
+}
+
+model Notification {
+  id          String    @id @default(cuid())
+  userId      String
+  type        String
+  title       String
+  message     String
+  relatedId   String?
+  relatedType String?
+  readAt      DateTime?
+  createdAt   DateTime  @default(now())
+  user        User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, readAt, createdAt])
+}
+
+model AuditLog {
+  id         String   @id @default(cuid())
+  actorId    String?
+  action     String
+  entityType String
+  entityId   String?
+  before     Json?
+  after      Json?
+  ipAddress  String?
+  createdAt  DateTime @default(now())
+  actor      User?    @relation("AuditActor", fields: [actorId], references: [id])
+
+  @@index([entityType, entityId, createdAt])
+  @@index([actorId, createdAt])
+}
+
+// ============================================================================
+// AI INTEGRATION — Matchmaking Engine + SUTRA Agents + Copilot
+// ============================================================================
+
+enum ProblemProcessingStatus {
+  DRAFT
+  EXTRACTING
+  MATCHING
+  ANALYZING
+  COMPLETE
+  FAILED
+}
+
+enum MatchEngine {
+  MATCHMAKING
+  SUTRA
+}
+
+enum MatchResultStatus {
+  PENDING
+  RUNNING
+  COMPLETE
+  FAILED
+}
+
+enum AIAgentType {
+  REQUIREMENT_EXTRACTOR
+  TECHNOLOGY_DISCOVERY
+  INDUSTRY_FIT
+  COMPLIANCE_ADVISOR
+  COMMERCIALIZATION_ADVISOR
+  CITATION_VERIFIER
+  MATCHMAKING
+  COPILOT
+}
+
+enum AIExecutionStatus {
+  PENDING
+  SUCCESS
+  FAILED
+}
+
+enum FitLevel {
+  HIGH
+  MEDIUM
+  LOW
+}
+
+enum VerificationStatus {
+  VERIFIED
+  PARTIALLY_VERIFIED
+  UNVERIFIED
+}
+
+enum ConversationRole {
+  USER
+  ASSISTANT
+  SYSTEM
+}
+
+/// SUTRA Industry Requirement Extractor output — one structured requirement per problem.
+model IndustryRequirement {
+  id                 String           @id @default(cuid())
+  problemStatementId String           @unique
+  companyId          String?
+  domain             String?
+  subDomain          String?
+  problemStatement   String?
+  technologyNeeded   String?
+  keywords           String[]
+  requiredTrl        Int?
+  deploymentScale    String?
+  raw                Json?
+  createdAt          DateTime         @default(now())
+  updatedAt          DateTime         @updatedAt
+  deletedAt          DateTime?
+  problem            ProblemStatement @relation(fields: [problemStatementId], references: [id], onDelete: Cascade)
+  company            Company?         @relation(fields: [companyId], references: [id])
+
+  @@index([companyId])
+  @@index([deletedAt])
+}
+
+/// Cache of research papers surfaced by the Matchmaking engine (keyed by its seed_ref).
+model ResearchPaper {
+  id             String          @id @default(cuid())
+  seedRef        String          @unique
+  title          String
+  subDomain      String?
+  abstract       String?
+  authors        String?
+  doi            String?
+  year           Int?
+  venue          String?
+  citationCount  Int?
+  externalSource String?
+  metadata       Json?
+  createdAt      DateTime        @default(now())
+  updatedAt      DateTime        @updatedAt
+  matches        ResearchMatch[]
+
+  @@index([subDomain])
+}
+
+/// A single matching run (problem -> ranked papers) from the Matchmaking engine.
+model MatchResult {
+  id                 String            @id @default(cuid())
+  problemStatementId String
+  engine             MatchEngine       @default(MATCHMAKING)
+  status             MatchResultStatus @default(COMPLETE)
+  topN               Int               @default(10)
+  model              String?
+  problemText        String?
+  summary            Json?
+  createdAt          DateTime          @default(now())
+  updatedAt          DateTime          @updatedAt
+  deletedAt          DateTime?
+  problem            ProblemStatement  @relation(fields: [problemStatementId], references: [id], onDelete: Cascade)
+  matches            ResearchMatch[]
+
+  @@index([problemStatementId, createdAt])
+  @@index([deletedAt])
+}
+
+/// Join row: a paper ranked within a MatchResult, with similarity + optional "why it fits".
+model ResearchMatch {
+  id              String        @id @default(cuid())
+  matchResultId   String
+  researchPaperId String
+  cosine          Float
+  rank            Int
+  whyItFits       String?
+  createdAt       DateTime      @default(now())
+  matchResult     MatchResult   @relation(fields: [matchResultId], references: [id], onDelete: Cascade)
+  paper           ResearchPaper @relation(fields: [researchPaperId], references: [id], onDelete: Cascade)
+
+  @@unique([matchResultId, researchPaperId])
+  @@index([matchResultId, rank])
+}
+
+/// SUTRA Technology Discovery output — a candidate technology for a problem.
+model TechnologyRecommendation {
+  id                     String                   @id @default(cuid())
+  problemStatementId     String
+  externalId             String?
+  name                   String
+  description            String?
+  matchScore             Float?
+  matchReasons           String[]
+  trl                    Int?
+  patentStatus           String?
+  manufacturingReadiness String?
+  licenseAvailability    String?
+  raw                    Json?
+  createdAt              DateTime                 @default(now())
+  updatedAt              DateTime                 @updatedAt
+  deletedAt              DateTime?
+  problem                ProblemStatement         @relation(fields: [problemStatementId], references: [id], onDelete: Cascade)
+  fitEvaluation          TechnologyFitEvaluation?
+  complianceReports      ComplianceReport[]
+
+  @@index([problemStatementId])
+  @@index([deletedAt])
+}
+
+/// SUTRA Industry Fit Evaluator output for a recommendation.
+model TechnologyFitEvaluation {
+  id               String                   @id @default(cuid())
+  recommendationId String                   @unique
+  fitLevel         FitLevel
+  score            Float
+  strengths        String[]
+  risks            String[]
+  confidence       Float?
+  raw              Json?
+  createdAt        DateTime                 @default(now())
+  updatedAt        DateTime                 @updatedAt
+  deletedAt        DateTime?
+  recommendation   TechnologyRecommendation @relation(fields: [recommendationId], references: [id], onDelete: Cascade)
+}
+
+/// SUTRA Compliance Advisor output (Indian regulatory readiness).
+model ComplianceReport {
+  id                 String                    @id @default(cuid())
+  problemStatementId String
+  recommendationId   String?
+  technologyName     String?
+  requiredCerts      String[]
+  missingCerts       String[]
+  approvalStatus     String?
+  recommendations    String[]
+  regulators         String[]
+  raw                Json?
+  createdAt          DateTime                  @default(now())
+  updatedAt          DateTime                  @updatedAt
+  deletedAt          DateTime?
+  problem            ProblemStatement          @relation(fields: [problemStatementId], references: [id], onDelete: Cascade)
+  recommendation     TechnologyRecommendation? @relation(fields: [recommendationId], references: [id])
+
+  @@index([problemStatementId])
+  @@index([deletedAt])
+}
+
+/// SUTRA Commercialization Advisor output, incl. quick-license / patent-buyout signals.
+model CommercializationReport {
+  id                   String           @id @default(cuid())
+  problemStatementId   String
+  technologyName       String?
+  licenseType          String?
+  techTransferTimeline String?
+  marketReadiness      String?
+  readinessScore       Int?
+  roadmap              Json?
+  quickLicense         Boolean          @default(false)
+  patentBuyout         Boolean          @default(false)
+  raw                  Json?
+  createdAt            DateTime         @default(now())
+  updatedAt            DateTime         @updatedAt
+  deletedAt            DateTime?
+  problem              ProblemStatement @relation(fields: [problemStatementId], references: [id], onDelete: Cascade)
+
+  @@index([problemStatementId])
+  @@index([deletedAt])
+}
+
+/// SUTRA Citation Verifier output — a verified claim with sources.
+model CitationVerification {
+  id             String             @id @default(cuid())
+  claim          String
+  verifiedAnswer String?
+  confidence     Float?
+  status         VerificationStatus @default(UNVERIFIED)
+  domain         String?
+  subDomain      String?
+  sources        Json?
+  relatedType    String?
+  relatedId      String?
+  createdAt      DateTime           @default(now())
+  updatedAt      DateTime           @updatedAt
+  deletedAt      DateTime?
+
+  @@index([relatedType, relatedId])
+  @@index([deletedAt])
+}
+
+/// Telemetry + audit for every AI/agent/matchmaking/copilot call (cost, latency, errors).
+model AIAgentExecution {
+  id          String            @id @default(cuid())
+  agent       AIAgentType
+  provider    String?
+  model       String?
+  status      AIExecutionStatus @default(PENDING)
+  actorId     String?
+  relatedType String?
+  relatedId   String?
+  input       Json?
+  output      Json?
+  error       String?
+  latencyMs   Int?
+  tokensIn    Int?
+  tokensOut   Int?
+  cached      Boolean           @default(false)
+  createdAt   DateTime          @default(now())
+  actor       User?             @relation("AIExecutionActor", fields: [actorId], references: [id])
+
+  @@index([agent, createdAt])
+  @@index([actorId, createdAt])
+  @@index([relatedType, relatedId])
+}
+
+/// A role-scoped AI Copilot chat session.
+model CopilotSession {
+  id            String         @id @default(cuid())
+  userId        String
+  role          UserRole
+  title         String?
+  lastMessageAt DateTime?
+  createdAt     DateTime       @default(now())
+  updatedAt     DateTime       @updatedAt
+  deletedAt     DateTime?
+  user          User           @relation(fields: [userId], references: [id], onDelete: Cascade)
+  messages      Conversation[]
+
+  @@index([userId, lastMessageAt])
+  @@index([deletedAt])
+}
+
+/// A single message within a CopilotSession.
+model Conversation {
+  id        String           @id @default(cuid())
+  sessionId String
+  role      ConversationRole
+  content   String
+  citations Json?
+  tokens    Int?
+  createdAt DateTime         @default(now())
+  session   CopilotSession   @relation(fields: [sessionId], references: [id], onDelete: Cascade)
+
+  @@index([sessionId, createdAt])
+}

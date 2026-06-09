@@ -1,0 +1,15 @@
+@import './fonts.css';
+@import './tailwind.css';
+@import './theme.css';
+@import './globals.css';
+
+/* App shell sizing (moved from an inline <style> in index.html so the
+   production build's HTML inline-CSS proxy doesn't choke). */
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+#root {
+  height: 100%;
+}

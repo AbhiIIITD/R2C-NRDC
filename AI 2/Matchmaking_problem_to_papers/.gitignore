@@ -1,0 +1,19 @@
+# secrets — NEVER commit
+.env
+
+# the wireframe is a separate project
+Comprehensiveproductwireframesystem-main/
+
+# python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# raw doc extracts / scratch
+data/_*.txt
+data/_*.json
+
+# os
+.DS_Store
+Thumbs.db

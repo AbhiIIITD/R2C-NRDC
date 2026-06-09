@@ -1,0 +1,7 @@
+# NRDC R2C — matchmaking
+fastapi
+uvicorn[standard]
+sentence-transformers        # bge-base-en-v1.5 embeddings
+psycopg2-binary              # Supabase Postgres
+numpy
+anthropic                    # optional: only needed for /match explain=true

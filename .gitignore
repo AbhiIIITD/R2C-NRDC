@@ -1,3 +1,65 @@
+# ============================================================================
+# R2C.AI monorepo — root .gitignore
+# Covers all sub-projects (backend, frontend, matchmaking, ai-agents).
+# Nested .gitignore files add project-specific rules on top of these.
+# ============================================================================
+
+# ---- Secrets — NEVER commit. Only *.example is tracked. ----
 .env
-*.log
+.env.*
+!.env.example
+!**/.env.example
+
+# ---- Node / frontend / backend ----
+node_modules/
+**/node_modules/
+dist/
+**/dist/
+dist-server/
+**/dist-server/
 .dist/
+**/.dist/
+build/
+**/build/
+*.tsbuildinfo
+coverage/
+playwright-report/
+test-results/
+.vite/
+
+# ---- Python (matchmaking + ai-agents) ----
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ---- Runtime / uploaded data ----
+storage/
+**/storage/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ---- Local model / data caches (downloaded at build time, not committed) ----
+*.bin
+*.safetensors
+.cache/
+**/.cache/
+
+# ---- Editor / OS ----
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+
+# ---- Stale duplicate project copies (kept out of the deploy repo) ----
+**/Comprehensiveproductwireframesystem-main/

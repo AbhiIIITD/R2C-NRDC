@@ -1,0 +1,87 @@
+{
+  "seed_ref": "BL-16",
+  "metadata_schema_version": "1.0",
+  "ingested_at": "2026-06-06T00:00:00Z",
+  "resolution": {
+    "method": "doi",
+    "verify": {
+      "title_similarity": 0.73,
+      "year_doc": 2021,
+      "year_openalex": 2021,
+      "flag": "ok"
+    }
+  },
+  "core": {
+    "title": "Postcombustion CO<sub>2</sub> Capture: A Comparative Techno-Economic Assessment of Three Technologies Using a Solvent, an Adsorbent, and a Membrane",
+    "title_source": "openalex",
+    "abstract": "This work compares three postcombustion CO2 capture processes based on mature technologies for CO2 separation, namely, (i) absorption using an aqueous piperazine solution, (ii) adsorption using Zeolite 13X in conventional fixed beds (either vacuum swing adsorption or temperature swing adsorption), and (iii) multistage membrane separation using a polymeric material (with CO2/N2 selectivity of 50 and permeability for CO2 of 1700 GPU). All three capture plants are assumed to be retrofitted to a generic industrial CO2-emitting source with 12% CO2 v/v (with 95% relative humidity at the inlet temperature and pressure of 30 °C and 1.3 bar, respectively) to deliver CO2 at 96% purity. In the cases of adsorption and membranes, the flue gas is dried before feeding it to the CO2 capture unit. In a first step, the capture processes (i.e., components and design parameters) are optimized based on their technical performance, defined through process exergy requirement and plant productivity; exergy–productivity Pareto fronts are computed for varying CO2 recovery rates. Second, the economic performance of the processes is assessed through a cost analysis. Estimates of CO2 capture costs are provided for each process as a function of the plant size and CO2 recovery rate. The comparative assessment shows that, although the adsorption- and membrane-based processes analyzed may become cost competitive at the small scale (i.e., below sizes of 100 tons of flue gas processed per day) and low recovery rates (i.e., below ca. 40%), the absorption-based process considered is the most cost-effective option at most plant sizes and recovery rates.",
+    "abstract_source": "openalex",
+    "published_year": 2021,
+    "venue": "ACS Engineering Au",
+    "doi": "10.1021/acsengineeringau.1c00002",
+    "citation_count": 209,
+    "is_open_access": true,
+    "authors": [
+      {
+        "name": "Stefano E. Zanco",
+        "orcid": null,
+        "institution": "ETH Zurich",
+        "country": "CH"
+      },
+      {
+        "name": "José‐Francisco Pérez‐Calvo",
+        "orcid": "https://orcid.org/0000-0003-2716-8367",
+        "institution": "ETH Zurich",
+        "country": "CH"
+      },
+      {
+        "name": "Antonio Gasós",
+        "orcid": "https://orcid.org/0000-0003-1657-2225",
+        "institution": "ETH Zurich",
+        "country": "CH"
+      },
+      {
+        "name": "Beatrice Cordiano",
+        "orcid": null,
+        "institution": "ETH Zurich",
+        "country": "CH"
+      },
+      {
+        "name": "Viola Becattini",
+        "orcid": null,
+        "institution": "ETH Zurich",
+        "country": "CH"
+      },
+      {
+        "name": "Marco Mazzotti",
+        "orcid": "https://orcid.org/0000-0002-4948-6705",
+        "institution": "ETH Zurich",
+        "country": "CH"
+      }
+    ]
+  },
+  "research_domain": {
+    "primary_domain": "buildings_infrastructure",
+    "sub_domain": "building_tech_lca",
+    "problem_statement": "Comparative TEA for piperazine vs Zeolite 13X vs polymeric membrane",
+    "_source": "mapping_doc"
+  },
+  "commercialization": {
+    "maps_to_companies": [
+      "Carbon Clean"
+    ],
+    "trl_level": null,
+    "_trl_note": "needs review (no full-text TRL extraction in this lightweight pass)"
+  },
+  "derived": {
+    "indian_source_bonus": 0,
+    "recency_score": 0.5,
+    "citation_count": 209
+  },
+  "embedding_text": "This work compares three postcombustion CO2 capture processes based on mature technologies for CO2 separation, namely, (i) absorption using an aqueous piperazine solution, (ii) adsorption using Zeolite 13X in conventional fixed beds (either vacuum swing adsorption or temperature swing adsorption), and (iii) multistage membrane separation using a polymeric material (with CO2/N2 selectivity of 50 and permeability for CO2 of 1700 GPU). All three capture plants are assumed to be retrofitted to a generic industrial CO2-emitting source with 12% CO2 v/v (with 95% relative humidity at the inlet temperature and pressure of 30 °C and 1.3 bar, respectively) to deliver CO2 at 96% purity. In the cases of adsorption and membranes, the flue gas is dried before feeding it to the CO2 capture unit. In a first step, the capture processes (i.e., components and design parameters) are optimized based on their technical performance, defined through process exergy requirement and plant productivity; exergy–productivity Pareto fronts are computed for varying CO2 recovery rates. Second, the economic performance of the processes is assessed through a cost analysis. Estimates of CO2 capture costs are provided for each process as a function of the plant size and CO2 recovery rate. The comparative assessment shows that, although the adsorption- and membrane-based processes analyzed may become cost competitive at the small scale (i.e., below sizes of 100 tons of flue gas processed per day) and low recovery rates (i.e., below ca. 40%), the absorption-based process considered is the most cost-effective option at most plant sizes and recovery rates.",
+  "paper_embeddings": {
+    "_status": "DEFERRED",
+    "model": "BAAI/bge-base-en-v1.5",
+    "dim": 768
+  }
+}

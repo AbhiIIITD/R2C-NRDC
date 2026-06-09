@@ -1,0 +1,63 @@
+{
+  "seed_ref": "RE-20",
+  "metadata_schema_version": "1.0",
+  "ingested_at": "2026-06-06T00:00:00Z",
+  "resolution": {
+    "method": "doi",
+    "verify": {
+      "title_similarity": 1.0,
+      "year_doc": 2024,
+      "year_openalex": 2024,
+      "flag": "ok"
+    }
+  },
+  "core": {
+    "title": "Status and prospects of lithium iron phosphate manufacturing in the lithium battery industry",
+    "title_source": "openalex",
+    "abstract": "Abstract Lithium iron phosphate (LiFePO 4 , LFP) has long been a key player in the lithium battery industry for its exceptional stability, safety, and cost-effectiveness as a cathode material. Major car makers (e.g., Tesla, Volkswagen, Ford, Toyota) have either incorporated or are considering the use of LFP-based batteries in their latest electric vehicle (EV) models. Despite LFP’s well-researched status as a cathode material, it is expected to fulfill additional demands in electric vehicle applications, such as fast-charging capabilities, wide temperature range adaptability, and higher energy density. This perspective examines the LFP supply chain, synthetic approaches, manufacturing processes, market trends, recent advancements, and evolving demands to better understand its future role in the EV market. Graphical abstract",
+    "abstract_source": "openalex",
+    "published_year": 2024,
+    "venue": "MRS Communications",
+    "doi": "10.1557/s43579-024-00644-2",
+    "citation_count": 55,
+    "is_open_access": true,
+    "authors": [
+      {
+        "name": "Yanying Lu",
+        "orcid": null,
+        "institution": "Clemson University",
+        "country": "US"
+      },
+      {
+        "name": "Tianyu Zhu",
+        "orcid": "https://orcid.org/0000-0001-9115-6462",
+        "institution": "Clemson University",
+        "country": "US"
+      }
+    ]
+  },
+  "research_domain": {
+    "primary_domain": "renewable_energy",
+    "sub_domain": "batteries_storage",
+    "problem_statement": "LFP at $95/kWh in 2023; manufacturing scale-up benchmark",
+    "_source": "mapping_doc"
+  },
+  "commercialization": {
+    "maps_to_companies": [
+      "Log9 Materials"
+    ],
+    "trl_level": null,
+    "_trl_note": "needs review (no full-text TRL extraction in this lightweight pass)"
+  },
+  "derived": {
+    "indian_source_bonus": 0,
+    "recency_score": 0.8,
+    "citation_count": 55
+  },
+  "embedding_text": "Abstract Lithium iron phosphate (LiFePO 4 , LFP) has long been a key player in the lithium battery industry for its exceptional stability, safety, and cost-effectiveness as a cathode material. Major car makers (e.g., Tesla, Volkswagen, Ford, Toyota) have either incorporated or are considering the use of LFP-based batteries in their latest electric vehicle (EV) models. Despite LFP’s well-researched status as a cathode material, it is expected to fulfill additional demands in electric vehicle applications, such as fast-charging capabilities, wide temperature range adaptability, and higher energy density. This perspective examines the LFP supply chain, synthetic approaches, manufacturing processes, market trends, recent advancements, and evolving demands to better understand its future role in the EV market. Graphical abstract",
+  "paper_embeddings": {
+    "_status": "DEFERRED",
+    "model": "BAAI/bge-base-en-v1.5",
+    "dim": 768
+  }
+}

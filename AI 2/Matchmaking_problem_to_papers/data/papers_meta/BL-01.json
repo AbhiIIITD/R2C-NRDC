@@ -1,0 +1,64 @@
+{
+  "seed_ref": "BL-01",
+  "metadata_schema_version": "1.0",
+  "ingested_at": "2026-06-06T00:00:00Z",
+  "resolution": {
+    "method": "title_search",
+    "verify": {
+      "title_similarity": 1.0,
+      "year_doc": 2024,
+      "year_openalex": 2005,
+      "flag": "CHECK"
+    }
+  },
+  "core": {
+    "title": "DEVELOPMENT AND PROPERTIES OF LOW-CALCIUM FLY ASH-BASED GEOPOLYMER CONCRETE",
+    "title_source": "openalex",
+    "abstract": "This Research Report describes the first part of the work carried out by the geopolymer research group at Curtin University of Technology. It describes the development and properties of heat-cured low-calcium fly ash-based geopolymer concrete. This Report will be followed by two other Reports describing the long-term properties of geopolymer concrete, and the behaviour of reinforced geopolymer concrete beams and columns.",
+    "abstract_source": "openalex",
+    "published_year": 2005,
+    "venue": "eSpace (Curtin University)",
+    "doi": null,
+    "citation_count": 827,
+    "is_open_access": true,
+    "authors": [
+      {
+        "name": "Djwantoro Hardjito",
+        "orcid": "https://orcid.org/0000-0002-0262-9166",
+        "institution": null,
+        "country": null
+      },
+      {
+        "name": "B. V. Rangan",
+        "orcid": null,
+        "institution": null,
+        "country": null
+      }
+    ]
+  },
+  "research_domain": {
+    "primary_domain": "buildings_infrastructure",
+    "sub_domain": "geopolymer_cement",
+    "problem_statement": "F/GGBS mix ratios 75:25 / 50:50 / 25:75 compressive strength benchmarks",
+    "_source": "mapping_doc"
+  },
+  "commercialization": {
+    "maps_to_companies": [
+      "UltraTech",
+      "CarbonStrong"
+    ],
+    "trl_level": null,
+    "_trl_note": "needs review (no full-text TRL extraction in this lightweight pass)"
+  },
+  "derived": {
+    "indian_source_bonus": 0,
+    "recency_score": 0.0,
+    "citation_count": 827
+  },
+  "embedding_text": "This Research Report describes the first part of the work carried out by the geopolymer research group at Curtin University of Technology. It describes the development and properties of heat-cured low-calcium fly ash-based geopolymer concrete. This Report will be followed by two other Reports describing the long-term properties of geopolymer concrete, and the behaviour of reinforced geopolymer concrete beams and columns.",
+  "paper_embeddings": {
+    "_status": "DEFERRED",
+    "model": "BAAI/bge-base-en-v1.5",
+    "dim": 768
+  }
+}

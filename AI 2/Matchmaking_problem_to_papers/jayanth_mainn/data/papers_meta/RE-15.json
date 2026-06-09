@@ -1,0 +1,117 @@
+{
+  "seed_ref": "RE-15",
+  "metadata_schema_version": "1.0",
+  "ingested_at": "2026-06-06T00:00:00Z",
+  "resolution": {
+    "method": "doi",
+    "verify": {
+      "title_similarity": 0.81,
+      "year_doc": 2014,
+      "year_openalex": 2014,
+      "flag": "ok"
+    }
+  },
+  "core": {
+    "title": "An Advanced Lithium-Ion Battery Based on a Graphene Anode and a Lithium Iron Phosphate Cathode",
+    "title_source": "openalex",
+    "abstract": "We report an advanced lithium-ion battery based on a graphene ink anode and a lithium iron phosphate cathode. By carefully balancing the cell composition and suppressing the initial irreversible capacity of the anode in the round of few cycles, we demonstrate an optimal battery performance in terms of specific capacity, that is, 165 mAhg(-1), of an estimated energy density of about 190 Wh kg(-1) and a stable operation for over 80 charge-discharge cycles. The components of the battery are low cost and potentially scalable. To the best of our knowledge, complete, graphene-based, lithium ion batteries having performances comparable with those offered by the present technology are rarely reported; hence, we believe that the results disclosed in this work may open up new opportunities for exploiting graphene in the lithium-ion battery science and development.",
+    "abstract_source": "openalex",
+    "published_year": 2014,
+    "venue": "Nano Letters",
+    "doi": "10.1021/nl502429m",
+    "citation_count": 455,
+    "is_open_access": true,
+    "authors": [
+      {
+        "name": "Jusef Hassoun",
+        "orcid": "https://orcid.org/0000-0002-8218-5680",
+        "institution": "Sapienza University of Rome",
+        "country": "IT"
+      },
+      {
+        "name": "Francesco Bonaccorso",
+        "orcid": "https://orcid.org/0000-0001-7238-9420",
+        "institution": "Institute for Chemical and Physical Processes",
+        "country": "IT"
+      },
+      {
+        "name": "Marco Agostini",
+        "orcid": "https://orcid.org/0000-0002-4152-8894",
+        "institution": "Sapienza University of Rome",
+        "country": "IT"
+      },
+      {
+        "name": "M. Angelucci",
+        "orcid": "https://orcid.org/0000-0001-6506-4863",
+        "institution": "Sapienza University of Rome",
+        "country": "IT"
+      },
+      {
+        "name": "Maria Grazia Betti",
+        "orcid": "https://orcid.org/0000-0002-6244-0306",
+        "institution": "Sapienza University of Rome",
+        "country": "IT"
+      },
+      {
+        "name": "R. Cingolani",
+        "orcid": null,
+        "institution": "Italian Institute of Technology",
+        "country": "IT"
+      },
+      {
+        "name": "Mauro Gemmi",
+        "orcid": "https://orcid.org/0000-0001-9542-3783",
+        "institution": "Italian Institute of Technology",
+        "country": "IT"
+      },
+      {
+        "name": "Carlo Mariani",
+        "orcid": "https://orcid.org/0000-0002-7979-1700",
+        "institution": "Sapienza University of Rome",
+        "country": "IT"
+      },
+      {
+        "name": "S. Panero",
+        "orcid": "https://orcid.org/0000-0002-9779-1050",
+        "institution": "Sapienza University of Rome",
+        "country": "IT"
+      },
+      {
+        "name": "Vittorio Pellegrini",
+        "orcid": null,
+        "institution": "Istituto Nanoscienze",
+        "country": "IT"
+      },
+      {
+        "name": "Bruno Scrosati",
+        "orcid": null,
+        "institution": "Italian Institute of Technology",
+        "country": "IT"
+      }
+    ]
+  },
+  "research_domain": {
+    "primary_domain": "renewable_energy",
+    "sub_domain": "batteries_storage",
+    "problem_statement": "Foundational graphene-anode + LFP-cathode architecture",
+    "_source": "mapping_doc"
+  },
+  "commercialization": {
+    "maps_to_companies": [
+      "Log9 Materials"
+    ],
+    "trl_level": null,
+    "_trl_note": "needs review (no full-text TRL extraction in this lightweight pass)"
+  },
+  "derived": {
+    "indian_source_bonus": 0,
+    "recency_score": 0.0,
+    "citation_count": 455
+  },
+  "embedding_text": "We report an advanced lithium-ion battery based on a graphene ink anode and a lithium iron phosphate cathode. By carefully balancing the cell composition and suppressing the initial irreversible capacity of the anode in the round of few cycles, we demonstrate an optimal battery performance in terms of specific capacity, that is, 165 mAhg(-1), of an estimated energy density of about 190 Wh kg(-1) and a stable operation for over 80 charge-discharge cycles. The components of the battery are low cost and potentially scalable. To the best of our knowledge, complete, graphene-based, lithium ion batteries having performances comparable with those offered by the present technology are rarely reported; hence, we believe that the results disclosed in this work may open up new opportunities for exploiting graphene in the lithium-ion battery science and development.",
+  "paper_embeddings": {
+    "_status": "DEFERRED",
+    "model": "BAAI/bge-base-en-v1.5",
+    "dim": 768
+  }
+}

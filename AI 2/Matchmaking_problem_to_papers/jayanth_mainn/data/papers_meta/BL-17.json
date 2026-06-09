@@ -1,0 +1,71 @@
+{
+  "seed_ref": "BL-17",
+  "metadata_schema_version": "1.0",
+  "ingested_at": "2026-06-06T00:00:00Z",
+  "resolution": {
+    "method": "title_search",
+    "verify": {
+      "title_similarity": 1.0,
+      "year_doc": 2023,
+      "year_openalex": 2023,
+      "flag": "ok"
+    }
+  },
+  "core": {
+    "title": "Embodied carbon dioxide of fly ash based geopolymer concrete",
+    "title_source": "openalex",
+    "abstract": "Abstract Concrete is one of the most widely used construction materials in most construction works around the world. Concrete materials are generally composed of several basic materials, namely Portland cement (OPC), coarse aggregate, fine aggregate and water as a cement reagent. However, in recent years, environmental issues have made concrete a material that is less friendly to the environment. This is due to the high CO 2 content in the Portland cement (OPC) manufacturing process. Therefore, it is necessary to innovate to replace OPC materials with other materials that are more environmentally friendly. One of the substitutes for OPC is fly ash. Geopolymer concrete is a concrete material that has a cement content of 0%.From the results of these calculations, it can be seen that the amount of carbon contained in 1m 3 , normal concrete is 552.22 kg, while in geopolymer concrete it is 242.87 kg, or lower by 309.35 kg. This carbon emission calculation value is only based on the A1-A3 carbon factor value. This indicates that the use of geopolymer concrete can reduce carbon emissions by up to 56.02%.",
+    "abstract_source": "openalex",
+    "published_year": 2023,
+    "venue": "IOP Conference Series Earth and Environmental Science",
+    "doi": "10.1088/1755-1315/1195/1/012031",
+    "citation_count": 40,
+    "is_open_access": true,
+    "authors": [
+      {
+        "name": "Agus Setiawan",
+        "orcid": "https://orcid.org/0000-0002-6518-1450",
+        "institution": "Tarumanagara University",
+        "country": "ID"
+      },
+      {
+        "name": "Harianto Hardjasaputra",
+        "orcid": null,
+        "institution": null,
+        "country": null
+      },
+      {
+        "name": "Roesdiman Soegiarso",
+        "orcid": null,
+        "institution": "Tarumanagara University",
+        "country": "ID"
+      }
+    ]
+  },
+  "research_domain": {
+    "primary_domain": "buildings_infrastructure",
+    "sub_domain": "building_tech_lca",
+    "problem_statement": "LCA-based embodied carbon for GPC vs OPC concrete",
+    "_source": "mapping_doc"
+  },
+  "commercialization": {
+    "maps_to_companies": [
+      "UltraTech",
+      "CarbonStrong",
+      "Mahindra Lifespaces"
+    ],
+    "trl_level": null,
+    "_trl_note": "needs review (no full-text TRL extraction in this lightweight pass)"
+  },
+  "derived": {
+    "indian_source_bonus": 0,
+    "recency_score": 0.7,
+    "citation_count": 40
+  },
+  "embedding_text": "Abstract Concrete is one of the most widely used construction materials in most construction works around the world. Concrete materials are generally composed of several basic materials, namely Portland cement (OPC), coarse aggregate, fine aggregate and water as a cement reagent. However, in recent years, environmental issues have made concrete a material that is less friendly to the environment. This is due to the high CO 2 content in the Portland cement (OPC) manufacturing process. Therefore, it is necessary to innovate to replace OPC materials with other materials that are more environmentally friendly. One of the substitutes for OPC is fly ash. Geopolymer concrete is a concrete material that has a cement content of 0%.From the results of these calculations, it can be seen that the amount of carbon contained in 1m 3 , normal concrete is 552.22 kg, while in geopolymer concrete it is 242.87 kg, or lower by 309.35 kg. This carbon emission calculation value is only based on the A1-A3 carbon factor value. This indicates that the use of geopolymer concrete can reduce carbon emissions by up to 56.02%.",
+  "paper_embeddings": {
+    "_status": "DEFERRED",
+    "model": "BAAI/bge-base-en-v1.5",
+    "dim": 768
+  }
+}

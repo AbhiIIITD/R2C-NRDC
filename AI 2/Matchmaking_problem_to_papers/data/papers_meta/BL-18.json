@@ -1,0 +1,65 @@
+{
+  "seed_ref": "BL-18",
+  "metadata_schema_version": "1.0",
+  "ingested_at": "2026-06-06T00:00:00Z",
+  "resolution": {
+    "method": "doi",
+    "verify": {
+      "title_similarity": 0.85,
+      "year_doc": 2025,
+      "year_openalex": 2025,
+      "flag": "ok"
+    }
+  },
+  "core": {
+    "title": "Optimization of geopolymer concrete mix design using machine learning for enhanced sulphate and chloride resistance",
+    "title_source": "openalex",
+    "abstract": null,
+    "abstract_source": null,
+    "published_year": 2025,
+    "venue": "Asian Journal of Civil Engineering",
+    "doi": "10.1007/s42107-025-01503-8",
+    "citation_count": 4,
+    "is_open_access": false,
+    "authors": [
+      {
+        "name": "Akshay Dhawan",
+        "orcid": null,
+        "institution": "GLA University",
+        "country": "IN"
+      },
+      {
+        "name": "Manvendra Verma",
+        "orcid": null,
+        "institution": "GLA University",
+        "country": "IN"
+      }
+    ]
+  },
+  "research_domain": {
+    "primary_domain": "buildings_infrastructure",
+    "sub_domain": "building_tech_lca",
+    "problem_statement": "Durability under aggressive environments via mix optimisation",
+    "_source": "mapping_doc"
+  },
+  "commercialization": {
+    "maps_to_companies": [
+      "UltraTech",
+      "CarbonStrong",
+      "Mahindra Lifespaces"
+    ],
+    "trl_level": null,
+    "_trl_note": "needs review (no full-text TRL extraction in this lightweight pass)"
+  },
+  "derived": {
+    "indian_source_bonus": 1,
+    "recency_score": 0.9,
+    "citation_count": 4
+  },
+  "embedding_text": "Optimization of geopolymer concrete mix design using machine learning for enhanced sulphate and chloride resistance. Durability under aggressive environments via mix optimisation",
+  "paper_embeddings": {
+    "_status": "DEFERRED",
+    "model": "BAAI/bge-base-en-v1.5",
+    "dim": 768
+  }
+}

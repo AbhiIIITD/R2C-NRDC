@@ -1,0 +1,225 @@
+{
+  "paper_id": "11111111-1111-4111-8111-000000000007",
+  "seed_ref": "IN-07",
+  "metadata_schema_version": "1.0",
+  "batch_version": "seed-2026-06",
+  "ingestion_timestamp": "2026-06-06T00:00:00Z",
+  "created_at": "2026-06-06T00:00:00Z",
+  "updated_at": "2026-06-06T00:00:00Z",
+  "tier_A_factual": {
+    "title": {
+      "value": "A Hybrid Leak Localization Approach Using Acoustic Emission for Industrial Pipelines",
+      "source": "crossref"
+    },
+    "doi": {
+      "value": "10.3390/s22103963",
+      "source": "crossref"
+    },
+    "published_year": {
+      "value": 2022,
+      "source": "crossref"
+    },
+    "venue": {
+      "value": "Sensors",
+      "source": "crossref"
+    },
+    "publisher": {
+      "value": "MDPI AG",
+      "source": "crossref"
+    },
+    "paper_type": {
+      "value": "journal-article",
+      "source": "crossref"
+    },
+    "language": {
+      "value": "en",
+      "source": "crossref"
+    },
+    "abstract": {
+      "value": "Acoustic emission techniques are widely used to monitor industrial pipelines. Intelligent methods using acoustic emission signals can analyze acoustic waves and provide important information for leak detection and localization. To address safety and protect the operation of industrial pipelines, a novel hybrid approach based on acoustic emission signals is proposed to achieve reliable leak localization. The proposed method employs minimum entropy deconvolution using the maximization kurtosis norm of acoustic emission signals to remove noise and identify important feature signals. In addition, the damping frequency energy based on the dynamic differential equation with damping term is designed to extract important energy information, and a smooth envelope for the feature signals over time is generated. The zero crossing tracks the arrival time via the envelope changes and identifies the time difference of the acoustic waves from the two channels, each of which is installed at the end of a pipeline. Finally, the time data are combined with the velocity data to localize the leak. The proposed approach has better performance than the existing generalized cross-correlation and empirical mode decomposition combined with the generalized cross-correlation methods, providing proper leak localization in the industrial pipeline.",
+      "source": "crossref"
+    },
+    "reference_count": {
+      "value": 24,
+      "source": "crossref"
+    },
+    "citation_count": {
+      "value": 23,
+      "source": "openalex"
+    },
+    "is_open_access": {
+      "value": true,
+      "source": "openalex"
+    },
+    "oa_pdf_url": {
+      "value": "https://www.mdpi.com/1424-8220/22/10/3963/pdf?version=1653364248",
+      "source": "openalex"
+    },
+    "distribution_license": {
+      "value": "https://creativecommons.org/licenses/by/4.0/",
+      "source": "crossref"
+    },
+    "openalex_id": {
+      "value": "https://openalex.org/W4281483117",
+      "source": "openalex"
+    },
+    "openalex_topics": {
+      "value": [
+        "Water Systems and Optimization",
+        "Structural Integrity and Reliability Analysis",
+        "Geophysical Methods and Applications"
+      ],
+      "source": "openalex"
+    }
+  },
+  "tier_B_derived": {
+    "indian_source_bonus": {
+      "value": 0,
+      "rule": "1 if any author institution country == IN else 0",
+      "inputs": [
+        "KR"
+      ]
+    },
+    "recency_score": {
+      "value": 0.6,
+      "rule": "max(0, 1-(2026-year)*0.1)",
+      "input_year": 2022
+    }
+  },
+  "tier_C_draft": {
+    "domain": {
+      "value": "industrial_production",
+      "confidence": 0.5,
+      "assigned_by": "system_editorial_draft",
+      "needs_review": true
+    },
+    "sub_domain": {
+      "value": "industrial_iot_pipeline_inspection",
+      "confidence": 0.5,
+      "assigned_by": "system_editorial_draft",
+      "needs_review": true
+    },
+    "problem_area": {
+      "value": "acoustic-emission leak localization in industrial pipelines",
+      "confidence": 0.5,
+      "assigned_by": "system_editorial_draft",
+      "needs_review": true
+    },
+    "method": {
+      "value": "minimum entropy deconvolution + damping-frequency energy + zero-crossing TDoA",
+      "confidence": 0.5,
+      "assigned_by": "system_editorial_draft",
+      "needs_review": true
+    },
+    "trl_claim": {
+      "value": 5,
+      "basis": "experimental validation on pipeline test rig; outperforms GCC/EMD-GCC baselines",
+      "confidence": 0.4,
+      "assigned_by": "system_editorial_draft",
+      "needs_review": true
+    },
+    "wipo_green_eligible": {
+      "value": null,
+      "_resolution": "uncertain_not_asserted",
+      "needs_review": true
+    },
+    "novelty_score": {
+      "value": null,
+      "_resolution": "needs_rubric",
+      "needs_review": true
+    },
+    "publication_quality_score": {
+      "value": null,
+      "_resolution": "needs_rubric",
+      "needs_review": true
+    }
+  },
+  "tier_D_human": {
+    "has_patent": {
+      "value": null,
+      "_resolution": "awaiting_researcher_or_officer"
+    },
+    "ip_encumbrances": {
+      "value": null,
+      "_resolution": "awaiting_researcher_or_officer"
+    },
+    "licensing_preference": {
+      "value": null,
+      "_resolution": "awaiting_researcher"
+    },
+    "maps_to_companies_DRAFT": {
+      "value": [
+        "Detect Technologies"
+      ],
+      "confidence": 0.4,
+      "needs_review": true
+    }
+  },
+  "institutions": [
+    {
+      "institution_id_local": "https://ror.org/02c2f8975",
+      "name": "University of Ulsan",
+      "ror": "https://ror.org/02c2f8975",
+      "country": "KR",
+      "is_indian": false,
+      "source": "openalex"
+    }
+  ],
+  "authors": [
+    {
+      "author_id": "11111111-1111-4111-8111-000000000000",
+      "full_name": "Yangde Gao",
+      "orcid": "https://orcid.org/0000-0001-6546-4920",
+      "primary_institution_local": "https://ror.org/02c2f8975",
+      "source": "crossref+openalex"
+    },
+    {
+      "author_id": "11111111-1111-4111-8111-000000000001",
+      "full_name": "Farzin Piltan",
+      "orcid": "https://orcid.org/0000-0002-8420-9500",
+      "primary_institution_local": "https://ror.org/02c2f8975",
+      "source": "crossref+openalex"
+    },
+    {
+      "author_id": "11111111-1111-4111-8111-000000000002",
+      "full_name": "Jong-Myon Kim",
+      "orcid": "https://orcid.org/0000-0002-5185-1062",
+      "primary_institution_local": "https://ror.org/02c2f8975",
+      "source": "crossref+openalex"
+    }
+  ],
+  "paper_authors": [
+    {
+      "author_id": "11111111-1111-4111-8111-000000000000",
+      "author_order": 1,
+      "is_corresponding": null,
+      "affiliation_at_publication": "Department of Electrical, Electronics and Computer Engineering, University of Ulsan, Ulsan 44610, Korea"
+    },
+    {
+      "author_id": "11111111-1111-4111-8111-000000000001",
+      "author_order": 2,
+      "is_corresponding": null,
+      "affiliation_at_publication": "Department of Electrical, Electronics and Computer Engineering, University of Ulsan, Ulsan 44610, Korea"
+    },
+    {
+      "author_id": "11111111-1111-4111-8111-000000000002",
+      "author_order": 3,
+      "is_corresponding": null,
+      "affiliation_at_publication": "Department of Electrical, Electronics and Computer Engineering, University of Ulsan, Ulsan 44610, Korea"
+    }
+  ],
+  "paper_files": {
+    "s3_key": null,
+    "_resolution": "pdf_not_fetched",
+    "oa_pdf_url": "https://www.mdpi.com/1424-8220/22/10/3963/pdf?version=1653364248",
+    "is_public": true
+  },
+  "paper_tree_nodes": {
+    "_status": "DEFERRED",
+    "_note": "Needs GROBID/LLM pass over the PDF for section hierarchy."
+  },
+  "paper_embeddings": {
+    "_status": "DEFERRED",
+    "_note": "Generate with bge-base-en-v1.5 (768-dim) for BOTH papers and problems. See scripts/embed_demo.py for the local demo."
+  }
+}

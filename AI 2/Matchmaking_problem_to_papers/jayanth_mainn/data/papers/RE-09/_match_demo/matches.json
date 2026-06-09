@@ -1,0 +1,28 @@
+[
+  {
+    "match_id": "88888888-8888-4888-8888-000000000001",
+    "paper_id": "11111111-1111-4111-8111-000000000009",
+    "problem_id": "77777777-7777-4777-8777-000000000001",
+    "score": 0.808,
+    "confidence": 0.75,
+    "score_breakdown": {
+      "semantic_similarity": { "weight": 0.40, "value": 0.92, "note": "'PEM membrane degradation' (paper) vs 'reduce PEM stack replacement cost / membrane lifetime' (Newtrace)" },
+      "trl_fit": { "weight": 0.20, "value": 0.70, "note": "Paper TRL ~3 (modelling); Newtrace operates TRL 5-6 - usable for next-gen R&D, not drop-in." },
+      "subdomain_match": { "weight": 0.15, "value": 1.00, "note": "Both Green Hydrogen / PEM electrolyser." },
+      "indian_source_bonus": { "weight": 0.10, "value": 0.00, "note": "Paper from Comillas, Spain - no Indian-source bonus." },
+      "recency": { "weight": 0.15, "value": 1.00, "note": "2025 preprint." }
+    },
+    "explanation": "This paper directly addresses Newtrace's problem of reducing PEM stack-replacement cost: it models membrane degradation (the main driver of stack wear-out) using a Physics-Informed Neural Network that estimates remaining membrane life from limited noisy operating data - exactly the predictive capability Newtrace needs for maintenance scheduling and next-gen durability. Same sub-domain (PEM electrolysis) and recent (2025). Caveat: it is an early-stage modelling result (TRL ~3) on synthetic data, so it is R&D input rather than a deployable product.",
+    "snippet": "this study presents the first application of Physics-Informed Neural Networks (PINNs) to model membrane degradation in PEM electrolyzers ... the PINN accurately captures the long-term system's degradation dynamics while preserving physical interpretability with limited noisy data",
+    "page_refs": [
+      { "node_id": "55555555-5555-4555-8555-000000000003", "page_start": 3, "page_end": 4 },
+      { "node_id": "55555555-5555-4555-8555-000000000009", "page_start": 6, "page_end": 8 }
+    ],
+    "suggested_action": "surface_medium",
+    "routing_tier": "officer_review",
+    "model_version": "matcher-v1.0",
+    "is_current": true,
+    "computed_at": "2026-06-06T00:00:00Z",
+    "_note": "Score computed honestly from the weights above = 0.808. The mapping doc B.2 states 0.83 for this pair; the small difference is rounding in the source doc (its own dimension values give 0.808). Score is in band 0.6-0.85 -> surfaces in Newtrace's discovery feed (not auto-outreach)."
+  }
+]

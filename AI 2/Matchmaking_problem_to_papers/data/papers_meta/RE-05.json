@@ -1,0 +1,124 @@
+{
+  "seed_ref": "RE-05",
+  "metadata_schema_version": "1.0",
+  "ingested_at": "2026-06-06T00:00:00Z",
+  "resolution": {
+    "method": "title_search",
+    "verify": {
+      "title_similarity": 0.66,
+      "year_doc": 2024,
+      "year_openalex": 2025,
+      "flag": "ok"
+    }
+  },
+  "core": {
+    "title": "Enabling 95 % bifaciality of efficient TOPCon solar cells by rear-side selective sunken pyramid structure and zebra-crossing passivation contact",
+    "title_source": "openalex",
+    "abstract": null,
+    "abstract_source": null,
+    "published_year": 2025,
+    "venue": "Solar Energy Materials and Solar Cells",
+    "doi": "10.1016/j.solmat.2025.113809",
+    "citation_count": 6,
+    "is_open_access": false,
+    "authors": [
+      {
+        "name": "Jiale Feng",
+        "orcid": null,
+        "institution": "Southwest Petroleum University",
+        "country": "CN"
+      },
+      {
+        "name": "Bin Yu",
+        "orcid": "https://orcid.org/0000-0003-1567-8415",
+        "institution": null,
+        "country": null
+      },
+      {
+        "name": "Yu He",
+        "orcid": "https://orcid.org/0000-0002-0357-681X",
+        "institution": null,
+        "country": null
+      },
+      {
+        "name": "Adelina Lv",
+        "orcid": "https://orcid.org/0000-0003-3229-1749",
+        "institution": null,
+        "country": null
+      },
+      {
+        "name": "Jianbin Fan",
+        "orcid": null,
+        "institution": null,
+        "country": null
+      },
+      {
+        "name": "Lei Yang",
+        "orcid": "https://orcid.org/0000-0002-8046-0845",
+        "institution": null,
+        "country": null
+      },
+      {
+        "name": "Zhengyue Xia",
+        "orcid": null,
+        "institution": null,
+        "country": null
+      },
+      {
+        "name": "Zhonglan Li",
+        "orcid": "https://orcid.org/0000-0002-4844-9494",
+        "institution": null,
+        "country": null
+      },
+      {
+        "name": "Xiajie Meng",
+        "orcid": null,
+        "institution": null,
+        "country": null
+      },
+      {
+        "name": "Fangdan Jiang",
+        "orcid": "https://orcid.org/0000-0003-2883-9089",
+        "institution": null,
+        "country": null
+      },
+      {
+        "name": "Guoqiang Xing",
+        "orcid": "https://orcid.org/0000-0003-1157-6323",
+        "institution": null,
+        "country": null
+      },
+      {
+        "name": "Jian Yu",
+        "orcid": "https://orcid.org/0000-0001-6824-064X",
+        "institution": "Southwest Petroleum University",
+        "country": "CN"
+      }
+    ]
+  },
+  "research_domain": {
+    "primary_domain": "renewable_energy",
+    "sub_domain": "solar_pv",
+    "problem_statement": "Cell-level optimisation for bifacial gain beyond 90%",
+    "_source": "mapping_doc"
+  },
+  "commercialization": {
+    "maps_to_companies": [
+      "Tata Power Solar",
+      "Vikram Solar"
+    ],
+    "trl_level": null,
+    "_trl_note": "needs review (no full-text TRL extraction in this lightweight pass)"
+  },
+  "derived": {
+    "indian_source_bonus": 0,
+    "recency_score": 0.9,
+    "citation_count": 6
+  },
+  "embedding_text": "Enabling 95 % bifaciality of efficient TOPCon solar cells by rear-side selective sunken pyramid structure and zebra-crossing passivation contact. Cell-level optimisation for bifacial gain beyond 90%",
+  "paper_embeddings": {
+    "_status": "DEFERRED",
+    "model": "BAAI/bge-base-en-v1.5",
+    "dim": 768
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "seed_ref": "BL-09",
+  "metadata_schema_version": "1.0",
+  "ingested_at": "2026-06-06T00:00:00Z",
+  "resolution": {
+    "method": "title_search",
+    "verify": {
+      "title_similarity": 0.99,
+      "year_doc": 2025,
+      "year_openalex": 2025,
+      "flag": "ok"
+    }
+  },
+  "core": {
+    "title": "Pilot-Scale Carbon Capture in a Heat-Pipe-Intercooled Rotating Packed Bed",
+    "title_source": "openalex",
+    "abstract": "The equipment size and energy penalties of carbon-capture processes can be reduced substantially by using rotating packed beds (RPB) and high-concentration amines. However, intercooling the absorption process is necessary to remove the heat-of-reaction that would otherwise halt CO2 absorption in full-scale processes. This paper presents pilot-scale experimental results in carbon capture, using a novel intercooled RPB rotor design that incorporates thermosyphon heat pipes and a variable-area packing. Tests outline the performance benefits of the design and present a correlation for the effects of rotation speed and liquid flow on overall gas-side mass-transfer coefficient (Kgae). The results show that Kgae is improved by 130% in comparison to previous conventional RPB rotor designs, providing an experimental demonstration of the benefits of intercooled RPBs in intensified carbon-capture processes.",
+    "abstract_source": "openalex",
+    "published_year": 2025,
+    "venue": "Industrial & Engineering Chemistry Research",
+    "doi": "10.1021/acs.iecr.4c01614",
+    "citation_count": 5,
+    "is_open_access": true,
+    "authors": [
+      {
+        "name": "James Hendry",
+        "orcid": "https://orcid.org/0000-0002-3024-0676",
+        "institution": "Newcastle University",
+        "country": "GB"
+      },
+      {
+        "name": "Jonathan G.M. Lee",
+        "orcid": "https://orcid.org/0000-0002-2539-5235",
+        "institution": "Newcastle University",
+        "country": "GB"
+      }
+    ]
+  },
+  "research_domain": {
+    "primary_domain": "buildings_infrastructure",
+    "sub_domain": "carbon_capture_cement",
+    "problem_statement": "Novel intercooled RPB; 10× size reduction over conventional",
+    "_source": "mapping_doc"
+  },
+  "commercialization": {
+    "maps_to_companies": [
+      "Carbon Clean",
+      "UltraTech"
+    ],
+    "trl_level": null,
+    "_trl_note": "needs review (no full-text TRL extraction in this lightweight pass)"
+  },
+  "derived": {
+    "indian_source_bonus": 0,
+    "recency_score": 0.9,
+    "citation_count": 5
+  },
+  "embedding_text": "The equipment size and energy penalties of carbon-capture processes can be reduced substantially by using rotating packed beds (RPB) and high-concentration amines. However, intercooling the absorption process is necessary to remove the heat-of-reaction that would otherwise halt CO2 absorption in full-scale processes. This paper presents pilot-scale experimental results in carbon capture, using a novel intercooled RPB rotor design that incorporates thermosyphon heat pipes and a variable-area packing. Tests outline the performance benefits of the design and present a correlation for the effects of rotation speed and liquid flow on overall gas-side mass-transfer coefficient (Kgae). The results show that Kgae is improved by 130% in comparison to previous conventional RPB rotor designs, providing an experimental demonstration of the benefits of intercooled RPBs in intensified carbon-capture processes.",
+  "paper_embeddings": {
+    "_status": "DEFERRED",
+    "model": "BAAI/bge-base-en-v1.5",
+    "dim": 768
+  }
+}

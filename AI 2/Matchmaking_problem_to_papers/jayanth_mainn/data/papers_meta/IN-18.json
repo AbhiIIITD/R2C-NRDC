@@ -1,0 +1,70 @@
+{
+  "seed_ref": "IN-18",
+  "metadata_schema_version": "1.0",
+  "ingested_at": "2026-06-06T00:00:00Z",
+  "resolution": {
+    "method": "doi",
+    "verify": {
+      "title_similarity": 0.8,
+      "year_doc": 2024,
+      "year_openalex": 2024,
+      "flag": "ok"
+    }
+  },
+  "core": {
+    "title": "WS<sub>2</sub>-Graphene van der Waals Heterostructure as Promising Anode Material for Lithium-Ion Batteries: A First-Principles Approach",
+    "title_source": "openalex",
+    "abstract": "In this work, we report the results of density functional theory (DFT) calculations on a van der Waals (VdW) heterostructure formed by vertically stacking single-layers of tungsten disulfide and graphene (WS2/graphene) for use as an anode material in lithium-ion batteries (LIBs). The electronic properties of the heterostructure reveal that the graphene layer improves the electronic conductivity of this hybrid system. Phonon calculations demonstrate that the WS2/graphene heterostructure is dynamically stable. Charge transfer from Li to the WS2/graphene heterostructure further enhances its metallic character. Moreover, the Li binding energy in this heterostructure is higher than that of the Li metal’s cohesive energy, significantly reducing the possibility of Li-dendrite formation in this WS2/graphene electrode. Ab initio molecular dynamics (AIMD) simulations of the lithiated WS2/graphene heterostructure show the system’s thermal stability. Additionally, we explore the effect of heteroatom doping (boron (B) and nitrogen (N)) on the graphene layer of the heterostructure and its impact on Li-adsorption ability. The results suggest that B-doping strengthens the Li-adsorption energy. Notably, the calculated open-circuit voltage (OCV) and Li-diffusion energy barrier further support the potential of this heterostructure as a promising anode material for LIBs.",
+    "abstract_source": "openalex",
+    "published_year": 2024,
+    "venue": "ACS Omega",
+    "doi": "10.1021/acsomega.3c06559",
+    "citation_count": 28,
+    "is_open_access": true,
+    "authors": [
+      {
+        "name": "T. K. Bijoy",
+        "orcid": null,
+        "institution": "Indo Korea Science and Technology",
+        "country": "IN"
+      },
+      {
+        "name": "Sooryadas Sudhakaran",
+        "orcid": "https://orcid.org/0009-0009-6354-9694",
+        "institution": "National Institute of Technology Calicut",
+        "country": "IN"
+      },
+      {
+        "name": "Seung‐Cheol Lee",
+        "orcid": "https://orcid.org/0000-0002-9741-6955",
+        "institution": "Indo Korea Science and Technology",
+        "country": "IN"
+      }
+    ]
+  },
+  "research_domain": {
+    "primary_domain": "industrial_production",
+    "sub_domain": "process_eng_rpb_materials",
+    "problem_statement": "Novel anode material for next-gen Li-ion — adjacent to Log9's graphene strategy",
+    "_source": "mapping_doc"
+  },
+  "commercialization": {
+    "maps_to_companies": [
+      "Log9 Materials",
+      "Bajaj Auto"
+    ],
+    "trl_level": null,
+    "_trl_note": "needs review (no full-text TRL extraction in this lightweight pass)"
+  },
+  "derived": {
+    "indian_source_bonus": 1,
+    "recency_score": 0.8,
+    "citation_count": 28
+  },
+  "embedding_text": "In this work, we report the results of density functional theory (DFT) calculations on a van der Waals (VdW) heterostructure formed by vertically stacking single-layers of tungsten disulfide and graphene (WS2/graphene) for use as an anode material in lithium-ion batteries (LIBs). The electronic properties of the heterostructure reveal that the graphene layer improves the electronic conductivity of this hybrid system. Phonon calculations demonstrate that the WS2/graphene heterostructure is dynamically stable. Charge transfer from Li to the WS2/graphene heterostructure further enhances its metallic character. Moreover, the Li binding energy in this heterostructure is higher than that of the Li metal’s cohesive energy, significantly reducing the possibility of Li-dendrite formation in this WS2/graphene electrode. Ab initio molecular dynamics (AIMD) simulations of the lithiated WS2/graphene heterostructure show the system’s thermal stability. Additionally, we explore the effect of heteroatom doping (boron (B) and nitrogen (N)) on the graphene layer of the heterostructure and its impact on Li-adsorption ability. The results suggest that B-doping strengthens the Li-adsorption energy. Notably, the calculated open-circuit voltage (OCV) and Li-diffusion energy barrier further support the potential of this heterostructure as a promising anode material for LIBs.",
+  "paper_embeddings": {
+    "_status": "DEFERRED",
+    "model": "BAAI/bge-base-en-v1.5",
+    "dim": 768
+  }
+}

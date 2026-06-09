@@ -1,0 +1,69 @@
+{
+  "seed_ref": "IN-19",
+  "metadata_schema_version": "1.0",
+  "ingested_at": "2026-06-06T00:00:00Z",
+  "resolution": {
+    "method": "doi",
+    "verify": {
+      "title_similarity": 0.8,
+      "year_doc": 2022,
+      "year_openalex": 2022,
+      "flag": "ok"
+    }
+  },
+  "core": {
+    "title": "Graphene/Graphene Derivatives from Coal, Biomass, and Wastes: Synthesis, Energy Applications, and Perspectives",
+    "title_source": "openalex",
+    "abstract": "In the last decade, there has been a phenomenal development in the commercially viable, large-scale synthesis of graphene, a multifunctional advanced carbon nanomaterial, which is gaining popularity for its diverse range of applications, especially in energy storage, composites, sensors, and membranes. With the increasing demand, a large number of worldwide research efforts have been employed, resulting in a series of enormous breakthroughs both in its fundamental science and innovative applications. The earlier reviews on graphene show that the increase in the production yield is often accompanied by the generation of substandard graphene quality, making the process unsuited for commercialization. However, recent studies on graphene synthesis have shown the use of naturally available carbonaceous sources for the production of low-cost graphene derivatives is becoming an emerging trend in graphene research. In this present review, the most recent advances in the synthesis of high-quality graphene from solid carbon precursors, particularly abundant coal, biomass, and waste materials, have been extensively discussed along with their potential scalability for commercial production. The quality and yield of these graphene derivatives synthesized through different methods like chemical vapor deposition, exfoliation, laser-induced, microwave irradiation, and chemical methods are also examined to determine the best-suited synthetic methodology from the available literature. The utilization of graphene derivatives in the energy sector was further discussed, particularly in the emerging field of energy storage. Finally, the challenges and future prospects of this study are highlighted to have a better understanding of the current graphene production scenario, with an insight into the most efficient method for synthesizing high-purity low-cost graphene and their potential for scale-up and energy applications in the distant future.",
+    "abstract_source": "openalex",
+    "published_year": 2022,
+    "venue": "Energy & Fuels",
+    "doi": "10.1021/acs.energyfuels.2c00976",
+    "citation_count": 67,
+    "is_open_access": false,
+    "authors": [
+      {
+        "name": "Joyshil Tamuly",
+        "orcid": "https://orcid.org/0000-0002-1187-4518",
+        "institution": "North East Institute of Science and Technology",
+        "country": "IN"
+      },
+      {
+        "name": "Dhrubajyoti Bhattacharjya",
+        "orcid": "https://orcid.org/0000-0001-7884-8130",
+        "institution": "North East Institute of Science and Technology",
+        "country": "IN"
+      },
+      {
+        "name": "Binoy K. Saikia",
+        "orcid": "https://orcid.org/0000-0002-3382-6218",
+        "institution": "North East Institute of Science and Technology",
+        "country": "IN"
+      }
+    ]
+  },
+  "research_domain": {
+    "primary_domain": "industrial_production",
+    "sub_domain": "process_eng_rpb_materials",
+    "problem_statement": "Coal-derived graphene synthesis — applicable to Log9's process IP space",
+    "_source": "mapping_doc"
+  },
+  "commercialization": {
+    "maps_to_companies": [
+      "Log9 Materials"
+    ],
+    "trl_level": null,
+    "_trl_note": "needs review (no full-text TRL extraction in this lightweight pass)"
+  },
+  "derived": {
+    "indian_source_bonus": 1,
+    "recency_score": 0.6,
+    "citation_count": 67
+  },
+  "embedding_text": "In the last decade, there has been a phenomenal development in the commercially viable, large-scale synthesis of graphene, a multifunctional advanced carbon nanomaterial, which is gaining popularity for its diverse range of applications, especially in energy storage, composites, sensors, and membranes. With the increasing demand, a large number of worldwide research efforts have been employed, resulting in a series of enormous breakthroughs both in its fundamental science and innovative applications. The earlier reviews on graphene show that the increase in the production yield is often accompanied by the generation of substandard graphene quality, making the process unsuited for commercialization. However, recent studies on graphene synthesis have shown the use of naturally available carbonaceous sources for the production of low-cost graphene derivatives is becoming an emerging trend in graphene research. In this present review, the most recent advances in the synthesis of high-quality graphene from solid carbon precursors, particularly abundant coal, biomass, and waste materials, have been extensively discussed along with their potential scalability for commercial production. The quality and yield of these graphene derivatives synthesized through different methods like chemical vapor deposition, exfoliation, laser-induced, microwave irradiation, and chemical methods are also examined to determine the best-suited synthetic methodology from the available literature. The utilization of graphene derivatives in the energy sector was further discussed, particularly in the emerging field of energy storage. Finally, the challenges and future prospects of this study are highlighted to have a better understanding of the current graphene production scenario, with an insight into the most efficient method for synthesizing high-purity low-cost graphene and their potential for scale-up and energy applications in the distant future.",
+  "paper_embeddings": {
+    "_status": "DEFERRED",
+    "model": "BAAI/bge-base-en-v1.5",
+    "dim": 768
+  }
+}

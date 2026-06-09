@@ -1,0 +1,82 @@
+{
+  "seed_ref": "BL-03",
+  "metadata_schema_version": "1.0",
+  "ingested_at": "2026-06-06T00:00:00Z",
+  "resolution": {
+    "method": "doi",
+    "verify": {
+      "title_similarity": 0.76,
+      "year_doc": 2023,
+      "year_openalex": 2024,
+      "flag": "ok"
+    }
+  },
+  "core": {
+    "title": "Utilization of GGBS, Fly Ash, and Recycled Aggregates for Sustainable Geopolymer Concrete: A Carbon Reduction Approach",
+    "title_source": "openalex",
+    "abstract": null,
+    "abstract_source": null,
+    "published_year": 2024,
+    "venue": "Lecture notes in civil engineering",
+    "doi": "10.1007/978-3-031-63280-8_19",
+    "citation_count": 1,
+    "is_open_access": false,
+    "authors": [
+      {
+        "name": "Sabbir Ahamed",
+        "orcid": null,
+        "institution": "State University of Bangladesh",
+        "country": "BD"
+      },
+      {
+        "name": "Md. Hafijul Islam",
+        "orcid": null,
+        "institution": "State University of Bangladesh",
+        "country": "BD"
+      },
+      {
+        "name": "Fahmida Rafiq",
+        "orcid": null,
+        "institution": "State University of Bangladesh",
+        "country": "BD"
+      },
+      {
+        "name": "M. N. Hossain",
+        "orcid": "https://orcid.org/0000-0001-8849-6167",
+        "institution": "Chittagong University of Engineering & Technology",
+        "country": "BD"
+      },
+      {
+        "name": "M. Bodiul Islam",
+        "orcid": "https://orcid.org/0000-0001-5829-4580",
+        "institution": "Chittagong University of Engineering & Technology",
+        "country": "BD"
+      }
+    ]
+  },
+  "research_domain": {
+    "primary_domain": "buildings_infrastructure",
+    "sub_domain": "geopolymer_cement",
+    "problem_statement": "Membrane curing + ambient curing comparative compressive strength",
+    "_source": "mapping_doc"
+  },
+  "commercialization": {
+    "maps_to_companies": [
+      "UltraTech",
+      "CarbonStrong"
+    ],
+    "trl_level": null,
+    "_trl_note": "needs review (no full-text TRL extraction in this lightweight pass)"
+  },
+  "derived": {
+    "indian_source_bonus": 0,
+    "recency_score": 0.8,
+    "citation_count": 1
+  },
+  "embedding_text": "Utilization of GGBS, Fly Ash, and Recycled Aggregates for Sustainable Geopolymer Concrete: A Carbon Reduction Approach. Membrane curing + ambient curing comparative compressive strength",
+  "paper_embeddings": {
+    "_status": "DEFERRED",
+    "model": "BAAI/bge-base-en-v1.5",
+    "dim": 768
+  }
+}

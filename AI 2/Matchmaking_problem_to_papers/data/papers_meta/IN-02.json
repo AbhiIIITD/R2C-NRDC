@@ -1,0 +1,81 @@
+{
+  "seed_ref": "IN-02",
+  "metadata_schema_version": "1.0",
+  "ingested_at": "2026-06-06T00:00:00Z",
+  "resolution": {
+    "method": "doi",
+    "verify": {
+      "title_similarity": 0.97,
+      "year_doc": 2024,
+      "year_openalex": 2025,
+      "flag": "ok"
+    }
+  },
+  "core": {
+    "title": "The Role of Hydrogen in Decarbonizing U.S. Iron and Steel Production",
+    "title_source": "openalex",
+    "abstract": "This study investigates the role of hydrogen as a decarbonization strategy for the iron and steel industry in the United States (U.S.) in the presence of an economy-wide net zero CO2 emissions target. Our analysis shows that hydrogen-based direct reduced iron (H2DRI) provides a cost-effective decarbonization strategy only under a relatively narrow set of conditions. Using today’s best estimates of the capital and variable costs of alternative decarbonized iron and steelmaking technologies in a U.S. economy-wide simulation framework, we find that carbon capture technologies can achieve comparable decarbonization levels by 2050 and greater cumulative emissions reductions from iron and steel production at a lower cost. Simulations suggest hydrogen contributes to economy-wide decarbonization, but H2DRI is not the preferred use case for hydrogen in most scenarios. The average abatement cost for U.S. iron and steel production could be as low as $70/tonne CO2 with existing technologies plus carbon capture, while the cost with H2DRI rises to over $500/tonne CO2. We also find that IRA tax credits are insufficient to spur hydrogen use in steelmaking in our model and that a green steel production tax credit would need to be as high as $300/tonne steel to lead to sustained H2DRI use.",
+    "abstract_source": "openalex",
+    "published_year": 2025,
+    "venue": "Environmental Science & Technology",
+    "doi": "10.1021/acs.est.4c05756",
+    "citation_count": 18,
+    "is_open_access": true,
+    "authors": [
+      {
+        "name": "Katherine Jordan",
+        "orcid": "https://orcid.org/0000-0001-5170-7821",
+        "institution": "Carnegie Mellon University",
+        "country": "US"
+      },
+      {
+        "name": "Paulina Jaramillo",
+        "orcid": "https://orcid.org/0000-0002-4214-1106",
+        "institution": "Carnegie Mellon University",
+        "country": "US"
+      },
+      {
+        "name": "Valerie J. Karplus",
+        "orcid": "https://orcid.org/0000-0001-5493-9150",
+        "institution": "Carnegie Mellon University",
+        "country": "US"
+      },
+      {
+        "name": "P. J. Adams",
+        "orcid": "https://orcid.org/0000-0003-0041-058X",
+        "institution": "Carnegie Mellon University",
+        "country": "US"
+      },
+      {
+        "name": "Nicholas Z. Muller",
+        "orcid": "https://orcid.org/0000-0003-1712-6526",
+        "institution": "National Bureau of Economic Research",
+        "country": "US"
+      }
+    ]
+  },
+  "research_domain": {
+    "primary_domain": "industrial_production",
+    "sub_domain": "green_steel_h2",
+    "problem_statement": "H2-DRI-EAF vs DRI+CC-EAF cost comparison: 79% vs 7% premium",
+    "_source": "mapping_doc"
+  },
+  "commercialization": {
+    "maps_to_companies": [
+      "Tata Steel"
+    ],
+    "trl_level": null,
+    "_trl_note": "needs review (no full-text TRL extraction in this lightweight pass)"
+  },
+  "derived": {
+    "indian_source_bonus": 0,
+    "recency_score": 0.9,
+    "citation_count": 18
+  },
+  "embedding_text": "This study investigates the role of hydrogen as a decarbonization strategy for the iron and steel industry in the United States (U.S.) in the presence of an economy-wide net zero CO2 emissions target. Our analysis shows that hydrogen-based direct reduced iron (H2DRI) provides a cost-effective decarbonization strategy only under a relatively narrow set of conditions. Using today’s best estimates of the capital and variable costs of alternative decarbonized iron and steelmaking technologies in a U.S. economy-wide simulation framework, we find that carbon capture technologies can achieve comparable decarbonization levels by 2050 and greater cumulative emissions reductions from iron and steel production at a lower cost. Simulations suggest hydrogen contributes to economy-wide decarbonization, but H2DRI is not the preferred use case for hydrogen in most scenarios. The average abatement cost for U.S. iron and steel production could be as low as $70/tonne CO2 with existing technologies plus carbon capture, while the cost with H2DRI rises to over $500/tonne CO2. We also find that IRA tax credits are insufficient to spur hydrogen use in steelmaking in our model and that a green steel production tax credit would need to be as high as $300/tonne steel to lead to sustained H2DRI use.",
+  "paper_embeddings": {
+    "_status": "DEFERRED",
+    "model": "BAAI/bge-base-en-v1.5",
+    "dim": 768
+  }
+}

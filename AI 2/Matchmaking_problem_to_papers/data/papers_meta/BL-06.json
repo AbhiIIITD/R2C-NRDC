@@ -1,0 +1,46 @@
+{
+  "seed_ref": "BL-06",
+  "metadata_schema_version": "1.0",
+  "ingested_at": "2026-06-06T00:00:00Z",
+  "resolution": {
+    "method": "unresolved",
+    "verify": null
+  },
+  "core": {
+    "title": "Experimental Analysis of GGBS and Fly Ash in Concrete (M50 grade flexural strength)",
+    "title_source": "mapping_doc",
+    "abstract": null,
+    "abstract_source": null,
+    "published_year": 2024,
+    "venue": null,
+    "doi": null,
+    "citation_count": null,
+    "is_open_access": null,
+    "authors": null
+  },
+  "research_domain": {
+    "primary_domain": "buildings_infrastructure",
+    "sub_domain": "geopolymer_cement",
+    "problem_statement": "M50 GPC achieves 21 MPa flexural at 7 days — structural feasibility",
+    "_source": "mapping_doc"
+  },
+  "commercialization": {
+    "maps_to_companies": [
+      "UltraTech",
+      "CarbonStrong"
+    ],
+    "trl_level": null,
+    "_trl_note": "needs review (no full-text TRL extraction in this lightweight pass)"
+  },
+  "derived": {
+    "indian_source_bonus": 0,
+    "recency_score": 0.8,
+    "citation_count": null
+  },
+  "embedding_text": "Experimental Analysis of GGBS and Fly Ash in Concrete (M50 grade flexural strength). M50 GPC achieves 21 MPa flexural at 7 days — structural feasibility",
+  "paper_embeddings": {
+    "_status": "DEFERRED",
+    "model": "BAAI/bge-base-en-v1.5",
+    "dim": 768
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "seed_ref": "BL-20",
+  "metadata_schema_version": "1.0",
+  "ingested_at": "2026-06-06T00:00:00Z",
+  "resolution": {
+    "method": "doi",
+    "verify": {
+      "title_similarity": 0.75,
+      "year_doc": 2023,
+      "year_openalex": 2023,
+      "flag": "ok"
+    }
+  },
+  "core": {
+    "title": "Prediction of the compressive strength of Flyash and GGBS incorporated geopolymer concrete using artificial neural network",
+    "title_source": "openalex",
+    "abstract": null,
+    "abstract_source": null,
+    "published_year": 2023,
+    "venue": "Asian Journal of Civil Engineering",
+    "doi": "10.1007/s42107-023-00678-2",
+    "citation_count": 45,
+    "is_open_access": false,
+    "authors": [
+      {
+        "name": "Ujjwal Sharma",
+        "orcid": "https://orcid.org/0000-0002-4605-5571",
+        "institution": "GLA University",
+        "country": "IN"
+      },
+      {
+        "name": "Nakul Gupta",
+        "orcid": "https://orcid.org/0000-0001-9525-8482",
+        "institution": "GLA University",
+        "country": "IN"
+      },
+      {
+        "name": "Manvendra Verma",
+        "orcid": "https://orcid.org/0000-0002-0840-841X",
+        "institution": "GLA University",
+        "country": "IN"
+      }
+    ]
+  },
+  "research_domain": {
+    "primary_domain": "buildings_infrastructure",
+    "sub_domain": "building_tech_lca",
+    "problem_statement": "ANN-based prediction model — feeds into a design-time tool",
+    "_source": "mapping_doc"
+  },
+  "commercialization": {
+    "maps_to_companies": [
+      "UltraTech",
+      "CarbonStrong"
+    ],
+    "trl_level": null,
+    "_trl_note": "needs review (no full-text TRL extraction in this lightweight pass)"
+  },
+  "derived": {
+    "indian_source_bonus": 1,
+    "recency_score": 0.7,
+    "citation_count": 45
+  },
+  "embedding_text": "Prediction of the compressive strength of Flyash and GGBS incorporated geopolymer concrete using artificial neural network. ANN-based prediction model — feeds into a design-time tool",
+  "paper_embeddings": {
+    "_status": "DEFERRED",
+    "model": "BAAI/bge-base-en-v1.5",
+    "dim": 768
+  }
+}

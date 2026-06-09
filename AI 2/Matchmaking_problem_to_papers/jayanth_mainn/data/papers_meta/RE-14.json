@@ -1,0 +1,47 @@
+{
+  "seed_ref": "RE-14",
+  "metadata_schema_version": "1.0",
+  "ingested_at": "2026-06-06T00:00:00Z",
+  "resolution": {
+    "method": "unresolved",
+    "verify": null
+  },
+  "core": {
+    "title": "IIT Madras Seawater Electrolyzer — Low-Cost Generation of Clean Hydrogen Fuel",
+    "title_source": "mapping_doc",
+    "abstract": null,
+    "abstract_source": null,
+    "published_year": 2025,
+    "venue": null,
+    "doi": null,
+    "citation_count": null,
+    "is_open_access": null,
+    "authors": null
+  },
+  "research_domain": {
+    "primary_domain": "renewable_energy",
+    "sub_domain": "green_hydrogen_electrolysers",
+    "problem_statement": "Seawater electrolysis without freshwater dependence; major cost reduction lever",
+    "_source": "mapping_doc"
+  },
+  "commercialization": {
+    "maps_to_companies": [
+      "Ohmium",
+      "Newtrace",
+      "Tata Steel"
+    ],
+    "trl_level": null,
+    "_trl_note": "needs review (no full-text TRL extraction in this lightweight pass)"
+  },
+  "derived": {
+    "indian_source_bonus": 0,
+    "recency_score": 0.9,
+    "citation_count": null
+  },
+  "embedding_text": "IIT Madras Seawater Electrolyzer — Low-Cost Generation of Clean Hydrogen Fuel. Seawater electrolysis without freshwater dependence; major cost reduction lever",
+  "paper_embeddings": {
+    "_status": "DEFERRED",
+    "model": "BAAI/bge-base-en-v1.5",
+    "dim": 768
+  }
+}

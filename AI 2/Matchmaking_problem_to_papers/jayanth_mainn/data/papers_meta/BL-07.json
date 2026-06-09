@@ -1,0 +1,64 @@
+{
+  "seed_ref": "BL-07",
+  "metadata_schema_version": "1.0",
+  "ingested_at": "2026-06-06T00:00:00Z",
+  "resolution": {
+    "method": "doi",
+    "verify": {
+      "title_similarity": 0.97,
+      "year_doc": 2025,
+      "year_openalex": 2025,
+      "flag": "ok"
+    }
+  },
+  "core": {
+    "title": "Alkali Cation Effects on Compressive Strength of Metakaolin–Low-Calcium Fly Ash-Based Geopolymers",
+    "title_source": "openalex",
+    "abstract": "Considering the current requirement for high temperatures and the significant energy consumption in the preparation of geopolymer-based cements, this paper presents a study on the compressive strength of metakaolin-based geopolymers containing various low-calcium fly ash admixtures, prepared at room temperature (25 ± 2 °C). The physical properties and microstructure of the geopolymers were characterized using X-ray diffraction (XRD), Fourier transform infrared spectroscopy (FTIR), scanning electron microscopy (SEM), and energy dispersive X-ray spectroscopy (EDS). The type of alkaline cations, phase transformation, evolution of characteristic functional groups, and hydration characteristics of the microstructures were analyzed, and the hydration mechanism is discussed. The experimental results indicated that the fly ash content had a more significant impact on compressive strength than the alkaline cation type (Na+/K+). The optimal formulation (20% fly ash with 20% KOH activator) reached a compressive strength of 76.70 MPa at 28 days, which was around 6% higher than that of the NaOH-activated counterpart (72.34 MPa). Crystalline phase analysis in the transformation of mullite and microstructure analysis indicated that the increase in compressive strength could be attributed to the effective filling of the matrix interface by chemically inert fillers and the dense N-A-S-H and C-(A)-S-H multi-dimensional gel structures. These experiments prove the feasibility of using fly ash and metakaolin to prepare geopolymer materials with high compressive strength at room temperature.",
+    "abstract_source": "openalex",
+    "published_year": 2025,
+    "venue": "Materials",
+    "doi": "10.3390/ma18174080",
+    "citation_count": 3,
+    "is_open_access": true,
+    "authors": [
+      {
+        "name": "Yan Li",
+        "orcid": "https://orcid.org/0000-0001-8141-9732",
+        "institution": "Metallurgical Corporation of China (China)",
+        "country": "CN"
+      },
+      {
+        "name": "Hongguang Wang",
+        "orcid": "https://orcid.org/0000-0002-7620-614X",
+        "institution": "Harbin Engineering University",
+        "country": "CN"
+      }
+    ]
+  },
+  "research_domain": {
+    "primary_domain": "buildings_infrastructure",
+    "sub_domain": "geopolymer_cement",
+    "problem_statement": "Cation choice (Na vs K) impact on room-temperature curing strength",
+    "_source": "mapping_doc"
+  },
+  "commercialization": {
+    "maps_to_companies": [
+      "UltraTech",
+      "CarbonStrong"
+    ],
+    "trl_level": null,
+    "_trl_note": "needs review (no full-text TRL extraction in this lightweight pass)"
+  },
+  "derived": {
+    "indian_source_bonus": 0,
+    "recency_score": 0.9,
+    "citation_count": 3
+  },
+  "embedding_text": "Considering the current requirement for high temperatures and the significant energy consumption in the preparation of geopolymer-based cements, this paper presents a study on the compressive strength of metakaolin-based geopolymers containing various low-calcium fly ash admixtures, prepared at room temperature (25 ± 2 °C). The physical properties and microstructure of the geopolymers were characterized using X-ray diffraction (XRD), Fourier transform infrared spectroscopy (FTIR), scanning electron microscopy (SEM), and energy dispersive X-ray spectroscopy (EDS). The type of alkaline cations, phase transformation, evolution of characteristic functional groups, and hydration characteristics of the microstructures were analyzed, and the hydration mechanism is discussed. The experimental results indicated that the fly ash content had a more significant impact on compressive strength than the alkaline cation type (Na+/K+). The optimal formulation (20% fly ash with 20% KOH activator) reached a compressive strength of 76.70 MPa at 28 days, which was around 6% higher than that of the NaOH-activated counterpart (72.34 MPa). Crystalline phase analysis in the transformation of mullite and microstructure analysis indicated that the increase in compressive strength could be attributed to the effective filling of the matrix interface by chemically inert fillers and the dense N-A-S-H and C-(A)-S-H multi-dimensional gel structures. These experiments prove the feasibility of using fly ash and metakaolin to prepare geopolymer materials with high compressive strength at room temperature.",
+  "paper_embeddings": {
+    "_status": "DEFERRED",
+    "model": "BAAI/bge-base-en-v1.5",
+    "dim": 768
+  }
+}

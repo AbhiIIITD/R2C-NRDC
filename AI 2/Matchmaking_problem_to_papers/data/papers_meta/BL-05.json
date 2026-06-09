@@ -1,0 +1,70 @@
+{
+  "seed_ref": "BL-05",
+  "metadata_schema_version": "1.0",
+  "ingested_at": "2026-06-06T00:00:00Z",
+  "resolution": {
+    "method": "doi",
+    "verify": {
+      "title_similarity": 0.81,
+      "year_doc": 2026,
+      "year_openalex": 2026,
+      "flag": "ok"
+    }
+  },
+  "core": {
+    "title": "Explainable machine learning based optimization of strength, durability, and carbon efficiency of fly ash–GGBS geopolymer concrete",
+    "title_source": "openalex",
+    "abstract": null,
+    "abstract_source": null,
+    "published_year": 2026,
+    "venue": "Scientific Reports",
+    "doi": "10.1038/s41598-026-48502-6",
+    "citation_count": 0,
+    "is_open_access": true,
+    "authors": [
+      {
+        "name": "Siva Shanmukha Anjaneya Babu Padavala",
+        "orcid": "https://orcid.org/0000-0002-6405-4097",
+        "institution": "Sri Venkateswara Veterinary University",
+        "country": "IN"
+      },
+      {
+        "name": "Deepak Kothuri",
+        "orcid": null,
+        "institution": "Siddhartha Medical College",
+        "country": "IN"
+      },
+      {
+        "name": "Abraham Mengistu Gashe",
+        "orcid": "https://orcid.org/0009-0005-5810-8393",
+        "institution": "Addis Ababa Science and Technology University",
+        "country": "ET"
+      }
+    ]
+  },
+  "research_domain": {
+    "primary_domain": "buildings_infrastructure",
+    "sub_domain": "geopolymer_cement",
+    "problem_statement": "Integrated LCA + ML for optimal mix at 8–14 M NaOH, 70:30 vs 50:50",
+    "_source": "mapping_doc"
+  },
+  "commercialization": {
+    "maps_to_companies": [
+      "UltraTech",
+      "CarbonStrong"
+    ],
+    "trl_level": null,
+    "_trl_note": "needs review (no full-text TRL extraction in this lightweight pass)"
+  },
+  "derived": {
+    "indian_source_bonus": 1,
+    "recency_score": 1.0,
+    "citation_count": 0
+  },
+  "embedding_text": "Explainable machine learning based optimization of strength, durability, and carbon efficiency of fly ash–GGBS geopolymer concrete. Integrated LCA + ML for optimal mix at 8–14 M NaOH, 70:30 vs 50:50",
+  "paper_embeddings": {
+    "_status": "DEFERRED",
+    "model": "BAAI/bge-base-en-v1.5",
+    "dim": 768
+  }
+}

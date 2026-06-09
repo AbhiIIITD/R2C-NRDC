@@ -1,0 +1,75 @@
+{
+  "seed_ref": "IN-20",
+  "metadata_schema_version": "1.0",
+  "ingested_at": "2026-06-06T00:00:00Z",
+  "resolution": {
+    "method": "doi",
+    "verify": {
+      "title_similarity": 0.96,
+      "year_doc": 2024,
+      "year_openalex": 2023,
+      "flag": "ok"
+    }
+  },
+  "core": {
+    "title": "Biochar: a sustainable and an eco-friendly material for energy storage applications",
+    "title_source": "openalex",
+    "abstract": "ABSTRACTIn the contemporary world, in order to deal with the existing problems of ecological debilitation and global warming and owing to the dire need to fulfill the rising necessities for sustainable energy, biochar could be a promising solution. Attributable to the astounding features of biochar, including higher capacitance (≤1600 F/g) and surface area (≤340 m2/g), greater energy density (≤26 GJ/Ton), and porosity (≤9 µm), they can be utilized in the energy storage domain. This review presents a comprehensive overview of conventional biochar production techniques encompassing pyrolysis and gasification along with an emphasis on biochar and their applications as efficient materials for sustainable energy storage in the near future. The beneficial characteristics of biochar over other carbonaceous substances (activated carbon, graphene) have been highlighted here. The applications of biochar and their composites for use in zinc-air batteries, thermochemical storage, magnetic concentration cells, lithium-ion batteries, green energy storage systems, and supercapacitors are analytically scrutinized in this review. Furthermore, all the challenges associated with the practical utilization of this methodology, with a road map leading to future prospects that can be implemented in the near future for the scalability of these projects have been emphasized here.KEYWORDS: Biocharsustainable energyeco-friendly materialpyrolysisenergy storage deviceslithium-ion batteries AcknowledgementsThe authors would like to thank Dr. C.P. Ramanarayanan, Vice-Chancellor, DIAT (Pune) for the support. The first author acknowledges Dr. Vikrant Gaikwad, HoS School of Chemical Engineering, MIT WPU (Pune). The authors are also thankful to Dr. Amrita Nighojkar, Ms. Niranjana J.P., Mr. Jigar Patadiya, and Ms. Alsha Subash for their unwavering technical support throughout the review.Disclosure statementNo potential conflict of interest was reported by the author(s).Availability of data and materialAll data generated or analyzed during this study are included in the submitted manuscriptConsent for publicationThe authors consent to publish the article upon acceptance.Ethics approvalThe submitted article complies with the ethical guidelines of the journal and does not contain the results of studies involving humans and/or animals.",
+    "abstract_source": "openalex",
+    "published_year": 2023,
+    "venue": "International Journal of Green Energy",
+    "doi": "10.1080/15435075.2023.2259973",
+    "citation_count": 24,
+    "is_open_access": false,
+    "authors": [
+      {
+        "name": "Arsh Kalla",
+        "orcid": null,
+        "institution": "MIT World Peace University",
+        "country": "IN"
+      },
+      {
+        "name": "Neelaambhigai Mayilswamy",
+        "orcid": "https://orcid.org/0000-0002-1861-2326",
+        "institution": "Defence Institute of Advanced Technology",
+        "country": "IN"
+      },
+      {
+        "name": "Balasubramanian Kandasubramanian",
+        "orcid": "https://orcid.org/0000-0003-4257-8807",
+        "institution": "Defence Institute of Advanced Technology",
+        "country": "IN"
+      },
+      {
+        "name": "Pallavi Mahajan- Tatpate",
+        "orcid": null,
+        "institution": "MIT World Peace University",
+        "country": "IN"
+      }
+    ]
+  },
+  "research_domain": {
+    "primary_domain": "industrial_production",
+    "sub_domain": "process_eng_rpb_materials",
+    "problem_statement": "Biochar as anode material — circular biowaste route for batteries",
+    "_source": "mapping_doc"
+  },
+  "commercialization": {
+    "maps_to_companies": [
+      "Log9 Materials"
+    ],
+    "trl_level": null,
+    "_trl_note": "needs review (no full-text TRL extraction in this lightweight pass)"
+  },
+  "derived": {
+    "indian_source_bonus": 1,
+    "recency_score": 0.7,
+    "citation_count": 24
+  },
+  "embedding_text": "ABSTRACTIn the contemporary world, in order to deal with the existing problems of ecological debilitation and global warming and owing to the dire need to fulfill the rising necessities for sustainable energy, biochar could be a promising solution. Attributable to the astounding features of biochar, including higher capacitance (≤1600 F/g) and surface area (≤340 m2/g), greater energy density (≤26 GJ/Ton), and porosity (≤9 µm), they can be utilized in the energy storage domain. This review presents a comprehensive overview of conventional biochar production techniques encompassing pyrolysis and gasification along with an emphasis on biochar and their applications as efficient materials for sustainable energy storage in the near future. The beneficial characteristics of biochar over other carbonaceous substances (activated carbon, graphene) have been highlighted here. The applications of biochar and their composites for use in zinc-air batteries, thermochemical storage, magnetic concentration cells, lithium-ion batteries, green energy storage systems, and supercapacitors are analytically scrutinized in this review. Furthermore, all the challenges associated with the practical utilization of this methodology, with a road map leading to future prospects that can be implemented in the near future for the scalability of these projects have been emphasized here.KEYWORDS: Biocharsustainable energyeco-friendly materialpyrolysisenergy storage deviceslithium-ion batteries AcknowledgementsThe authors would like to thank Dr. C.P. Ramanarayanan, Vice-Chancellor, DIAT (Pune) for the support. The first author acknowledges Dr. Vikrant Gaikwad, HoS School of Chemical Engineering, MIT WPU (Pune). The authors are also thankful to Dr. Amrita Nighojkar, Ms. Niranjana J.P., Mr. Jigar Patadiya, and Ms. Alsha Subash for their unwavering technical support throughout the review.Disclosure statementNo potential conflict of interest was reported by the author(s).Availability of data and materialAll data generated or analyzed during this study are included in the submitted manuscriptConsent for publicationThe authors consent to publish the article upon acceptance.Ethics approvalThe submitted article complies with the ethical guidelines of the journal and does not contain the results of studies involving humans and/or animals.",
+  "paper_embeddings": {
+    "_status": "DEFERRED",
+    "model": "BAAI/bge-base-en-v1.5",
+    "dim": 768
+  }
+}

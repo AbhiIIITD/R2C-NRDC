@@ -1,0 +1,76 @@
+{
+  "seed_ref": "BL-12",
+  "metadata_schema_version": "1.0",
+  "ingested_at": "2026-06-06T00:00:00Z",
+  "resolution": {
+    "method": "title_search",
+    "verify": {
+      "title_similarity": 0.75,
+      "year_doc": 2019,
+      "year_openalex": 2019,
+      "flag": "ok"
+    }
+  },
+  "core": {
+    "title": "Study of the post-combustion CO2 capture process by absorption-regeneration using amine solvents applied to cement plant flue gases with high CO2 contents",
+    "title_source": "openalex",
+    "abstract": null,
+    "abstract_source": null,
+    "published_year": 2019,
+    "venue": "International journal of greenhouse gas control",
+    "doi": "10.1016/j.ijggc.2019.102799",
+    "citation_count": 109,
+    "is_open_access": true,
+    "authors": [
+      {
+        "name": "Sinda Laribi",
+        "orcid": null,
+        "institution": "University of Mons",
+        "country": "BE"
+      },
+      {
+        "name": "Lionel Dubois",
+        "orcid": "https://orcid.org/0000-0003-3336-4938",
+        "institution": "University of Mons",
+        "country": "BE"
+      },
+      {
+        "name": "Guy De Weireld",
+        "orcid": "https://orcid.org/0000-0002-9656-2379",
+        "institution": "University of Mons",
+        "country": "BE"
+      },
+      {
+        "name": "Diane Thomas",
+        "orcid": "https://orcid.org/0000-0002-3998-1972",
+        "institution": "University of Mons",
+        "country": "BE"
+      }
+    ]
+  },
+  "research_domain": {
+    "primary_domain": "buildings_infrastructure",
+    "sub_domain": "carbon_capture_cement",
+    "problem_statement": "High-CO2-content cement flue gas chemistry; design baseline",
+    "_source": "mapping_doc"
+  },
+  "commercialization": {
+    "maps_to_companies": [
+      "Carbon Clean",
+      "UltraTech"
+    ],
+    "trl_level": null,
+    "_trl_note": "needs review (no full-text TRL extraction in this lightweight pass)"
+  },
+  "derived": {
+    "indian_source_bonus": 0,
+    "recency_score": 0.3,
+    "citation_count": 109
+  },
+  "embedding_text": "Study of the post-combustion CO2 capture process by absorption-regeneration using amine solvents applied to cement plant flue gases with high CO2 contents. High-CO2-content cement flue gas chemistry; design baseline",
+  "paper_embeddings": {
+    "_status": "DEFERRED",
+    "model": "BAAI/bge-base-en-v1.5",
+    "dim": 768
+  }
+}

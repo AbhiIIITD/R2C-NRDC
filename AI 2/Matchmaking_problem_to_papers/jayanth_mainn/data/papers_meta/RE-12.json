@@ -1,0 +1,112 @@
+{
+  "seed_ref": "RE-12",
+  "metadata_schema_version": "1.0",
+  "ingested_at": "2026-06-06T00:00:00Z",
+  "resolution": {
+    "method": "title_search",
+    "verify": {
+      "title_similarity": 0.76,
+      "year_doc": 2024,
+      "year_openalex": 2024,
+      "flag": "ok"
+    }
+  },
+  "core": {
+    "title": "Assessing Challenges of 2D-Molybdenum Ditelluride for Efficient Hydrogen Generation in a Full-Scale Proton Exchange Membrane (PEM) Water Electrolyzer",
+    "title_source": "openalex",
+    "abstract": "Proton exchange membrane (PEM) water electrolyzers are critical enablers for sustainable green hydrogen production due to their high efficiency. However, nonplatinum catalysts are rarely evaluated under actual electrolyzer operating conditions, limiting knowledge of their feasibility for H2 production at scale. In this work, metallic 1T′-MoTe2 films were synthesized on carbon cloth supports via chemical vapor deposition and tested as cathodes in PEM electrolysis. Initial three-electrode tests revealed that at 100 mA cm–2, the overpotential of 1T′-MoTe2 approached that of leading 1T′-MoS2 systems, confirming its promise as a hydrogen evolution catalyst. However, when tested in a full-scale PEM electrolyzer, 1T′-MoTe2 delivered only 150 mA cm–2 at 2 V, far below expectations. Postelectrolysis analysis revealed an unexpected passivating tellurium layer, likely inhibiting catalytic sites. While initially promising, the unanticipated passivation caused 1T′-MoTe2 to underperform in practice. This highlights the critical need to evaluate emerging electrolyzer catalysts in PEM electrolyzers, revealing limitations of the idealized three-electrode configuration. Moving forward, validation of model systems in actual electrolyzers will be key to identifying robust nonplatinum catalysts for sustainable green hydrogen production.",
+    "abstract_source": "openalex",
+    "published_year": 2024,
+    "venue": "ACS Sustainable Chemistry & Engineering",
+    "doi": "10.1021/acssuschemeng.3c06616",
+    "citation_count": 11,
+    "is_open_access": true,
+    "authors": [
+      {
+        "name": "Arun Kumar Samuel",
+        "orcid": "https://orcid.org/0000-0003-1338-8166",
+        "institution": "University of Glasgow",
+        "country": "GB"
+      },
+      {
+        "name": "Abdulhai H. Faqeeh",
+        "orcid": "https://orcid.org/0000-0001-5581-9011",
+        "institution": "University of Glasgow",
+        "country": "GB"
+      },
+      {
+        "name": "Weihao Li",
+        "orcid": "https://orcid.org/0000-0002-0388-7490",
+        "institution": "University of Glasgow",
+        "country": "GB"
+      },
+      {
+        "name": "Zeliha Ertekin",
+        "orcid": "https://orcid.org/0000-0001-6106-7987",
+        "institution": "University of Glasgow",
+        "country": "GB"
+      },
+      {
+        "name": "Yuanshen Wang",
+        "orcid": "https://orcid.org/0000-0002-3307-7974",
+        "institution": "University of Glasgow",
+        "country": "GB"
+      },
+      {
+        "name": "Jingyi Zhang",
+        "orcid": "https://orcid.org/0000-0002-9549-1337",
+        "institution": "University of Glasgow",
+        "country": "GB"
+      },
+      {
+        "name": "Nikolaj Gadegaard",
+        "orcid": "https://orcid.org/0000-0002-3396-846X",
+        "institution": "University of Glasgow",
+        "country": "GB"
+      },
+      {
+        "name": "David A. J. Moran",
+        "orcid": "https://orcid.org/0000-0003-4085-7650",
+        "institution": "University of Glasgow",
+        "country": "GB"
+      },
+      {
+        "name": "Mark D. Symes",
+        "orcid": "https://orcid.org/0000-0001-8067-5240",
+        "institution": "University of Glasgow",
+        "country": "GB"
+      },
+      {
+        "name": "Alexey Y. Ganin",
+        "orcid": "https://orcid.org/0000-0002-3754-5819",
+        "institution": "University of Glasgow",
+        "country": "GB"
+      }
+    ]
+  },
+  "research_domain": {
+    "primary_domain": "renewable_energy",
+    "sub_domain": "green_hydrogen_electrolysers",
+    "problem_statement": "Non-Pt catalyst evaluation — passivation lesson critical to commercial deployment",
+    "_source": "mapping_doc"
+  },
+  "commercialization": {
+    "maps_to_companies": [
+      "Ohmium",
+      "Newtrace"
+    ],
+    "trl_level": null,
+    "_trl_note": "needs review (no full-text TRL extraction in this lightweight pass)"
+  },
+  "derived": {
+    "indian_source_bonus": 0,
+    "recency_score": 0.8,
+    "citation_count": 11
+  },
+  "embedding_text": "Proton exchange membrane (PEM) water electrolyzers are critical enablers for sustainable green hydrogen production due to their high efficiency. However, nonplatinum catalysts are rarely evaluated under actual electrolyzer operating conditions, limiting knowledge of their feasibility for H2 production at scale. In this work, metallic 1T′-MoTe2 films were synthesized on carbon cloth supports via chemical vapor deposition and tested as cathodes in PEM electrolysis. Initial three-electrode tests revealed that at 100 mA cm–2, the overpotential of 1T′-MoTe2 approached that of leading 1T′-MoS2 systems, confirming its promise as a hydrogen evolution catalyst. However, when tested in a full-scale PEM electrolyzer, 1T′-MoTe2 delivered only 150 mA cm–2 at 2 V, far below expectations. Postelectrolysis analysis revealed an unexpected passivating tellurium layer, likely inhibiting catalytic sites. While initially promising, the unanticipated passivation caused 1T′-MoTe2 to underperform in practice. This highlights the critical need to evaluate emerging electrolyzer catalysts in PEM electrolyzers, revealing limitations of the idealized three-electrode configuration. Moving forward, validation of model systems in actual electrolyzers will be key to identifying robust nonplatinum catalysts for sustainable green hydrogen production.",
+  "paper_embeddings": {
+    "_status": "DEFERRED",
+    "model": "BAAI/bge-base-en-v1.5",
+    "dim": 768
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "paper_id": "11111111-1111-4111-8111-000000000009",
+  "topic_cluster": "PEM electrolyzer membrane-degradation modelling",
+  "citation_score": null,
+  "influence_score": null,
+  "citation_count": null,
+  "industry_citations": null,
+  "abstract_structure_signal": "problem -> limitation-of-prior-art -> method (PINN) -> results -> contribution",
+  "confidence_score": 0.6,
+  "novelty_score": 0.8,
+  "novelty_basis": "Self-described first application of PINNs to PEM-electrolyzer membrane degradation.",
+  "indian_source_bonus": 0,
+  "wipo_green_eligible": true,
+  "wipo_green_basis": "Hydrogen production / clean-energy enabling technology.",
+  "derived_by": "manual_seed_v1",
+  "derivation_version": "seed-1.0",
+  "computed_at": "2026-06-06T00:00:00Z",
+  "_note": "citation_count / citation_score / influence_score left null - to be populated by the OpenAlex/Crossref citation-refresh job after ingestion (Master Schema A3 / A5)."
+}

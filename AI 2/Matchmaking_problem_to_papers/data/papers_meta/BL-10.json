@@ -1,0 +1,70 @@
+{
+  "seed_ref": "BL-10",
+  "metadata_schema_version": "1.0",
+  "ingested_at": "2026-06-06T00:00:00Z",
+  "resolution": {
+    "method": "doi",
+    "verify": {
+      "title_similarity": 0.7,
+      "year_doc": 2023,
+      "year_openalex": 2023,
+      "flag": "ok"
+    }
+  },
+  "core": {
+    "title": "A review of process intensified CO2 capture in RPB for sustainability and contribution to industrial net zero",
+    "title_source": "openalex",
+    "abstract": "Carbon dioxide (CO 2 ), a significant greenhouse gas released from power plants and industries, substantially impacts climate change; minimizing it and achieving carbon net zero is essential globally. In the direction of reducing CO 2 emissions into the atmosphere, post-combustion carbon capture from large point CO 2 emitters by chemical absorption involving the absorption of this gas in a capturing fluid is a commonly used and efficacious mechanism. Researchers have worked on the process using conventional columns. However, process intensification technology is required because of the high capital cost, the absorption column height, and the traditional columns’ low energy efficiency. Rotating packed bed (RPB) process intensification equipment has been identified as a suitable technology for enhanced carbon capture using an absorbing fluid. This article reviews and discusses recent model developments in the post-combustion CO 2 capture process intensification using rotating packed beds. In the literature, various researchers have developed steady-state mathematical models regarding mass balance and energy balance equations in gas and liquid phases using ordinary or partial differential equations. Due to the circular shape, the equations are considered in a radial direction and have been solved using a numerical approach and simulated using different software platforms, viz. MATLAB, FORTRAN, and gPROMS. A comparison of various correlations has been presented. The models predict the mole fraction of absorbed CO 2 and correspond well with the experimental results. Along with these models, an experimental data review on rotating packed bed is also included in this work.",
+    "abstract_source": "openalex",
+    "published_year": 2023,
+    "venue": "Frontiers in Energy Research",
+    "doi": "10.3389/fenrg.2023.1135188",
+    "citation_count": 45,
+    "is_open_access": true,
+    "authors": [
+      {
+        "name": "Chetna Shukla",
+        "orcid": "https://orcid.org/0000-0002-0377-5878",
+        "institution": "Pandit Deendayal Energy University",
+        "country": "IN"
+      },
+      {
+        "name": "Poonam Mishra",
+        "orcid": "https://orcid.org/0000-0002-1783-7654",
+        "institution": "Pandit Deendayal Energy University",
+        "country": "IN"
+      },
+      {
+        "name": "Sukanta Kumar Dash",
+        "orcid": null,
+        "institution": "Pandit Deendayal Energy University",
+        "country": "IN"
+      }
+    ]
+  },
+  "research_domain": {
+    "primary_domain": "buildings_infrastructure",
+    "sub_domain": "carbon_capture_cement",
+    "problem_statement": "Comparative analysis of MEA, AEEA, PZ, AMP in RPB systems",
+    "_source": "mapping_doc"
+  },
+  "commercialization": {
+    "maps_to_companies": [
+      "Carbon Clean",
+      "UltraTech"
+    ],
+    "trl_level": null,
+    "_trl_note": "needs review (no full-text TRL extraction in this lightweight pass)"
+  },
+  "derived": {
+    "indian_source_bonus": 1,
+    "recency_score": 0.7,
+    "citation_count": 45
+  },
+  "embedding_text": "Carbon dioxide (CO 2 ), a significant greenhouse gas released from power plants and industries, substantially impacts climate change; minimizing it and achieving carbon net zero is essential globally. In the direction of reducing CO 2 emissions into the atmosphere, post-combustion carbon capture from large point CO 2 emitters by chemical absorption involving the absorption of this gas in a capturing fluid is a commonly used and efficacious mechanism. Researchers have worked on the process using conventional columns. However, process intensification technology is required because of the high capital cost, the absorption column height, and the traditional columns’ low energy efficiency. Rotating packed bed (RPB) process intensification equipment has been identified as a suitable technology for enhanced carbon capture using an absorbing fluid. This article reviews and discusses recent model developments in the post-combustion CO 2 capture process intensification using rotating packed beds. In the literature, various researchers have developed steady-state mathematical models regarding mass balance and energy balance equations in gas and liquid phases using ordinary or partial differential equations. Due to the circular shape, the equations are considered in a radial direction and have been solved using a numerical approach and simulated using different software platforms, viz. MATLAB, FORTRAN, and gPROMS. A comparison of various correlations has been presented. The models predict the mole fraction of absorbed CO 2 and correspond well with the experimental results. Along with these models, an experimental data review on rotating packed bed is also included in this work.",
+  "paper_embeddings": {
+    "_status": "DEFERRED",
+    "model": "BAAI/bge-base-en-v1.5",
+    "dim": 768
+  }
+}

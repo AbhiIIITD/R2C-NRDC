@@ -1,0 +1,75 @@
+{
+  "seed_ref": "IN-10",
+  "metadata_schema_version": "1.0",
+  "ingested_at": "2026-06-06T00:00:00Z",
+  "resolution": {
+    "method": "doi",
+    "verify": {
+      "title_similarity": 0.81,
+      "year_doc": 2018,
+      "year_openalex": 2018,
+      "flag": "ok"
+    }
+  },
+  "core": {
+    "title": "Research on Detection and Location of Fluid-Filled Pipeline Leakage Based on Acoustic Emission Technology",
+    "title_source": "openalex",
+    "abstract": "Because of the inconvenience of installing sensors in a buried pipeline, an acoustic emission sensor is initially proposed for collecting and analyzing leakage signals inside the pipeline. Four operating conditions of a fluid-filled pipeline are established and a support vector machine (SVM) method is used to accurately classify the leakage condition of the pipeline. Wavelet decomposition and empirical mode decomposition (EMD) methods are initially used in denoising these signals to address the problem in which original leakage acoustic emission signals contain too much noise. Signals with more information and energy are then reconstructed. The time-delay estimation method is finally used to accurately locate the leakage source in the pipeline. The results show that by using SVM, wavelet decomposition and EMD methods, leakage detection in a liquid-filled pipe with built-in acoustic emission sensors is effective and accurate and provides a reference value for real-time online monitoring of pipeline operational status with broad application prospects.",
+    "abstract_source": "openalex",
+    "published_year": 2018,
+    "venue": "Sensors",
+    "doi": "10.3390/s18113628",
+    "citation_count": 65,
+    "is_open_access": true,
+    "authors": [
+      {
+        "name": "Shengshan Pan",
+        "orcid": "https://orcid.org/0000-0002-1491-241X",
+        "institution": "Dalian University of Technology",
+        "country": "CN"
+      },
+      {
+        "name": "Zhengdan Xu",
+        "orcid": "https://orcid.org/0000-0002-4050-9739",
+        "institution": "Dalian University of Technology",
+        "country": "CN"
+      },
+      {
+        "name": "Dongsheng Li",
+        "orcid": "https://orcid.org/0000-0003-0008-6687",
+        "institution": "Dalian University of Technology",
+        "country": "CN"
+      },
+      {
+        "name": "Dang Lu",
+        "orcid": null,
+        "institution": "Dalian University of Technology",
+        "country": "CN"
+      }
+    ]
+  },
+  "research_domain": {
+    "primary_domain": "industrial_production",
+    "sub_domain": "industrial_iot_predictive_maintenance",
+    "problem_statement": "SVM classifier on AE signals — base method for industrial IoT",
+    "_source": "mapping_doc"
+  },
+  "commercialization": {
+    "maps_to_companies": [
+      "Detect Technologies"
+    ],
+    "trl_level": null,
+    "_trl_note": "needs review (no full-text TRL extraction in this lightweight pass)"
+  },
+  "derived": {
+    "indian_source_bonus": 0,
+    "recency_score": 0.2,
+    "citation_count": 65
+  },
+  "embedding_text": "Because of the inconvenience of installing sensors in a buried pipeline, an acoustic emission sensor is initially proposed for collecting and analyzing leakage signals inside the pipeline. Four operating conditions of a fluid-filled pipeline are established and a support vector machine (SVM) method is used to accurately classify the leakage condition of the pipeline. Wavelet decomposition and empirical mode decomposition (EMD) methods are initially used in denoising these signals to address the problem in which original leakage acoustic emission signals contain too much noise. Signals with more information and energy are then reconstructed. The time-delay estimation method is finally used to accurately locate the leakage source in the pipeline. The results show that by using SVM, wavelet decomposition and EMD methods, leakage detection in a liquid-filled pipe with built-in acoustic emission sensors is effective and accurate and provides a reference value for real-time online monitoring of pipeline operational status with broad application prospects.",
+  "paper_embeddings": {
+    "_status": "DEFERRED",
+    "model": "BAAI/bge-base-en-v1.5",
+    "dim": 768
+  }
+}

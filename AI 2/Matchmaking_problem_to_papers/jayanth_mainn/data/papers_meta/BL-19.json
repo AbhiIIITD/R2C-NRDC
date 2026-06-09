@@ -1,0 +1,77 @@
+{
+  "seed_ref": "BL-19",
+  "metadata_schema_version": "1.0",
+  "ingested_at": "2026-06-06T00:00:00Z",
+  "resolution": {
+    "method": "doi",
+    "verify": {
+      "title_similarity": 0.55,
+      "year_doc": 2025,
+      "year_openalex": 2025,
+      "flag": "CHECK"
+    }
+  },
+  "core": {
+    "title": "Life cycle assessment of SCM substitution in various CDW-based geopolymer concretes and sensitivity analyses on allocation methods",
+    "title_source": "openalex",
+    "abstract": null,
+    "abstract_source": null,
+    "published_year": 2025,
+    "venue": "Waste Management",
+    "doi": "10.1016/j.wasman.2025.115034",
+    "citation_count": 12,
+    "is_open_access": false,
+    "authors": [
+      {
+        "name": "Emircan Özçelikci",
+        "orcid": null,
+        "institution": "Hacettepe University",
+        "country": "TR"
+      },
+      {
+        "name": "Mingming Hu",
+        "orcid": "https://orcid.org/0000-0003-0021-0633",
+        "institution": "Leiden University",
+        "country": "NL"
+      },
+      {
+        "name": "Marc van der Meide",
+        "orcid": "https://orcid.org/0000-0001-6888-316X",
+        "institution": "Leiden University",
+        "country": "NL"
+      },
+      {
+        "name": "Mustafa Şahmaran",
+        "orcid": "https://orcid.org/0000-0002-7549-096X",
+        "institution": "Hacettepe University",
+        "country": "TR"
+      }
+    ]
+  },
+  "research_domain": {
+    "primary_domain": "buildings_infrastructure",
+    "sub_domain": "building_tech_lca",
+    "problem_statement": "LCA of recycled aggregate + GPC for circular construction",
+    "_source": "mapping_doc"
+  },
+  "commercialization": {
+    "maps_to_companies": [
+      "UltraTech",
+      "Mahindra Lifespaces",
+      "CarbonStrong"
+    ],
+    "trl_level": null,
+    "_trl_note": "needs review (no full-text TRL extraction in this lightweight pass)"
+  },
+  "derived": {
+    "indian_source_bonus": 0,
+    "recency_score": 0.9,
+    "citation_count": 12
+  },
+  "embedding_text": "Life cycle assessment of SCM substitution in various CDW-based geopolymer concretes and sensitivity analyses on allocation methods. LCA of recycled aggregate + GPC for circular construction",
+  "paper_embeddings": {
+    "_status": "DEFERRED",
+    "model": "BAAI/bge-base-en-v1.5",
+    "dim": 768
+  }
+}

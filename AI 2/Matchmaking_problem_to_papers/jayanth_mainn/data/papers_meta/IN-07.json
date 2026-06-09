@@ -1,0 +1,69 @@
+{
+  "seed_ref": "IN-07",
+  "metadata_schema_version": "1.0",
+  "ingested_at": "2026-06-06T00:00:00Z",
+  "resolution": {
+    "method": "doi",
+    "verify": {
+      "title_similarity": 0.94,
+      "year_doc": 2022,
+      "year_openalex": 2022,
+      "flag": "ok"
+    }
+  },
+  "core": {
+    "title": "A Hybrid Leak Localization Approach Using Acoustic Emission for Industrial Pipelines",
+    "title_source": "openalex",
+    "abstract": "Acoustic emission techniques are widely used to monitor industrial pipelines. Intelligent methods using acoustic emission signals can analyze acoustic waves and provide important information for leak detection and localization. To address safety and protect the operation of industrial pipelines, a novel hybrid approach based on acoustic emission signals is proposed to achieve reliable leak localization. The proposed method employs minimum entropy deconvolution using the maximization kurtosis norm of acoustic emission signals to remove noise and identify important feature signals. In addition, the damping frequency energy based on the dynamic differential equation with damping term is designed to extract important energy information, and a smooth envelope for the feature signals over time is generated. The zero crossing tracks the arrival time via the envelope changes and identifies the time difference of the acoustic waves from the two channels, each of which is installed at the end of a pipeline. Finally, the time data are combined with the velocity data to localize the leak. The proposed approach has better performance than the existing generalized cross-correlation and empirical mode decomposition combined with the generalized cross-correlation methods, providing proper leak localization in the industrial pipeline.",
+    "abstract_source": "openalex",
+    "published_year": 2022,
+    "venue": "Sensors",
+    "doi": "10.3390/s22103963",
+    "citation_count": 23,
+    "is_open_access": true,
+    "authors": [
+      {
+        "name": "Yangde Gao",
+        "orcid": "https://orcid.org/0000-0001-6546-4920",
+        "institution": "University of Ulsan",
+        "country": "KR"
+      },
+      {
+        "name": "Farzin Piltan",
+        "orcid": "https://orcid.org/0000-0002-8420-9500",
+        "institution": "University of Ulsan",
+        "country": "KR"
+      },
+      {
+        "name": "Jong-Myon Kim",
+        "orcid": "https://orcid.org/0000-0002-5185-1062",
+        "institution": "University of Ulsan",
+        "country": "KR"
+      }
+    ]
+  },
+  "research_domain": {
+    "primary_domain": "industrial_production",
+    "sub_domain": "industrial_iot_predictive_maintenance",
+    "problem_statement": "MED + DFE method for accurate leak source detection in pipelines",
+    "_source": "mapping_doc"
+  },
+  "commercialization": {
+    "maps_to_companies": [
+      "Detect Technologies"
+    ],
+    "trl_level": null,
+    "_trl_note": "needs review (no full-text TRL extraction in this lightweight pass)"
+  },
+  "derived": {
+    "indian_source_bonus": 0,
+    "recency_score": 0.6,
+    "citation_count": 23
+  },
+  "embedding_text": "Acoustic emission techniques are widely used to monitor industrial pipelines. Intelligent methods using acoustic emission signals can analyze acoustic waves and provide important information for leak detection and localization. To address safety and protect the operation of industrial pipelines, a novel hybrid approach based on acoustic emission signals is proposed to achieve reliable leak localization. The proposed method employs minimum entropy deconvolution using the maximization kurtosis norm of acoustic emission signals to remove noise and identify important feature signals. In addition, the damping frequency energy based on the dynamic differential equation with damping term is designed to extract important energy information, and a smooth envelope for the feature signals over time is generated. The zero crossing tracks the arrival time via the envelope changes and identifies the time difference of the acoustic waves from the two channels, each of which is installed at the end of a pipeline. Finally, the time data are combined with the velocity data to localize the leak. The proposed approach has better performance than the existing generalized cross-correlation and empirical mode decomposition combined with the generalized cross-correlation methods, providing proper leak localization in the industrial pipeline.",
+  "paper_embeddings": {
+    "_status": "DEFERRED",
+    "model": "BAAI/bge-base-en-v1.5",
+    "dim": 768
+  }
+}

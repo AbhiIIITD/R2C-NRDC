@@ -1,0 +1,10 @@
+{
+  "paper_id": "11111111-1111-4111-8111-000000000009",
+  "embedding_abstract": null,
+  "embedding_full": null,
+  "embedding_model": null,
+  "embedding_dim": null,
+  "computed_at": null,
+  "_status": "DEFERRED",
+  "_note": "Embeddings intentionally not generated yet (per decision: defer until Supabase/pgvector + final embedding-model choice). To populate after DB setup: (1) embedding_abstract = VECTOR(768) from the abstract using the chosen 768-dim model; (2) embedding_full = VECTOR(1536) built from the concatenated paper_tree_nodes summaries. CRITICAL: papers AND problems must use the SAME model, and vector length must match the column dimension."
+}

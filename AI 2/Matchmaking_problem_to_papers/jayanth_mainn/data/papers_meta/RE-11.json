@@ -1,0 +1,76 @@
+{
+  "seed_ref": "RE-11",
+  "metadata_schema_version": "1.0",
+  "ingested_at": "2026-06-06T00:00:00Z",
+  "resolution": {
+    "method": "title_search",
+    "verify": {
+      "title_similarity": 0.88,
+      "year_doc": 2024,
+      "year_openalex": 2024,
+      "flag": "ok"
+    }
+  },
+  "core": {
+    "title": "Cathode Catalyst Layer Design in PEM Water Electrolysis toward Reduced Pt Loading and Hydrogen Crossover",
+    "title_source": "openalex",
+    "abstract": "Reducing the use of platinum group metals is crucial for the large-scale deployment of proton exchange membrane (PEM) water electrolysis systems. The optimization of the cathode catalyst layer and decrease of the cathode Pt loading are usually overlooked due to the predominant focus of research on the anode. However, given the close relationship between the rate of hydrogen permeation through the membrane in an operating cell and the local hydrogen concentration near the membrane–cathode interface, the structural design of the cathode catalyst layer is considered to be of pivotal importance for reducing H2 crossover, particularly in combination with the use of thin (≲50 μm) membranes. In this study, we have conducted a detailed investigation on the cathode structural parameters, covering the Pt wt % of the Pt/C electrocatalyst, the type of carbon support (Vulcan and high surface area carbon, HSAC), and the ionomer content, with a goal to reduce Pt loading to 0.025 mgPt/cm2 while minimizing the rate of cell hydrogen crossover. We found that the electrochemical performance is mainly influenced by the changes in the interfacial contact resistance due to variations in the cathode thickness. Both the Pt wt % in Pt/C and the ionomer content showed a positive correlation with the measured H2 in O2% in the anode outlet, whereas the Pt loading exhibited an opposite trend. The rate of hydrogen crossover was analyzed in relation to the calculated local volumetric current density within the cathode catalyst layer. Based on the obtained hydrogen mass transfer coefficient, a cathode catalyst layer comprising 40 wt % Pt on HSAC support with an ionomer-to-carbon (I/C) ratio of 0.35 was found to be an optimum configuration for achieving a low Pt loading of 0.025 mgPt/cm2 and a reduced rate of hydrogen crossover.",
+    "abstract_source": "openalex",
+    "published_year": 2024,
+    "venue": "ACS Applied Materials & Interfaces",
+    "doi": "10.1021/acsami.4c01827",
+    "citation_count": 18,
+    "is_open_access": true,
+    "authors": [
+      {
+        "name": "Zheyu Zhang",
+        "orcid": "https://orcid.org/0000-0002-9147-0264",
+        "institution": "Paul Scherrer Institute",
+        "country": "CH"
+      },
+      {
+        "name": "Axelle Baudy",
+        "orcid": null,
+        "institution": "Paul Scherrer Institute",
+        "country": "CH"
+      },
+      {
+        "name": "Andrea Testino",
+        "orcid": "https://orcid.org/0000-0003-3160-1194",
+        "institution": "Paul Scherrer Institute",
+        "country": "CH"
+      },
+      {
+        "name": "Lorenz Gubler",
+        "orcid": "https://orcid.org/0000-0002-8338-6994",
+        "institution": "Paul Scherrer Institute",
+        "country": "CH"
+      }
+    ]
+  },
+  "research_domain": {
+    "primary_domain": "renewable_energy",
+    "sub_domain": "green_hydrogen_electrolysers",
+    "problem_statement": "Cutting Pt loading to 0.025 mg/cm² — direct stack-cost reduction",
+    "_source": "mapping_doc"
+  },
+  "commercialization": {
+    "maps_to_companies": [
+      "Ohmium",
+      "Newtrace"
+    ],
+    "trl_level": null,
+    "_trl_note": "needs review (no full-text TRL extraction in this lightweight pass)"
+  },
+  "derived": {
+    "indian_source_bonus": 0,
+    "recency_score": 0.8,
+    "citation_count": 18
+  },
+  "embedding_text": "Reducing the use of platinum group metals is crucial for the large-scale deployment of proton exchange membrane (PEM) water electrolysis systems. The optimization of the cathode catalyst layer and decrease of the cathode Pt loading are usually overlooked due to the predominant focus of research on the anode. However, given the close relationship between the rate of hydrogen permeation through the membrane in an operating cell and the local hydrogen concentration near the membrane–cathode interface, the structural design of the cathode catalyst layer is considered to be of pivotal importance for reducing H2 crossover, particularly in combination with the use of thin (≲50 μm) membranes. In this study, we have conducted a detailed investigation on the cathode structural parameters, covering the Pt wt % of the Pt/C electrocatalyst, the type of carbon support (Vulcan and high surface area carbon, HSAC), and the ionomer content, with a goal to reduce Pt loading to 0.025 mgPt/cm2 while minimizing the rate of cell hydrogen crossover. We found that the electrochemical performance is mainly influenced by the changes in the interfacial contact resistance due to variations in the cathode thickness. Both the Pt wt % in Pt/C and the ionomer content showed a positive correlation with the measured H2 in O2% in the anode outlet, whereas the Pt loading exhibited an opposite trend. The rate of hydrogen crossover was analyzed in relation to the calculated local volumetric current density within the cathode catalyst layer. Based on the obtained hydrogen mass transfer coefficient, a cathode catalyst layer comprising 40 wt % Pt on HSAC support with an ionomer-to-carbon (I/C) ratio of 0.35 was found to be an optimum configuration for achieving a low Pt loading of 0.025 mgPt/cm2 and a reduced rate of hydrogen crossover.",
+  "paper_embeddings": {
+    "_status": "DEFERRED",
+    "model": "BAAI/bge-base-en-v1.5",
+    "dim": 768
+  }
+}

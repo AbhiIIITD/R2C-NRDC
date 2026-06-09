@@ -1,0 +1,46 @@
+{
+  "seed_ref": "IN-11",
+  "metadata_schema_version": "1.0",
+  "ingested_at": "2026-06-06T00:00:00Z",
+  "resolution": {
+    "method": "unresolved",
+    "verify": null
+  },
+  "core": {
+    "title": "Predictive Maintenance in Industrial IoT: Harnessing the Power of AI",
+    "title_source": "mapping_doc",
+    "abstract": null,
+    "abstract_source": null,
+    "published_year": 2024,
+    "venue": null,
+    "doi": null,
+    "citation_count": null,
+    "is_open_access": null,
+    "authors": null
+  },
+  "research_domain": {
+    "primary_domain": "industrial_production",
+    "sub_domain": "industrial_iot_predictive_maintenance",
+    "problem_statement": "End-to-end IIoT predictive-maintenance reference architecture",
+    "_source": "mapping_doc"
+  },
+  "commercialization": {
+    "maps_to_companies": [
+      "Detect Technologies",
+      "Bajaj Auto"
+    ],
+    "trl_level": null,
+    "_trl_note": "needs review (no full-text TRL extraction in this lightweight pass)"
+  },
+  "derived": {
+    "indian_source_bonus": 0,
+    "recency_score": 0.8,
+    "citation_count": null
+  },
+  "embedding_text": "Predictive Maintenance in Industrial IoT: Harnessing the Power of AI. End-to-end IIoT predictive-maintenance reference architecture",
+  "paper_embeddings": {
+    "_status": "DEFERRED",
+    "model": "BAAI/bge-base-en-v1.5",
+    "dim": 768
+  }
+}

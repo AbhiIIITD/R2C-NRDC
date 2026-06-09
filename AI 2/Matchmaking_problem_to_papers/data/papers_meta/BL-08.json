@@ -1,0 +1,77 @@
+{
+  "seed_ref": "BL-08",
+  "metadata_schema_version": "1.0",
+  "ingested_at": "2026-06-06T00:00:00Z",
+  "resolution": {
+    "method": "doi",
+    "verify": {
+      "title_similarity": 1.0,
+      "year_doc": 2015,
+      "year_openalex": 2015,
+      "flag": "ok"
+    }
+  },
+  "core": {
+    "title": "Geopolymer concrete: A review of some recent developments",
+    "title_source": "openalex",
+    "abstract": null,
+    "abstract_source": null,
+    "published_year": 2015,
+    "venue": "Construction and Building Materials",
+    "doi": "10.1016/j.conbuildmat.2015.03.036",
+    "citation_count": 1441,
+    "is_open_access": false,
+    "authors": [
+      {
+        "name": "Bani Singh",
+        "orcid": "https://orcid.org/0000-0002-8384-9872",
+        "institution": "Central Building Research Institute",
+        "country": "IN"
+      },
+      {
+        "name": "G. Ishwarya",
+        "orcid": null,
+        "institution": "Central Building Research Institute",
+        "country": "IN"
+      },
+      {
+        "name": "M. Gupta",
+        "orcid": "https://orcid.org/0009-0002-1457-6994",
+        "institution": "Central Building Research Institute",
+        "country": "IN"
+      },
+      {
+        "name": "S. K. Bhattacharyya",
+        "orcid": null,
+        "institution": "Central Building Research Institute",
+        "country": "IN"
+      }
+    ]
+  },
+  "research_domain": {
+    "primary_domain": "buildings_infrastructure",
+    "sub_domain": "geopolymer_cement",
+    "problem_statement": "GPC durability vs OPC — silage effluent, sulphate, chloride exposure",
+    "_source": "mapping_doc"
+  },
+  "commercialization": {
+    "maps_to_companies": [
+      "UltraTech",
+      "CarbonStrong",
+      "Mahindra Lifespaces"
+    ],
+    "trl_level": null,
+    "_trl_note": "needs review (no full-text TRL extraction in this lightweight pass)"
+  },
+  "derived": {
+    "indian_source_bonus": 1,
+    "recency_score": 0.0,
+    "citation_count": 1441
+  },
+  "embedding_text": "Geopolymer concrete: A review of some recent developments. GPC durability vs OPC — silage effluent, sulphate, chloride exposure",
+  "paper_embeddings": {
+    "_status": "DEFERRED",
+    "model": "BAAI/bge-base-en-v1.5",
+    "dim": 768
+  }
+}

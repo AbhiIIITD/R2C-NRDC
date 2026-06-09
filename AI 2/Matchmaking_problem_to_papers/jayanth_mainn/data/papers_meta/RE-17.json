@@ -1,0 +1,99 @@
+{
+  "seed_ref": "RE-17",
+  "metadata_schema_version": "1.0",
+  "ingested_at": "2026-06-06T00:00:00Z",
+  "resolution": {
+    "method": "doi",
+    "verify": {
+      "title_similarity": 0.6,
+      "year_doc": 2024,
+      "year_openalex": 2024,
+      "flag": "ok"
+    }
+  },
+  "core": {
+    "title": "Enhanced Electrochemical Performance of Lithium Iron Phosphate Cathodes Using Plasma-Assisted Reduced Graphene Oxide Additives for Lithium-Ion Batteries",
+    "title_source": "openalex",
+    "abstract": "One-dimensional lithium-ion transport channels in lithium iron phosphate (LFP) used as a cathode in lithium-ion batteries (LIBs) result in low electrical conductivity and reduced electrochemical performance. To overcome this limitation, three-dimensional plasma-treated reduced graphene oxide (rGO) was synthesized in this study and used as an additive for LFP in LIB cathodes. Graphene oxide was synthesized using Hummers’ method, followed by mixing with LFP, lyophilization, and plasma treatment to obtain LFP@rGO. The plasma treatment achieved the highest degree of reduction and porosity in rGO, creating ion transfer channels. The structure of LFP@rGO was verified through scanning electron microscopy (SEM) analysis, which demonstrated that incorporating 10.0 wt% of rGO into LFP resulted in successful coverage by the rGO layer, forming LFP@rGO-10. In half-cell tests, LFP@rGO-10 exhibited a specific capacity of 142.7 mAh g−1 at the 1.0 C-rate, which is higher than that of LFP. The full-cell exhibited 86.8% capacity retention after 200 cycles, demonstrating the effectiveness of rGO in enhancing the performance of LFP as an LIB cathode material. The outstanding efficiency and performance of the LFP@rGO-10//graphite cell highlight the promising potential of rGO-modified LFP as a cathode material for high-performance LIBs, providing both increased capacity and stability.",
+    "abstract_source": "openalex",
+    "published_year": 2024,
+    "venue": "Batteries",
+    "doi": "10.3390/batteries10100345",
+    "citation_count": 4,
+    "is_open_access": true,
+    "authors": [
+      {
+        "name": "Suk Jekal",
+        "orcid": "https://orcid.org/0000-0002-8705-4735",
+        "institution": "Hanbat National University",
+        "country": "KR"
+      },
+      {
+        "name": "Chan-Gyo Kim",
+        "orcid": null,
+        "institution": "Hanbat National University",
+        "country": "KR"
+      },
+      {
+        "name": "Jiwon Kim",
+        "orcid": "https://orcid.org/0009-0008-5083-0455",
+        "institution": "Hanbat National University",
+        "country": "KR"
+      },
+      {
+        "name": "Ha-Yeong Kim",
+        "orcid": null,
+        "institution": "Hanbat National University",
+        "country": "KR"
+      },
+      {
+        "name": "Yeon-Ryong Chu",
+        "orcid": null,
+        "institution": "Hanbat National University",
+        "country": "KR"
+      },
+      {
+        "name": "Yoon-Ho Ra",
+        "orcid": null,
+        "institution": "Hanbat National University",
+        "country": "KR"
+      },
+      {
+        "name": "Zambaga Otgonbayar",
+        "orcid": null,
+        "institution": "Hanbat National University",
+        "country": "KR"
+      },
+      {
+        "name": "Chang‐Min Yoon",
+        "orcid": "https://orcid.org/0000-0002-6530-3833",
+        "institution": "Hanbat National University",
+        "country": "KR"
+      }
+    ]
+  },
+  "research_domain": {
+    "primary_domain": "renewable_energy",
+    "sub_domain": "batteries_storage",
+    "problem_statement": "rGO additive raises specific capacity to 142.7 mAh/g at 1C",
+    "_source": "mapping_doc"
+  },
+  "commercialization": {
+    "maps_to_companies": [
+      "Log9 Materials"
+    ],
+    "trl_level": null,
+    "_trl_note": "needs review (no full-text TRL extraction in this lightweight pass)"
+  },
+  "derived": {
+    "indian_source_bonus": 0,
+    "recency_score": 0.8,
+    "citation_count": 4
+  },
+  "embedding_text": "One-dimensional lithium-ion transport channels in lithium iron phosphate (LFP) used as a cathode in lithium-ion batteries (LIBs) result in low electrical conductivity and reduced electrochemical performance. To overcome this limitation, three-dimensional plasma-treated reduced graphene oxide (rGO) was synthesized in this study and used as an additive for LFP in LIB cathodes. Graphene oxide was synthesized using Hummers’ method, followed by mixing with LFP, lyophilization, and plasma treatment to obtain LFP@rGO. The plasma treatment achieved the highest degree of reduction and porosity in rGO, creating ion transfer channels. The structure of LFP@rGO was verified through scanning electron microscopy (SEM) analysis, which demonstrated that incorporating 10.0 wt% of rGO into LFP resulted in successful coverage by the rGO layer, forming LFP@rGO-10. In half-cell tests, LFP@rGO-10 exhibited a specific capacity of 142.7 mAh g−1 at the 1.0 C-rate, which is higher than that of LFP. The full-cell exhibited 86.8% capacity retention after 200 cycles, demonstrating the effectiveness of rGO in enhancing the performance of LFP as an LIB cathode material. The outstanding efficiency and performance of the LFP@rGO-10//graphite cell highlight the promising potential of rGO-modified LFP as a cathode material for high-performance LIBs, providing both increased capacity and stability.",
+  "paper_embeddings": {
+    "_status": "DEFERRED",
+    "model": "BAAI/bge-base-en-v1.5",
+    "dim": 768
+  }
+}

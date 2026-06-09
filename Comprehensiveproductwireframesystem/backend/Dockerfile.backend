@@ -1,0 +1,24 @@
+# ---- NRDC R2C backend (Express + Prisma, TypeScript -> compiled) ----
+FROM node:22-alpine
+
+# wget for healthcheck; openssl required by Prisma engines on alpine
+RUN apk add --no-cache wget openssl
+
+WORKDIR /app
+
+# Install all deps (prisma CLI + tsx needed for migrate/seed at runtime)
+COPY package*.json ./
+RUN npm ci
+
+# Prisma schema + server source
+COPY prisma ./prisma
+COPY server ./server
+
+# Generate client + production compile (tsc -> dist-server)
+RUN npx prisma generate --schema prisma/schema.prisma \
+ && npm run build:api
+
+EXPOSE 4000
+
+# On boot: wait for DB, apply migrations, seed (idempotent), then run compiled server.
+CMD ["sh", "-c", "i=0; until npx prisma migrate deploy --schema prisma/schema.prisma; do i=$((i+1)); if [ $i -ge 30 ]; then echo 'DB not reachable - giving up'; exit 1; fi; echo 'waiting for database...'; sleep 2; done; npm run prisma:seed || echo 'seed skipped'; npm run import:papers || echo 'paper import skipped'; node dist-server/index.js"]

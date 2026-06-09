@@ -1,0 +1,5 @@
+{
+  "_status": "DEFERRED",
+  "_note": "The paper lists ~39 references. paper_citations rows require BOTH citing_paper_id and cited_paper_id to be papers that exist in our DB. Since the cited works are not yet in our corpus, this is populated by the ingestion pipeline's citation step (Master Schema flow 9.1 step 6): parse the reference list + cross-check OpenAlex/Crossref, create stub paper rows for cited works as needed, then insert edges. Left empty for the static seed.",
+  "citations": []
+}
